@@ -1,5 +1,3 @@
-scripts to visualize .elf usage
+Dockerfile for creating an container to build the .elf file
 
-https://stackoverflow.com/questions/2360734/whats-a-good-directory-structure-for-larger-c-projects-using-makefile
-
-docker if needed
+Maybe some helper tools to visualize memory in elf

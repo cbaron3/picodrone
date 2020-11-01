@@ -92,13 +92,13 @@ void DefaultResetHandler(void)
 {
     // Fill data
     volatile unsigned long* src = &_ld_data_load_source;
-    for (volatile unsigned long* dest = &_ld_data_load_dest_start; dest != &_ld_data_load_dest_stop;) {
-        *dest++ = *src++;
+    for (volatile unsigned long* dest_data = &_ld_data_load_dest_start; dest_data != &_ld_data_load_dest_stop;) {
+        *dest_data++ = *src++;
     }
         
     // Zero fill bss
-    for (volatile unsigned long* dest = &_ld_bss_data_start; dest != &_ld_bss_data_stop; dest++) {
-        *dest = 0x0;
+    for (volatile unsigned long* dest_bss = &_ld_bss_data_start; dest_bss != &_ld_bss_data_stop; dest_bss++) {
+        *dest_bss = 0x0;
     }
     
     // SystemInit

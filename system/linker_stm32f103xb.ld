@@ -1,11 +1,10 @@
-/* Entry point*/
 ENTRY(DefaultResetHandler)
 
 /* Memory mapping */
 MEMORY
 {
     FLASH (rx) : ORIGIN = 0x08000000, LENGTH = 64K
-    RAM (rwx) : ORIGIN = 0x20000000, LENGTH = 20K
+    RAM (xrw) : ORIGIN = 0x20000000, LENGTH = 20K
 }
 
 /* Stack sizing definitions */
@@ -29,15 +28,22 @@ SECTIONS
     .text : {
         . = ALIGN(4);
         KEEP(*(.text.interrupt_handler))
-        *(.text)
         *(.text*)
     } >FLASH
 
     .rodata : {
         . = ALIGN(4);
-        *(.rodata)
         *(.rodata*)
         . = ALIGN(4);
+    } >FLASH
+
+    .ARM.extab :
+    {
+    *(.ARM.extab* .gnu.linkonce.armextab.*)
+    } >FLASH
+    
+    .ARM : {
+        *(.ARM.exidx*)
     } >FLASH
 
     /* Handle global ctors and dtors */
@@ -65,7 +71,6 @@ SECTIONS
     .data : {
         . = ALIGN(4);
         _ld_data_load_dest_start = .; /* export start address for initialized data; used in startup for initializing section */
-        *(.data)
         *(.data*)
         . = ALIGN(4);
         _ld_data_load_dest_stop = .; /* export end address for initialized data; used in startup for initializing section */
