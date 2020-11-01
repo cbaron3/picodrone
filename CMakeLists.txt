@@ -9,14 +9,22 @@ set(STARTUP_FILE "system/startup_stm32f103xb.c")
 
 add_subdirectory(external)
 
+file(GLOB C_SRCS 
+    "lib/*.c"
+)
+
+file(GLOB CPP_SRCS 
+    "lib/*.cpp"
+)
+
 add_executable(${ELF} ${STARTUP_FILE}
-  src/main.c)
+  src/main.cpp ${CPP_SRCS})
 
 target_link_libraries(${ELF} ll )
 
 target_include_directories(ll PUBLIC 
     "${PROJECT_SOURCE_DIR}/system"
-    "${PROJECT_SOURCE_DIR}/inc"
+    "${PROJECT_SOURCE_DIR}/include"
     "${PROJECT_SOURCE_DIR}/external/STM32CubeF1-1.8.2/Drivers/STM32F1xx_HAL_Driver/Inc"
     "${PROJECT_SOURCE_DIR}/external/STM32CubeF1-1.8.2/Drivers/CMSIS/Include"
     "${PROJECT_SOURCE_DIR}/external/STM32CubeF1-1.8.2/Drivers/CMSIS/Core/Include"
@@ -35,12 +43,13 @@ set_target_properties(
 target_compile_options(${ELF} PUBLIC
   -Wall 
   -g 
-  -std=gnu99 
+  # -std=gnu99 
   -Os
   -mthumb
   -mcpu=cortex-m3
   -mfloat-abi=soft
   -mlittle-endian
+  -fno-exceptions # Delete exceptions so newlib functions arent required
   -ffunction-sections 
   -fdata-sections
   -Werror 

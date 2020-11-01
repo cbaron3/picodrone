@@ -58,11 +58,12 @@ void SystemClock_Config(void)
 }
 
 /* We must hook the systick in order for HAL_Delay to work. */
-// extern "C"
-void SysTick_Handler(void)
-{
-	HAL_IncTick();
-  //osSystickHandler(); For FREERTOS stuff
+extern "C" {
+  void SysTick_Handler(void)
+  {
+    HAL_IncTick();
+    //osSystickHandler(); For FREERTOS stuff
+  }
 }
 
 void Pin_Init()
