@@ -20,7 +20,7 @@ file(GLOB CPP_SRCS
 add_executable(${ELF} ${STARTUP_FILE}
   src/main.cpp ${CPP_SRCS})
 
-target_link_libraries(${ELF} ll )
+target_link_libraries(${ELF} ll freertos)
 
 target_include_directories(ll PUBLIC 
     "${PROJECT_SOURCE_DIR}/system"
@@ -29,6 +29,9 @@ target_include_directories(ll PUBLIC
     "${PROJECT_SOURCE_DIR}/external/STM32CubeF1-1.8.2/Drivers/CMSIS/Include"
     "${PROJECT_SOURCE_DIR}/external/STM32CubeF1-1.8.2/Drivers/CMSIS/Core/Include"
     "${PROJECT_SOURCE_DIR}/external/STM32CubeF1-1.8.2/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+
+    "${PROJECT_SOURCE_DIR}/external/FreeRTOSv10.4.1/FreeRTOS/Source/portable/GCC/ARM_CM3/"
+    "${PROJECT_SOURCE_DIR}/external/FreeRTOSv10.4.1/FreeRTOS/include/"
 )
 
 set_target_properties(
@@ -48,6 +51,10 @@ target_compile_options(${ELF} PUBLIC
   -mthumb
   -mcpu=cortex-m3
   -mfloat-abi=soft
+  -mno-thumb-interwork
+  -mfpu=vfp 
+  -msoft-float 
+  -mfix-cortex-m3-ldrd
   -mlittle-endian
   -fno-exceptions # Delete exceptions so newlib functions arent required
   -ffunction-sections 
