@@ -1,9 +1,11 @@
 #ifndef TYPES_HPP
 #define TYPES_HPP
 
+// NOTE: File not currently used but could come in handy
+
 #include <cstdint>
 
-#include "Util.hpp"
+#include "utility.hpp"
 
 namespace lib {
     namespace type {
