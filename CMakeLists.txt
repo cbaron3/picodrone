@@ -33,7 +33,7 @@ target_include_directories(ll PUBLIC
     "${PROJECT_SOURCE_DIR}/external/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM3/"
     "${PROJECT_SOURCE_DIR}/external/FreeRTOS/FreeRTOS/Source/include/"
 
-    "${PROJECT_SOURCE_DIR}/external/freertos-addons-1.6.0.4.1/c++/Source/include/"
+    "${PROJECT_SOURCE_DIR}/external/freertos-addons.4.1/c++/Source/include/"
 )
 
 set_target_properties(
