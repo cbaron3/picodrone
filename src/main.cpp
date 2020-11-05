@@ -2,6 +2,8 @@
 #include "stm32f1xx.h"
 #include "string.h"
 
+#include "thread.hpp"
+
 #include "GPIO.hpp"
 #include "Timer.hpp"
 #include "Util.hpp"

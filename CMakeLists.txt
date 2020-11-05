@@ -20,7 +20,7 @@ file(GLOB CPP_SRCS
 add_executable(${ELF} ${STARTUP_FILE}
   src/main.cpp ${CPP_SRCS})
 
-target_link_libraries(${ELF} ll freertos)
+target_link_libraries(${ELF} ll freertos freertos_cpp)
 
 target_include_directories(ll PUBLIC 
     "${PROJECT_SOURCE_DIR}/system"
@@ -31,7 +31,9 @@ target_include_directories(ll PUBLIC
     "${PROJECT_SOURCE_DIR}/external/STM32CubeF1-1.8.2/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
 
     "${PROJECT_SOURCE_DIR}/external/FreeRTOSv10.4.1/FreeRTOS/Source/portable/GCC/ARM_CM3/"
-    "${PROJECT_SOURCE_DIR}/external/FreeRTOSv10.4.1/FreeRTOS/include/"
+    "${PROJECT_SOURCE_DIR}/external/FreeRTOSv10.4.1/FreeRTOS/Source/include/"
+
+    "${PROJECT_SOURCE_DIR}/external/freertos-addons-1.6.0.4.1/c++/Source/include/"
 )
 
 set_target_properties(
