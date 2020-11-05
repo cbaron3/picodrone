@@ -1,15 +1,13 @@
 #include "stm32f1xx_hal.h"
 #include "stm32f1xx.h"
 #include "string.h"
-
-#include "thread.hpp"
-
-#include "GPIO.hpp"
-#include "Timer.hpp"
 #include "Util.hpp"
+// #include "thread.hpp"
 
 TIM_HandleTypeDef htim2;
 
+
+// Calculate prescalar based on period and 
 
 /* Boot up the Phase Locked Loop to give us a 72MHz clock.. */
 void SystemClock_Config(void)
@@ -67,67 +65,83 @@ extern "C" {
   }
 }
 
-void InitGPIO()
+void Pin_Init()
 {
-    using namespace lib::gpio;
+    // LED pins
+    __HAL_RCC_GPIOC_CLK_ENABLE();
+    GPIO_InitTypeDef GPIO_InitStruct;
+    GPIO_InitStruct.Pin = GPIO_PIN_13;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL; //This was previously PULL_UP, which makes no sense on an output pin! No pullup resistors here.
+    GPIO_InitStruct.Speed = GPIO_SPEED_HIGH;
+    HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
-    // Onboard LED
-    C::init<Pin::P13, Mode::OutputPP, Pull::None, Speed::High>();
-    
-    // Configure channel 1 on Timer 2 for PWM
-    A::init<Pin::P0, Mode::AltPP, Pull::None, Speed::High>();
+    // PWM pins
+    __HAL_RCC_GPIOA_CLK_ENABLE();
+    GPIO_InitTypeDef GPIO_PWM_InitStruct;
+    GPIO_PWM_InitStruct.Pin = GPIO_PIN_0;
+    GPIO_PWM_InitStruct.Mode = GPIO_MODE_AF_PP;
+    //GPIO_PWM_InitStruct.Pull = GPIO_NOPULL; //This was previously PULL_UP, which makes no sense on an output pin! No pullup resistors here.
+    GPIO_PWM_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+    HAL_GPIO_Init(GPIOA, &GPIO_PWM_InitStruct);
 }
 
-void InitPWM()
+void TIM_Init()
 {
-    using namespace lib::timer;
+  __HAL_RCC_TIM2_CLK_ENABLE();
 
-    using Result = lib::type::Result<HAL_StatusTypeDef, lib::type::ErrCode>;
+    //TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+    //TIM_MasterConfigTypeDef sMasterConfig = {0};
+    TIM_OC_InitTypeDef sConfigOC = {0};
 
-    // Init timer
-    Result timer_init = PWM_2::InitTimer<1095, 15, CounterMode::Up, ClockDiv::D1, AutoReloadPreload::Enable>(&htim2);
-    if(!timer_init) { lib::util::ErrorHandler(__FILE__, __LINE__); }
+    htim2.Instance = TIM2;
+    htim2.Init.Prescaler = 15;
+    htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
+    htim2.Init.Period = 1095;
+    htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+    htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_ENABLE;
+    if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
+    {
+      lib::util::ErrorHandler(__FILE__, __LINE__);
+    }
 
-    // Init output compare
-    Result comp_init = PWM_2::InitCompare<0, OCMode::PWM1, OCFastMode::Enable, OCPolarity::High, TIM_CHANNEL_1>(&htim2);
-    if(!comp_init) { lib::util::ErrorHandler(__FILE__, __LINE__); }
-
-    // Start
-    Result start = PWM_2::Start<TIM_CHANNEL_1>(&htim2);
-    if(!start) { lib::util::ErrorHandler(__FILE__, __LINE__); }
+    sConfigOC.OCMode = TIM_OCMODE_PWM1;
+    sConfigOC.Pulse = 0;
+    sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+    sConfigOC.OCFastMode = TIM_OCFAST_ENABLE;
+    if (HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+    {
+      
+      lib::util::ErrorHandler(__FILE__, __LINE__);
+    }
 }
 
 int main() {
-	//Init HAL            // Start
-
-            // Stop
-
-            // PWM Config
-
-            // PWM Set
+	//Init HAL
 	HAL_Init();
 
 	//Initialize clocks to max speed
 	SystemClock_Config();
 
 	//Init GPIOs
-	InitGPIO();
+	Pin_Init();
 
-    // Init PWM
-    InitPWM();
+  // Init PWM
+  TIM_Init();
+
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
 
 	//Blinky blinky
-    uint16_t CH1_DC = 0;
+  uint16_t CH1_DC = 0;
 	while(1) {
-        lib::gpio::C::toggle<lib::gpio::Pin::P13>();
-
+		HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_6);
 		HAL_Delay(100);
 
-        lib::timer::PWM_2::SetValue<TIM_CHANNEL_1>(&htim2, CH1_DC);
+    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, CH1_DC);
+    CH1_DC += 50;
 
-        CH1_DC += 50;
-
-        if(CH1_DC >= 1095) CH1_DC = 0;
+    if(CH1_DC >= 1095) CH1_DC = 0;
 	}
 
 	return 0;
