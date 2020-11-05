@@ -8,8 +8,8 @@ add_library(freertos_cpp STATIC ${FREE_RTOS_SRC})
 
 target_include_directories(freertos_cpp PUBLIC 
     "${PROJECT_SOURCE_DIR}/system"
-    "${PROJECT_SOURCE_DIR}/external/FreeRTOSv10.4.1/FreeRTOS/Source/portable/GCC/ARM_CM3/"
-    "${PROJECT_SOURCE_DIR}/external/FreeRTOSv10.4.1/FreeRTOS/Source/include/"
+    "${PROJECT_SOURCE_DIR}/external/FreeRTOS/FreeRTOS/Source/portable/GCC/ARM_CM3/"
+    "${PROJECT_SOURCE_DIR}/external/FreeRTOS/FreeRTOS/Source/include/"
     "c++/Source/include/"
 )
 
