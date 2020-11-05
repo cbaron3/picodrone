@@ -1,3 +1,7 @@
+GROUP (
+        libnosys.a
+    )
+    
 ENTRY(DefaultResetHandler)
 
 /* Memory mapping */
@@ -106,4 +110,6 @@ SECTIONS
         libm.a ( * )
         libgcc.a ( * )
     }
+
+    
 }

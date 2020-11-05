@@ -20,7 +20,8 @@ file(GLOB CPP_SRCS
 add_executable(${ELF} ${STARTUP_FILE}
   src/main.cpp ${CPP_SRCS})
 
-target_link_libraries(${ELF} ll freertos freertos_cpp)
+# target_link_libraries(${ELF} ll freertos_cpp freertos)
+target_link_libraries(${ELF} ll  freertos)
 
 target_include_directories(ll PUBLIC 
     "${PROJECT_SOURCE_DIR}/system"

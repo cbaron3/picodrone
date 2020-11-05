@@ -12,6 +12,8 @@ file(GLOB FREE_RTOS_HEAP_SRC
     "FreeRTOS/Source/portable/MemMang/heap_1.c"
 )
 
+# add_definitions(-DportUSING_MPU_WRAPPERS)
+
 add_library(freertos STATIC ${FREE_RTOS_SRC} ${FREE_RTOS_PORT_SRC} ${FREE_RTOS_HEAP_SRC})
 
 target_include_directories(freertos PUBLIC 

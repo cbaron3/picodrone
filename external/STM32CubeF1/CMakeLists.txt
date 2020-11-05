@@ -28,5 +28,6 @@ target_include_directories(ll PUBLIC
 target_compile_options(ll PUBLIC
   -mthumb
   -mcpu=cortex-m3
+  -fno-exceptions
   -mfloat-abi=soft
   -mlittle-endian)
