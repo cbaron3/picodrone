@@ -16,12 +16,10 @@ set(STM32_DEVICE_GROUP "STM32F103xB" CACHE STRING
 
 target_compile_definitions(ll PUBLIC ${STM32_DEVICE_GROUP})
 target_compile_definitions(ll PUBLIC "USE_FULL_LL_DRIVER")
-target_compile_definitions(ll PUBLIC "USE_FULL_HAL_DRIVER")
 
 target_include_directories(ll PUBLIC 
     "${PROJECT_SOURCE_DIR}/external/STM32CubeF1/Drivers/STM32F1xx_HAL_Driver/Inc"
     "${PROJECT_SOURCE_DIR}/external/STM32CubeF1/Drivers/CMSIS/Include"
-    # "${PROJECT_SOURCE_DIR}/external/STM32CubeF1/Drivers/CMSIS/Core/Include"
     "${PROJECT_SOURCE_DIR}/external/STM32CubeF1/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
 )
 

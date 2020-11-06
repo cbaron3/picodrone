@@ -3,6 +3,7 @@
 
 #include "stm32f1xx_hal.h"
 #include "stm32f1xx.h"
+#include "string.h"
 
 namespace picodrone
 {
@@ -14,21 +15,8 @@ namespace uart
     void init() {
         
         __HAL_RCC_AFIO_CLK_ENABLE();
-        //AFIO->MAPR |= AFIO_MAPR_USART2_REMAP;
 
         __HAL_RCC_USART1_CLK_ENABLE();
-
-        // /* GPIOA PIN9 alternative function Tx */
-        // GPIO_InitTypeDef gpioa_init_struct;
-        // gpioa_init_struct.Pin = GPIO_PIN_2;
-        // gpioa_init_struct.Speed = GPIO_SPEED_FREQ_HIGH;
-        // gpioa_init_struct.Mode = GPIO_MODE_AF_PP;
-        // HAL_GPIO_Init(GPIOA, &gpioa_init_struct);
-        // /* GPIOA PIN9 alternative function Rx */
-        // gpioa_init_struct.Pin = GPIO_PIN_3;
-        // gpioa_init_struct.Speed = GPIO_SPEED_FREQ_HIGH;
-        // gpioa_init_struct.Mode = GPIO_MODE_AF_OD;
-        // HAL_GPIO_Init(GPIOA, &gpioa_init_struct);
         
         UART1.Instance = USART1;
         UART1.Init.BaudRate = 9600;
