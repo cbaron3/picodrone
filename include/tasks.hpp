@@ -6,6 +6,7 @@
 
 #include "utility.hpp"
 #include "gpio.hpp"
+#include "uart.hpp"
 
 #include "FreeRTOS.h"
 #include "task.h"
@@ -37,6 +38,11 @@ namespace task
         for( ;; )
         {
             HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+            picodrone::uart::send("Hello World");
+            vTaskDelayUntil(&xLastWakeTime,xFrequency);
+
+            HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+            picodrone::uart::send("Bye World");
             vTaskDelayUntil(&xLastWakeTime,xFrequency);
         }
     }
