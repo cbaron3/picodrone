@@ -25,9 +25,9 @@ int main() {
   // Init UART
   uart::init();
 
-  //system::rtos::init();
+  system::rtos::init();
   
-  //system::rtos::start();
+  system::rtos::start();
 
   // TODO:
     // 1. Create a UART thread; debug with oscillscope until FTDI ships

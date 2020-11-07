@@ -6,9 +6,11 @@
 
 #include "utility.hpp"
 #include "tasks.hpp"
+#include "uart.hpp"
 
 #include "FreeRTOS.h"
 #include "task.h"
+#include "queue.h"
 
 namespace picodrone
 {
@@ -18,20 +20,111 @@ namespace system
 
 namespace rtos
 {
-    void init() {
-        // xTaskCreate( picodrone::task::vDebug, "LED", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
-        //xTaskCreate( picodrone::task::vController, "Controller", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
-        //xTaskCreate( picodrone::task::vI2C_IMU, "I2C_IMU", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
-        //xTaskCreate( picodrone::task::vI2C_BMP, "I2C_BMP", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
-        //xTaskCreate( picodrone::task::vSPI, "SPI", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
-    }
-
+    static xQueueHandle txQueue;
+    
     void start() {
         vTaskStartScheduler();
         //you should never get here
         while(1)
             { }
     }
+
+    void vController(void *pvParameters) {
+        // Call control loop and update pwm state
+        // 20ms?
+        portTickType xLastWakeTime;
+        const portTickType xFrequency = 20;
+        xLastWakeTime=xTaskGetTickCount();
+        for( ;; )
+        {
+            vTaskDelayUntil(&xLastWakeTime,xFrequency);
+        }
+    }
+
+    void vUART( void *pvParameters ) {
+        char received[100];
+
+        for(;;) {
+            if(pdTRUE == xQueueReceive(picodrone::system::rtos::txQueue, received, 100)) {
+                picodrone::uart::send(received);
+            }   
+        }
+    }
+
+    void vDebug( void *pvParameters ) {
+        // UART and LED flashing
+        // Slow
+        const char* msg = "Hello World";
+
+        portTickType xLastWakeTime;
+        const portTickType xFrequency = 1000;
+        xLastWakeTime=xTaskGetTickCount();
+        for( ;; )
+        {
+            if(pdTRUE == xQueueSend(picodrone::system::rtos::txQueue,msg,100)) {
+                HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+            }
+
+            vTaskDelayUntil(&xLastWakeTime,xFrequency);
+        }
+    }
+
+    void vSPI(void *pvParameters ) {
+        // Will be for nrf24
+        // Fast; used for control from remote
+        portTickType xLastWakeTime;
+        const portTickType xFrequency = 20;
+        xLastWakeTime=xTaskGetTickCount();
+        for( ;; )
+        {
+            vTaskDelayUntil(&xLastWakeTime,xFrequency);
+        }
+    }
+
+    void vI2C_IMU(void *pvParameters) {
+
+        // INIT PERIPHERAL OUTSIDE OF TASK (i2c bus)
+        // INIT DEVICE, WITH CONFIG DATA, IN TASK
+
+        // Will be for i2c/bmp
+        // Fast for IMU, slower for BMP. Maybe two threads? Use two different I2C busses? Yes. Unless creating a sensor hub.
+        // sensors <-> sensor chip <-> main chip could be something for the future
+        portTickType xLastWakeTime;
+        const portTickType xFrequency = 20;
+        xLastWakeTime=xTaskGetTickCount();
+        for( ;; )
+        {
+            vTaskDelayUntil(&xLastWakeTime,xFrequency);
+        }
+    }
+
+    void vI2C_BMP(void *pvParameters) {
+        // Will be for i2c/bmp
+        // Fast for IMU, slower for BMP. Maybe two threads? Use two different I2C busses? Yes. Unless creating a sensor hub.
+        // sensors <-> sensor chip <-> main chip could be something for the future
+        portTickType xLastWakeTime;
+        const portTickType xFrequency = 50;
+        xLastWakeTime=xTaskGetTickCount();
+        for( ;; )
+        {
+            vTaskDelayUntil(&xLastWakeTime,xFrequency);
+        }
+    }
+
+    void init() {
+        txQueue = xQueueCreate(5, 50);
+
+        xTaskCreate( vUART, "UART", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+        xTaskCreate( vDebug, "LED", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+
+        xTaskCreate( vController, "Controller", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+        xTaskCreate( vI2C_IMU, "I2C_IMU", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+        xTaskCreate( vI2C_BMP, "I2C_BMP", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+        xTaskCreate( vSPI, "SPI", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+    }
+
+    
+
 }
 
 namespace clock
