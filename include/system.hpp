@@ -19,11 +19,11 @@ namespace system
 namespace rtos
 {
     void init() {
-        xTaskCreate( picodrone::task::vDebug, "LED", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
-        xTaskCreate( picodrone::task::vController, "Controller", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
-        xTaskCreate( picodrone::task::vI2C_IMU, "I2C_IMU", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
-        xTaskCreate( picodrone::task::vI2C_BMP, "I2C_BMP", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
-        xTaskCreate( picodrone::task::vSPI, "SPI", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+        // xTaskCreate( picodrone::task::vDebug, "LED", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+        //xTaskCreate( picodrone::task::vController, "Controller", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+        //xTaskCreate( picodrone::task::vI2C_IMU, "I2C_IMU", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+        //xTaskCreate( picodrone::task::vI2C_BMP, "I2C_BMP", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+        //xTaskCreate( picodrone::task::vSPI, "SPI", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
     }
 
     void start() {

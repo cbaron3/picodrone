@@ -27,6 +27,8 @@ namespace uart
         UART1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
         UART1.Init.OverSampling = UART_OVERSAMPLING_16;
 
+
+        // TODO: Replace with LL_UART INIT because this takes too much flash, ~9k or around ~14
         if (HAL_UART_Init(&UART1) != HAL_OK)
         {
             /* Initialization Error */
