@@ -6,7 +6,7 @@
 #include "system.hpp"
 #include "gpio.hpp"
 #include "pwm.hpp"
-
+#include "i2c.hpp"
 int main() {
   using namespace picodrone;
 
@@ -25,8 +25,11 @@ int main() {
   // Init UART
   uart::init();
 
+  // Init I2C
+  i2c::init();
+
   system::rtos::init();
-  
+
   system::rtos::start();
 
   // TODO:
