@@ -7,6 +7,9 @@
 #include "gpio.hpp"
 #include "pwm.hpp"
 #include "i2c.hpp"
+
+#include "OS/threads.h"
+
 int main() {
   using namespace picodrone;
 

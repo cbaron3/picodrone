@@ -14,7 +14,7 @@ file(GLOB C_SRCS
 )
 
 file(GLOB CPP_SRCS 
-    "lib/*.cpp"
+    "lib/OS/*.cpp"
 )
 
 add_executable(${ELF} ${STARTUP_FILE}
