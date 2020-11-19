@@ -3797,14 +3797,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J12" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1" value="M4_CTRL_IN_TEST"/>
 <part name="J13" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1" value="M3_SRC_TEST"/>
 <part name="J14" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1" value="M3_DRAIN_TEST"/>
-<part name="J15" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1" value="M3_VIN_TEST"/>
 <part name="J16" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1" value="M4_DRAIN_TEST"/>
-<part name="J17" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1" value="M4_VIN_TEST"/>
 <part name="J18" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1" value="M4_SRC_TEST"/>
 <part name="J19" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1" value="M2_SRC_TEST"/>
 <part name="J20" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1" value="M2_DRAIN_TEST"/>
-<part name="J21" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1" value="M2_VIN_TEST"/>
-<part name="J22" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1" value="M1_VIN_TEST"/>
 <part name="J23" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1" value="M1_DRAIN_TEST"/>
 <part name="J24" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_01" device="" package3d_urn="urn:adsk.eagle:package:38028/1" value="M1_SRC_TEST"/>
 </parts>
@@ -4054,17 +4050,9 @@ MOTORS</text>
 <attribute name="VALUE" x="-121.666" y="-8.636" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="-119.126" y="-0.762" size="1.778" layer="95" font="vector"/>
 </instance>
-<instance part="J15" gate="G$1" x="-116.586" y="13.97" smashed="yes">
-<attribute name="VALUE" x="-119.126" y="9.144" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="-119.126" y="17.018" size="1.778" layer="95" font="vector"/>
-</instance>
 <instance part="J16" gate="G$1" x="-37.846" y="-3.81" smashed="yes">
 <attribute name="VALUE" x="-40.386" y="-8.636" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="-40.386" y="-0.762" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="J17" gate="G$1" x="-37.846" y="13.97" smashed="yes">
-<attribute name="VALUE" x="-40.386" y="9.144" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="-40.386" y="17.018" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J18" gate="G$1" x="22.606" y="-21.59" smashed="yes" rot="R180">
 <attribute name="VALUE" x="25.146" y="-16.764" size="1.778" layer="96" font="vector" rot="R180"/>
@@ -4077,14 +4065,6 @@ MOTORS</text>
 <instance part="J20" gate="G$1" x="-37.846" y="72.39" smashed="yes">
 <attribute name="VALUE" x="-40.386" y="67.564" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="-40.386" y="75.438" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="J21" gate="G$1" x="-37.846" y="90.17" smashed="yes">
-<attribute name="VALUE" x="-40.386" y="85.344" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="-40.386" y="93.218" size="1.778" layer="95" font="vector"/>
-</instance>
-<instance part="J22" gate="G$1" x="-116.586" y="90.17" smashed="yes">
-<attribute name="VALUE" x="-119.126" y="85.344" size="1.778" layer="96" font="vector"/>
-<attribute name="NAME" x="-119.126" y="93.218" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="J23" gate="G$1" x="-116.586" y="72.39" smashed="yes">
 <attribute name="VALUE" x="-119.126" y="67.564" size="1.778" layer="96" font="vector"/>
@@ -4250,9 +4230,8 @@ MOTORS</text>
 <net name="VIN" class="0">
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="-81.28" y1="83.82" x2="-81.28" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="83.82" x2="-81.28" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="K"/>
-<wire x1="-81.28" y1="90.17" x2="-81.28" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="91.44" x2="-73.66" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="91.44" x2="-73.66" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="J4" gate="G$1" pin="1"/>
@@ -4267,15 +4246,11 @@ MOTORS</text>
 <wire x1="-66.04" y1="104.14" x2="-66.04" y2="99.06" width="0.1524" layer="91"/>
 <junction x="-66.04" y="99.06"/>
 <label x="-66.04" y="104.14" size="1.778" layer="95" xref="yes"/>
-<pinref part="J22" gate="G$1" pin="1"/>
-<wire x1="-108.966" y1="90.17" x2="-81.28" y2="90.17" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="90.17" x2="-81.28" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="-2.54" y1="83.82" x2="-2.54" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="83.82" x2="-2.54" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="K"/>
-<wire x1="-2.54" y1="90.17" x2="-2.54" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="91.44" x2="5.08" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="91.44" x2="5.08" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="J5" gate="G$1" pin="1"/>
@@ -4290,15 +4265,11 @@ MOTORS</text>
 <wire x1="12.7" y1="104.14" x2="12.7" y2="99.06" width="0.1524" layer="91"/>
 <junction x="12.7" y="99.06"/>
 <label x="12.7" y="104.14" size="1.778" layer="95" xref="yes"/>
-<pinref part="J21" gate="G$1" pin="1"/>
-<wire x1="-30.226" y1="90.17" x2="-2.54" y2="90.17" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="90.17" x2="-2.54" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="-81.28" y1="7.62" x2="-81.28" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-81.28" y1="7.62" x2="-81.28" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="D3" gate="G$1" pin="K"/>
-<wire x1="-81.28" y1="13.97" x2="-81.28" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="15.24" x2="-73.66" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="-73.66" y1="15.24" x2="-73.66" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="J6" gate="G$1" pin="1"/>
@@ -4313,13 +4284,10 @@ MOTORS</text>
 <wire x1="-66.04" y1="27.94" x2="-66.04" y2="22.86" width="0.1524" layer="91"/>
 <junction x="-66.04" y="22.86"/>
 <label x="-66.04" y="27.94" size="1.778" layer="95" xref="yes"/>
-<pinref part="J15" gate="G$1" pin="1"/>
-<wire x1="-108.966" y1="13.97" x2="-81.28" y2="13.97" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="13.97" x2="-81.28" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="-2.54" y1="7.62" x2="-2.54" y2="13.97" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="D4" gate="G$1" pin="K"/>
 <wire x1="-2.54" y1="15.24" x2="5.08" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="15.24" x2="5.08" y2="10.16" width="0.1524" layer="91"/>
@@ -4335,9 +4303,6 @@ MOTORS</text>
 <wire x1="12.7" y1="27.94" x2="12.7" y2="22.86" width="0.1524" layer="91"/>
 <junction x="12.7" y="22.86"/>
 <label x="12.7" y="27.94" size="1.778" layer="95" xref="yes"/>
-<pinref part="J17" gate="G$1" pin="1"/>
-<wire x1="-30.226" y1="13.97" x2="-2.54" y2="13.97" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="13.97" x2="-2.54" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
