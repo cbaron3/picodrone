@@ -9436,8 +9436,7 @@ need openocd.gdb config file for debugging?</text>
 <text x="78.74" y="-7.62" size="1.778" layer="91">TODO:
 - Add led to pin for testing code upload (blinky)
 - Create breakout for all pins that are not used
-- Create boot 3x2
-- Create BOM</text>
+- Create boot 3x2</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="99.06" y="58.42" smashed="yes">

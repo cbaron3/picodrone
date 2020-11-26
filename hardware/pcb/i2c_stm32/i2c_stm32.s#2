@@ -9433,11 +9433,6 @@ need openocd.gdb config file for debugging?</text>
 <text x="-114.3" y="73.66" size="1.778" layer="97">I2C Connector</text>
 <text x="-114.3" y="43.18" size="1.778" layer="97">SPI Connector</text>
 <text x="17.78" y="170.18" size="0.8128" layer="91">Bit more than 22pF may be a good idea cause of 18pF load capacitance https://www.digikey.ca/en/products/detail/abracon-llc/ABM3B-16-000MHZ-B2-T/675317</text>
-<text x="78.74" y="-7.62" size="1.778" layer="91">TODO:
-- Add led to pin for testing code upload (blinky)
-- Create breakout for all pins that are not used
-- Create boot 3x2
-- Create BOM</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="99.06" y="58.42" smashed="yes">
