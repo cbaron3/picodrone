@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -9197,8 +9197,6 @@ Datasheet</description>
 <part name="R3" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" deviceset="RC0603JR-070RL" device="" package3d_urn="urn:adsk.eagle:package:10872900/2" value="1M"/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
-<part name="R1" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" deviceset="RC0603JR-070RL" device="" package3d_urn="urn:adsk.eagle:package:10872900/2"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="FRAME4" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="Y1" library="SparkFun-Clocks" library_urn="urn:adsk.eagle:library:511" deviceset="CRYSTAL-8MHZ" device="SMD-5X3.2" package3d_urn="urn:adsk.eagle:package:37518/1" value="8MHz"/>
@@ -9228,7 +9226,6 @@ Datasheet</description>
 <part name="C16" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="22pF"/>
 <part name="C17" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="22pF"/>
 <part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R4" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" deviceset="RC0603JR-070RL" device="" package3d_urn="urn:adsk.eagle:package:10872900/2"/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D1" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1"/>
 <part name="D2" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" deviceset="LED" device="0603" package3d_urn="urn:adsk.eagle:package:39354/1"/>
@@ -9264,8 +9261,8 @@ Datasheet</description>
 <part name="C6" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="2200 pF"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U4" library="NRF24L01" deviceset="NRF24L01" device=""/>
-<part name="C7" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="22pF"/>
-<part name="C8" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="22pF"/>
+<part name="C7" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="18pF"/>
+<part name="C8" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="18pF"/>
 <part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R2" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" deviceset="RC0603JR-070RL" device="" package3d_urn="urn:adsk.eagle:package:10872900/2" value="22k"/>
@@ -9283,6 +9280,8 @@ Datasheet</description>
 <part name="C13" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="33 nF"/>
 <part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="Y3" library="SparkFun-Clocks" library_urn="urn:adsk.eagle:library:511" deviceset="CRYSTAL-16MHZ" device="SMD-5X3.2" package3d_urn="urn:adsk.eagle:package:37518/1" value="16MHz"/>
+<part name="R6" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" deviceset="RC0603JR-070RL" device="" package3d_urn="urn:adsk.eagle:package:10872900/2" value="220"/>
+<part name="R1" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" deviceset="RC0603JR-070RL" device="" package3d_urn="urn:adsk.eagle:package:10872900/2" value="220"/>
 </parts>
 <sheets>
 <sheet>
@@ -9306,15 +9305,15 @@ Datasheet</description>
 <wire x1="170.18" y1="142.24" x2="170.18" y2="167.64" width="0.254" layer="97"/>
 <wire x1="170.18" y1="167.64" x2="132.08" y2="167.64" width="0.254" layer="97"/>
 <text x="182.88" y="162.56" size="2.54" layer="105" font="vector">32.768 kHz Clock</text>
-<wire x1="180.34" y1="167.64" x2="180.34" y2="137.16" width="0.254" layer="97"/>
-<wire x1="180.34" y1="137.16" x2="210.82" y2="137.16" width="0.254" layer="97"/>
-<wire x1="210.82" y1="137.16" x2="210.82" y2="167.64" width="0.254" layer="97"/>
+<wire x1="180.34" y1="167.64" x2="180.34" y2="129.54" width="0.254" layer="97"/>
+<wire x1="180.34" y1="129.54" x2="210.82" y2="129.54" width="0.254" layer="97"/>
+<wire x1="210.82" y1="129.54" x2="210.82" y2="167.64" width="0.254" layer="97"/>
 <wire x1="210.82" y1="167.64" x2="180.34" y2="167.64" width="0.254" layer="97"/>
 <text x="223.52" y="162.56" size="2.54" layer="105" font="vector">8 MHz Clock</text>
-<wire x1="220.98" y1="167.64" x2="220.98" y2="132.08" width="0.254" layer="97"/>
-<wire x1="220.98" y1="132.08" x2="246.38" y2="132.08" width="0.254" layer="97"/>
-<wire x1="246.38" y1="132.08" x2="246.38" y2="167.64" width="0.254" layer="97"/>
-<wire x1="246.38" y1="167.64" x2="220.98" y2="167.64" width="0.254" layer="97"/>
+<wire x1="220.98" y1="167.64" x2="220.98" y2="124.46" width="0.254" layer="97"/>
+<wire x1="220.98" y1="124.46" x2="251.46" y2="124.46" width="0.254" layer="97"/>
+<wire x1="251.46" y1="124.46" x2="251.46" y2="167.64" width="0.254" layer="97"/>
+<wire x1="251.46" y1="167.64" x2="220.98" y2="167.64" width="0.254" layer="97"/>
 <text x="15.24" y="116.84" size="1.016" layer="105" font="vector">Power LED</text>
 <text x="15.24" y="109.22" size="1.016" layer="105" font="vector">Debug LED</text>
 <text x="15.24" y="119.38" size="2.54" layer="105" font="vector">LEDs</text>
@@ -9342,6 +9341,14 @@ Datasheet</description>
 <wire x1="160.02" y1="55.88" x2="213.36" y2="55.88" width="0.254" layer="97"/>
 <wire x1="213.36" y1="55.88" x2="213.36" y2="124.46" width="0.254" layer="97"/>
 <wire x1="213.36" y1="124.46" x2="160.02" y2="124.46" width="0.254" layer="97"/>
+<text x="182.626" y="131.826" size="1.016" layer="105" font="vector">C1 = C2 = 2*(CL - CStray)
+CStray for STM32 is in range [2pF, 7pF]
+Pick ~ 5pF
+2*(10pF - 5pF) = 10pF</text>
+<text x="223.266" y="126.746" size="1.016" layer="105" font="vector">C1 = C2 = 2*(CL - CStray)
+CStray for STM32 is in range [2pF, 7pF]
+Pick ~ 5pF
+2*(12.5pF - 5pF) = 15pF</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="106.68" y="73.66" smashed="yes">
@@ -9359,9 +9366,6 @@ Datasheet</description>
 <attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
-</instance>
-<instance part="R1" gate="G$1" x="30.48" y="114.3" smashed="yes">
-<attribute name="NAME" x="26.67" y="115.7986" size="1.016" layer="95" font="vector"/>
 </instance>
 <instance part="GND11" gate="1" x="48.26" y="111.76" smashed="yes">
 <attribute name="VALUE" x="46.99" y="109.22" size="1.016" layer="96" font="vector"/>
@@ -9455,9 +9459,6 @@ Datasheet</description>
 <instance part="GND21" gate="1" x="233.68" y="137.16" smashed="yes">
 <attribute name="VALUE" x="231.14" y="134.62" size="1.016" layer="96" font="vector"/>
 </instance>
-<instance part="R4" gate="G$1" x="30.48" y="106.68" smashed="yes">
-<attribute name="NAME" x="26.67" y="108.1786" size="1.016" layer="95" font="vector"/>
-</instance>
 <instance part="GND22" gate="1" x="48.26" y="104.14" smashed="yes">
 <attribute name="VALUE" x="46.99" y="101.6" size="1.016" layer="96" font="vector"/>
 </instance>
@@ -9509,6 +9510,14 @@ Datasheet</description>
 <instance part="GND32" gate="1" x="190.5" y="109.22" smashed="yes">
 <attribute name="VALUE" x="187.96" y="106.68" size="1.016" layer="96" font="vector"/>
 </instance>
+<instance part="R6" gate="G$1" x="30.48" y="114.3" smashed="yes">
+<attribute name="NAME" x="25.4" y="115.2906" size="1.016" layer="95" font="vector"/>
+<attribute name="VALUE" x="33.274" y="115.316" size="1.016" layer="96" font="vector"/>
+</instance>
+<instance part="R1" gate="G$1" x="30.48" y="106.68" smashed="yes">
+<attribute name="NAME" x="25.4" y="107.6706" size="1.016" layer="95" font="vector"/>
+<attribute name="VALUE" x="33.274" y="107.696" size="1.016" layer="96" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9533,9 +9542,9 @@ Datasheet</description>
 <pinref part="C20" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="114.3" x2="23.368" y2="114.3" width="0.1524" layer="91"/>
 <label x="23.368" y="114.3" size="1.016" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U5" gate="U1" pin="OUT"/>
@@ -9701,9 +9710,9 @@ Datasheet</description>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="114.3" x2="38.1" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -9853,9 +9862,9 @@ Datasheet</description>
 <label x="78.74" y="50.8" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="25.4" y1="106.68" x2="19.304" y2="106.68" width="0.1524" layer="91"/>
 <label x="19.304" y="106.68" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="2"/>
@@ -9865,9 +9874,9 @@ Datasheet</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="106.68" x2="38.1" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="A"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -10309,6 +10318,9 @@ Datasheet</description>
 <wire x1="238.76" y1="165.1" x2="238.76" y2="111.76" width="0.254" layer="97"/>
 <wire x1="111.76" y1="111.76" x2="238.76" y2="111.76" width="0.254" layer="97"/>
 <text x="114.808" y="159.004" size="2.54" layer="105" font="vector">MOSFETs - Motor Controller &lt;TBD&gt;</text>
+<text x="116.586" y="86.106" size="1.016" layer="105" font="vector">C1 = C2 = 2*(CL - CStray)
+CStray for NRF is ~1pF
+2*(10pF - 1pF) = 18pF</text>
 </plain>
 <instances>
 <instance part="C2" gate="G$1" x="83.82" y="142.24" smashed="yes">
@@ -10810,32 +10822,13 @@ Datasheet</description>
 </nets>
 </sheet>
 <sheet>
-<description>NRF24 - Radio</description>
-<plain>
-</plain>
-<instances>
-<instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
-<attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
-<attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
-<attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
-</instance>
-</instances>
-<busses>
-</busses>
-<nets>
-</nets>
-</sheet>
-<sheet>
 <plain>
 <text x="15.24" y="27.94" size="5.08" layer="105" font="vector">TODO:
 1. Confirm capacitor values for crystals (match load capacitance)
 2. Create BOM
 3. openocd.gdb for debugging
-4. Current limiting resistor values for LED
 5. Make correct SDA,SCL, and SPI connections
-6. Clean baro schematic
-7. Clean imu schematic
-8. Clean nrf schematic</text>
+6. Check all values -&gt; Collect all reference material</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="0" y="0" smashed="yes">

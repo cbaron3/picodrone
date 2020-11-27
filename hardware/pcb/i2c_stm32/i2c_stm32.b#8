@@ -4927,6 +4927,126 @@ design rules under a new name.</description>
 <signal name="PB15">
 <contactref element="U1" pad="28"/>
 </signal>
+<signal name="N$15">
+<contactref element="J3" pad="1"/>
+</signal>
+<signal name="N$16">
+<contactref element="J3" pad="2"/>
+</signal>
+<signal name="N$18">
+<contactref element="J3" pad="3"/>
+</signal>
+<signal name="N$19">
+<contactref element="J3" pad="4"/>
+</signal>
+<signal name="N$20">
+<contactref element="J3" pad="5"/>
+</signal>
+<signal name="N$21">
+<contactref element="J3" pad="6"/>
+</signal>
+<signal name="N$22">
+<contactref element="J3" pad="7"/>
+</signal>
+<signal name="N$23">
+<contactref element="J3" pad="8"/>
+</signal>
+<signal name="N$24">
+<contactref element="J3" pad="9"/>
+</signal>
+<signal name="N$25">
+<contactref element="J3" pad="10"/>
+</signal>
+<signal name="N$26">
+<contactref element="J3" pad="11"/>
+</signal>
+<signal name="N$27">
+<contactref element="J3" pad="12"/>
+</signal>
+<signal name="N$28">
+<contactref element="J3" pad="13"/>
+</signal>
+<signal name="N$29">
+<contactref element="J3" pad="14"/>
+</signal>
+<signal name="N$30">
+<contactref element="J3" pad="15"/>
+</signal>
+<signal name="N$31">
+<contactref element="J3" pad="16"/>
+</signal>
+<signal name="N$32">
+<contactref element="J3" pad="17"/>
+</signal>
+<signal name="N$33">
+<contactref element="J3" pad="18"/>
+</signal>
+<signal name="N$34">
+<contactref element="J3" pad="19"/>
+</signal>
+<signal name="N$35">
+<contactref element="J3" pad="20"/>
+</signal>
+<signal name="N$36">
+<contactref element="J4" pad="1"/>
+</signal>
+<signal name="N$37">
+<contactref element="J4" pad="2"/>
+</signal>
+<signal name="N$38">
+<contactref element="J4" pad="3"/>
+</signal>
+<signal name="N$39">
+<contactref element="J4" pad="4"/>
+</signal>
+<signal name="N$40">
+<contactref element="J4" pad="5"/>
+</signal>
+<signal name="N$41">
+<contactref element="J4" pad="6"/>
+</signal>
+<signal name="N$42">
+<contactref element="J4" pad="7"/>
+</signal>
+<signal name="N$43">
+<contactref element="J4" pad="8"/>
+</signal>
+<signal name="N$44">
+<contactref element="J4" pad="9"/>
+</signal>
+<signal name="N$45">
+<contactref element="J4" pad="10"/>
+</signal>
+<signal name="N$46">
+<contactref element="J4" pad="11"/>
+</signal>
+<signal name="N$47">
+<contactref element="J4" pad="12"/>
+</signal>
+<signal name="N$48">
+<contactref element="J4" pad="13"/>
+</signal>
+<signal name="N$49">
+<contactref element="J4" pad="14"/>
+</signal>
+<signal name="N$50">
+<contactref element="J4" pad="15"/>
+</signal>
+<signal name="N$51">
+<contactref element="J4" pad="16"/>
+</signal>
+<signal name="N$52">
+<contactref element="J4" pad="17"/>
+</signal>
+<signal name="N$53">
+<contactref element="J4" pad="18"/>
+</signal>
+<signal name="N$54">
+<contactref element="J4" pad="19"/>
+</signal>
+<signal name="N$55">
+<contactref element="J4" pad="20"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>

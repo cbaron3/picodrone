@@ -4834,97 +4834,97 @@ design rules under a new name.</description>
 <wire x1="-71.8312" y1="-80.2894" x2="-71.825" y2="-87.63" width="0" layer="19" extent="1-1"/>
 <wire x1="6.615" y1="13.72" x2="-71.8312" y2="-80.2894" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$15">
+<signal name="VBAT">
 <contactref element="U1" pad="1"/>
 </signal>
-<signal name="N$16">
+<signal name="PA0">
 <contactref element="U1" pad="10"/>
 </signal>
-<signal name="N$18">
+<signal name="PA1">
 <contactref element="U1" pad="11"/>
 </signal>
-<signal name="N$19">
+<signal name="PA2">
 <contactref element="U1" pad="12"/>
 </signal>
-<signal name="N$20">
+<signal name="PA3">
 <contactref element="U1" pad="13"/>
 </signal>
-<signal name="N$21">
+<signal name="PA4">
 <contactref element="U1" pad="14"/>
 </signal>
-<signal name="N$22">
+<signal name="PA5">
 <contactref element="U1" pad="15"/>
 </signal>
-<signal name="N$23">
+<signal name="PA6">
 <contactref element="U1" pad="16"/>
 </signal>
-<signal name="N$24">
+<signal name="PA7">
 <contactref element="U1" pad="17"/>
 </signal>
-<signal name="N$25">
+<signal name="PA8">
 <contactref element="U1" pad="29"/>
 </signal>
-<signal name="N$26">
+<signal name="PA9">
 <contactref element="U1" pad="30"/>
 </signal>
-<signal name="N$27">
+<signal name="PA10">
 <contactref element="U1" pad="31"/>
 </signal>
-<signal name="N$28">
+<signal name="PA11">
 <contactref element="U1" pad="32"/>
 </signal>
-<signal name="N$29">
+<signal name="PA12">
 <contactref element="U1" pad="33"/>
 </signal>
-<signal name="N$30">
+<signal name="PA15">
 <contactref element="U1" pad="38"/>
 </signal>
-<signal name="N$32">
+<signal name="PB0">
 <contactref element="U1" pad="18"/>
 </signal>
-<signal name="N$33">
+<signal name="PB1">
 <contactref element="U1" pad="19"/>
 </signal>
-<signal name="N$34">
+<signal name="PB2">
 <contactref element="U1" pad="20"/>
 </signal>
-<signal name="N$35">
+<signal name="PB3">
 <contactref element="U1" pad="39"/>
 </signal>
-<signal name="N$36">
+<signal name="PB4">
 <contactref element="U1" pad="40"/>
 </signal>
-<signal name="N$37">
+<signal name="PB5">
 <contactref element="U1" pad="41"/>
 </signal>
-<signal name="N$38">
+<signal name="PB6">
 <contactref element="U1" pad="42"/>
 </signal>
-<signal name="N$39">
+<signal name="PB7">
 <contactref element="U1" pad="43"/>
 </signal>
-<signal name="N$40">
+<signal name="PB8">
 <contactref element="U1" pad="45"/>
 </signal>
-<signal name="N$41">
+<signal name="PB9">
 <contactref element="U1" pad="46"/>
 </signal>
-<signal name="N$42">
+<signal name="PB10">
 <contactref element="U1" pad="21"/>
 </signal>
-<signal name="N$43">
+<signal name="PB11">
 <contactref element="U1" pad="22"/>
 </signal>
-<signal name="N$44">
+<signal name="PB12">
 <contactref element="U1" pad="25"/>
 </signal>
-<signal name="N$45">
+<signal name="PB13">
 <contactref element="U1" pad="26"/>
 </signal>
-<signal name="N$46">
+<signal name="PB14">
 <contactref element="U1" pad="27"/>
 </signal>
-<signal name="N$47">
+<signal name="PB15">
 <contactref element="U1" pad="28"/>
 </signal>
 </signals>
