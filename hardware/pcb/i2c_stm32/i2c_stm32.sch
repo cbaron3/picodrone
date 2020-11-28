@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5798,82 +5798,6 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="BMP280">
-<packages>
-<package name="XDCR_BMP280">
-<circle x="1.695" y="1.15" radius="0.1" width="0.2" layer="21"/>
-<text x="-1.250059375" y="1.902290625" size="0.8128375" layer="25" ratio="14">&gt;NAME</text>
-<text x="-1.434040625" y="-2.874109375" size="0.813984375" layer="27" ratio="14">&gt;VALUE</text>
-<wire x1="-1" y1="1.25" x2="-1" y2="-1.25" width="0.127" layer="51"/>
-<wire x1="-1" y1="-1.25" x2="1" y2="-1.25" width="0.127" layer="51"/>
-<wire x1="1" y1="-1.25" x2="1" y2="1.25" width="0.127" layer="51"/>
-<wire x1="1" y1="1.25" x2="-1" y2="1.25" width="0.127" layer="51"/>
-<wire x1="-1" y1="1.35" x2="1" y2="1.35" width="0.127" layer="21"/>
-<wire x1="-1" y1="-1.35" x2="1" y2="-1.35" width="0.127" layer="21"/>
-<wire x1="-1.3" y1="1.5" x2="1.3" y2="1.5" width="0.05" layer="39"/>
-<wire x1="1.3" y1="1.5" x2="1.3" y2="-1.5" width="0.05" layer="39"/>
-<wire x1="1.3" y1="-1.5" x2="-1.3" y2="-1.5" width="0.05" layer="39"/>
-<wire x1="-1.3" y1="-1.5" x2="-1.3" y2="1.5" width="0.05" layer="39"/>
-<smd name="2" x="0.8" y="0.325" dx="0.5" dy="0.35" layer="1"/>
-<smd name="7" x="-0.8" y="0.325" dx="0.5" dy="0.35" layer="1"/>
-<smd name="3" x="0.8" y="-0.325" dx="0.5" dy="0.35" layer="1"/>
-<smd name="6" x="-0.8" y="-0.325" dx="0.5" dy="0.35" layer="1"/>
-<smd name="8" x="-0.8" y="0.975" dx="0.5" dy="0.35" layer="1"/>
-<smd name="1" x="0.8" y="0.975" dx="0.5" dy="0.35" layer="1"/>
-<smd name="4" x="0.8" y="-0.975" dx="0.5" dy="0.35" layer="1"/>
-<smd name="5" x="-0.8" y="-0.975" dx="0.5" dy="0.35" layer="1"/>
-</package>
-</packages>
-<symbols>
-<symbol name="BMP280">
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-10.1796" y="7.63466875" size="1.78141875" layer="95">&gt;NAME</text>
-<text x="-10.1693" y="-10.1693" size="1.77963125" layer="96">&gt;VALUE</text>
-<pin name="VDD" x="12.7" y="5.08" length="short" direction="pwr" rot="R180"/>
-<pin name="GND" x="12.7" y="-5.08" length="short" direction="pwr" rot="R180"/>
-<pin name="SDO" x="-12.7" y="0" length="short"/>
-<pin name="SDI" x="-12.7" y="2.54" length="short"/>
-<pin name="BMP_SCK" x="-12.7" y="-2.54" length="short" direction="in" function="clk"/>
-<pin name="CSB" x="-12.7" y="5.08" length="short" direction="in"/>
-<pin name="VDDIO" x="12.7" y="2.54" length="short" direction="pwr" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="BMP280" prefix="U">
-<description>BMP280 Absolute Barometric Pressure Sensor for Battery Powered Devices 2 x 2.5mm &lt;a href="https://pricing.snapeda.com/parts/BMP280/Bosch/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="BMP280" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="XDCR_BMP280">
-<connects>
-<connect gate="G$1" pin="BMP_SCK" pad="4"/>
-<connect gate="G$1" pin="CSB" pad="2"/>
-<connect gate="G$1" pin="GND" pad="1 7"/>
-<connect gate="G$1" pin="SDI" pad="3"/>
-<connect gate="G$1" pin="SDO" pad="5"/>
-<connect gate="G$1" pin="VDD" pad="8"/>
-<connect gate="G$1" pin="VDDIO" pad="6"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="Good"/>
-<attribute name="DESCRIPTION" value=" Pressure Sensor 4.35PSI ~ 15.95PSI (30kPa ~ 110kPa) Absolute 16b 8-SMD "/>
-<attribute name="MF" value="Bosch"/>
-<attribute name="MP" value="BMP280"/>
-<attribute name="PACKAGE" value="SMD-8 Bosch Sensortec"/>
-<attribute name="PRICE" value="None"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/BMP280/?ref=eda"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="Sensor" urn="urn:adsk.eagle:library:11396555">
 <description>&lt;h3&gt; PCBLayout.com - Frequently Used &lt;i&gt;Sensors&lt;/i&gt;&lt;/h3&gt;
 
@@ -8255,7 +8179,7 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="MPU-6050" urn="urn:adsk.eagle:symbol:11396559/1" library_version="1">
+<symbol name="MPU-6050" urn="urn:adsk.eagle:symbol:11396559/3" library_version="3">
 <pin name="CLKIN" x="-22.86" y="5.08" length="middle" direction="in" function="clk"/>
 <pin name="NC_2" x="-22.86" y="2.54" length="middle" direction="pas"/>
 <pin name="NC_3" x="-22.86" y="0" length="middle" direction="pas"/>
@@ -8290,7 +8214,7 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MPU-6050" urn="urn:adsk.eagle:component:11396574/1" prefix="U" library_version="1">
+<deviceset name="MPU-6050" urn="urn:adsk.eagle:component:11396574/3" prefix="U" library_version="3">
 <description>&lt;h3&gt; IMU ACCEL/GYRO 3-AXIS I2C 24QFN&lt;/h3&gt;
 &lt;BR&gt;
 &lt;a href="https://store.invensense.com/datasheets/invensense/MPU-6050_DataSheet_V3%204.pdf"&gt; Manufacturer's datasheet&lt;/a&gt;</description>
@@ -9177,6 +9101,92 @@ Datasheet</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="BMP388">
+<packages>
+<package name="PQFN50P200X200X80-10N">
+<wire x1="1.21" y1="-1.21" x2="-1.21" y2="-1.21" width="0.05" layer="39"/>
+<wire x1="-1.21" y1="-1.21" x2="-1.21" y2="1.21" width="0.05" layer="39"/>
+<wire x1="-1.21" y1="1.21" x2="1.21" y2="1.21" width="0.05" layer="39"/>
+<wire x1="1.21" y1="1.21" x2="1.21" y2="-1.21" width="0.05" layer="39"/>
+<wire x1="1.03" y1="-1.03" x2="-1.03" y2="-1.03" width="0.127" layer="51"/>
+<wire x1="-1.03" y1="-1.03" x2="-1.03" y2="1.03" width="0.127" layer="51"/>
+<wire x1="-1.03" y1="1.03" x2="1.03" y2="1.03" width="0.127" layer="51"/>
+<wire x1="1.03" y1="1.03" x2="1.03" y2="-1.03" width="0.127" layer="51"/>
+<wire x1="-0.85" y1="-1.03" x2="-1.03" y2="-1.03" width="0.127" layer="21"/>
+<wire x1="-1.03" y1="-1.03" x2="-1.03" y2="-0.63" width="0.127" layer="21"/>
+<wire x1="-1.03" y1="0.63" x2="-1.03" y2="1.03" width="0.127" layer="21"/>
+<wire x1="-1.03" y1="1.03" x2="-0.85" y2="1.03" width="0.127" layer="21"/>
+<wire x1="0.85" y1="1.03" x2="1.03" y2="1.03" width="0.127" layer="21"/>
+<wire x1="1.03" y1="1.03" x2="1.03" y2="0.63" width="0.127" layer="21"/>
+<wire x1="0.85" y1="-1.03" x2="1.03" y2="-1.03" width="0.127" layer="21"/>
+<wire x1="1.03" y1="-1.03" x2="1.03" y2="-0.63" width="0.127" layer="21"/>
+<circle x="-1.5" y="0.3" radius="0.1" width="0.2" layer="51"/>
+<circle x="-1.5" y="0.3" radius="0.1" width="0.2" layer="21"/>
+<text x="-1.301759375" y="1.4019" size="0.40695" layer="25">&gt;NAME</text>
+<text x="-1.20183125" y="-1.702590625" size="0.40701875" layer="27">&gt;VALUE</text>
+<smd name="1" x="-0.765" y="0.25" dx="0.38" dy="0.35" layer="1" roundness="9" rot="R90"/>
+<smd name="2" x="-0.765" y="-0.25" dx="0.38" dy="0.35" layer="1" roundness="9" rot="R90"/>
+<smd name="3" x="-0.5" y="-0.765" dx="0.38" dy="0.35" layer="1" roundness="9" rot="R90"/>
+<smd name="4" x="0" y="-0.765" dx="0.38" dy="0.35" layer="1" roundness="9" rot="R90"/>
+<smd name="5" x="0.5" y="-0.765" dx="0.38" dy="0.35" layer="1" roundness="9" rot="R90"/>
+<smd name="6" x="0.765" y="-0.25" dx="0.38" dy="0.35" layer="1" roundness="9" rot="R90"/>
+<smd name="7" x="0.765" y="0.25" dx="0.38" dy="0.35" layer="1" roundness="9" rot="R90"/>
+<smd name="8" x="0.5" y="0.765" dx="0.38" dy="0.35" layer="1" roundness="9" rot="R90"/>
+<smd name="9" x="0" y="0.765" dx="0.38" dy="0.35" layer="1" roundness="9" rot="R90"/>
+<smd name="10" x="-0.5" y="0.765" dx="0.38" dy="0.35" layer="1" roundness="9" rot="R90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BMP388">
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<text x="-7.628109375" y="15.2562" size="1.779890625" layer="95" ratio="10">&gt;NAME</text>
+<text x="-7.6268" y="-15.2536" size="1.779590625" layer="96" ratio="10">&gt;VALUE</text>
+<pin name="VDDIO" x="12.7" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="SCK" x="-12.7" y="2.54" length="middle" direction="in" function="clk"/>
+<pin name="VSS" x="12.7" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="SDI" x="-12.7" y="-2.54" length="middle"/>
+<pin name="SDO" x="-12.7" y="-5.08" length="middle"/>
+<pin name="CSB" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="INT" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="VDD" x="12.7" y="12.7" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BMP388" prefix="U">
+<description>P-Sensor SPI I2C 1, 25 Bar SMD </description>
+<gates>
+<gate name="G$1" symbol="BMP388" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PQFN50P200X200X80-10N">
+<connects>
+<connect gate="G$1" pin="CSB" pad="6"/>
+<connect gate="G$1" pin="INT" pad="7"/>
+<connect gate="G$1" pin="SCK" pad="2"/>
+<connect gate="G$1" pin="SDI" pad="4"/>
+<connect gate="G$1" pin="SDO" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="10"/>
+<connect gate="G$1" pin="VDDIO" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="3 8 9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value=" Pressure Sensor 4.35PSI ~ 18.13PSI (30kPa ~ 125kPa) Absolute 10-WFLGA "/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="828-1079-1-ND"/>
+<attribute name="MF" value="Bosch Sensortec"/>
+<attribute name="MP" value="BMP388"/>
+<attribute name="PACKAGE" value="WFLGA-10 Bosch Tools"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/BMP388/?ref=eda"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9187,10 +9197,6 @@ Datasheet</description>
 </class>
 </classes>
 <parts>
-<part name="C2" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100 nF"/>
-<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U1" library="STM32F103C8T6" deviceset="STM32F103C8T6" device="">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
@@ -9246,11 +9252,9 @@ Datasheet</description>
 <part name="GND32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device="">
 <attribute name="SPICEPREFIX" value="G"/>
 </part>
-<part name="U3" library="BMP280" deviceset="BMP280" device=""/>
-<part name="C1" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100 nF"/>
 <part name="U2" library="Sensor" library_urn="urn:adsk.eagle:library:11396555" deviceset="MPU-6050" device="" package3d_urn="urn:adsk.eagle:package:10907357/2"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C3" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="0.1 uF"/>
+<part name="C3" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100nF"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C4" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="0.01uF"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -9258,7 +9262,7 @@ Datasheet</description>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C5" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100 nF"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C6" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="2200 pF"/>
+<part name="C6" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="2.2nF"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U4" library="NRF24L01" deviceset="NRF24L01" device=""/>
 <part name="C7" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="18pF"/>
@@ -9282,6 +9286,17 @@ Datasheet</description>
 <part name="Y3" library="SparkFun-Clocks" library_urn="urn:adsk.eagle:library:511" deviceset="CRYSTAL-16MHZ" device="SMD-5X3.2" package3d_urn="urn:adsk.eagle:package:37518/1" value="16MHz"/>
 <part name="R6" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" deviceset="RC0603JR-070RL" device="" package3d_urn="urn:adsk.eagle:package:10872900/2" value="220"/>
 <part name="R1" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" deviceset="RC0603JR-070RL" device="" package3d_urn="urn:adsk.eagle:package:10872900/2" value="220"/>
+<part name="R4" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" deviceset="RC0603JR-070RL" device="" package3d_urn="urn:adsk.eagle:package:10872900/2" value="1M"/>
+<part name="R7" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" deviceset="RC0603JR-070RL" device="" package3d_urn="urn:adsk.eagle:package:10872900/2" value="4.7k"/>
+<part name="R8" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" deviceset="RC0603JR-070RL" device="" package3d_urn="urn:adsk.eagle:package:10872900/2" value="4.7k"/>
+<part name="R9" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" deviceset="RC0603JR-070RL" device="" package3d_urn="urn:adsk.eagle:package:10872900/2" value="4.7k"/>
+<part name="R10" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" deviceset="RC0603JR-070RL" device="" package3d_urn="urn:adsk.eagle:package:10872900/2" value="4.7k"/>
+<part name="U6" library="BMP388" deviceset="BMP388" device=""/>
+<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C14" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100 nF"/>
+<part name="C15" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" deviceset="C0603C100C5GACTU" device="" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100 nF"/>
+<part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9338,9 +9353,9 @@ Datasheet</description>
 <wire x1="144.78" y1="27.94" x2="68.58" y2="27.94" width="0.254" layer="97"/>
 <text x="162.56" y="119.38" size="2.54" layer="105" font="vector">Headers</text>
 <wire x1="160.02" y1="124.46" x2="160.02" y2="55.88" width="0.254" layer="97"/>
-<wire x1="160.02" y1="55.88" x2="213.36" y2="55.88" width="0.254" layer="97"/>
-<wire x1="213.36" y1="55.88" x2="213.36" y2="124.46" width="0.254" layer="97"/>
-<wire x1="213.36" y1="124.46" x2="160.02" y2="124.46" width="0.254" layer="97"/>
+<wire x1="160.02" y1="55.88" x2="215.9" y2="55.88" width="0.254" layer="97"/>
+<wire x1="215.9" y1="55.88" x2="215.9" y2="124.46" width="0.254" layer="97"/>
+<wire x1="215.9" y1="124.46" x2="160.02" y2="124.46" width="0.254" layer="97"/>
 <text x="182.626" y="131.826" size="1.016" layer="105" font="vector">C1 = C2 = 2*(CL - CStray)
 CStray for STM32 is in range [2pF, 7pF]
 Pick ~ 5pF
@@ -9349,6 +9364,11 @@ Pick ~ 5pF
 CStray for STM32 is in range [2pF, 7pF]
 Pick ~ 5pF
 2*(12.5pF - 5pF) = 15pF</text>
+<text x="162.56" y="48.26" size="2.54" layer="105" font="vector">I2C Pull Ups</text>
+<wire x1="154.94" y1="53.34" x2="215.9" y2="53.34" width="0.254" layer="97"/>
+<wire x1="154.94" y1="53.34" x2="154.94" y2="30.48" width="0.254" layer="97"/>
+<wire x1="154.94" y1="30.48" x2="215.9" y2="30.48" width="0.254" layer="97"/>
+<wire x1="215.9" y1="30.48" x2="215.9" y2="53.34" width="0.254" layer="97"/>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="106.68" y="73.66" smashed="yes">
@@ -9518,6 +9538,22 @@ Pick ~ 5pF
 <attribute name="NAME" x="25.4" y="107.6706" size="1.016" layer="95" font="vector"/>
 <attribute name="VALUE" x="33.274" y="107.696" size="1.016" layer="96" font="vector"/>
 </instance>
+<instance part="R7" gate="G$1" x="169.926" y="42.418" smashed="yes">
+<attribute name="NAME" x="164.846" y="43.4086" size="1.016" layer="95" font="vector"/>
+<attribute name="VALUE" x="172.72" y="43.434" size="1.016" layer="96" font="vector"/>
+</instance>
+<instance part="R8" gate="G$1" x="169.926" y="37.338" smashed="yes">
+<attribute name="NAME" x="164.846" y="38.3286" size="1.016" layer="95" font="vector"/>
+<attribute name="VALUE" x="172.72" y="38.354" size="1.016" layer="96" font="vector"/>
+</instance>
+<instance part="R9" gate="G$1" x="200.406" y="42.418" smashed="yes">
+<attribute name="NAME" x="195.326" y="43.4086" size="1.016" layer="95" font="vector"/>
+<attribute name="VALUE" x="203.2" y="43.434" size="1.016" layer="96" font="vector"/>
+</instance>
+<instance part="R10" gate="G$1" x="200.406" y="37.338" smashed="yes">
+<attribute name="NAME" x="195.326" y="38.3286" size="1.016" layer="95" font="vector"/>
+<attribute name="VALUE" x="203.2" y="38.354" size="1.016" layer="96" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9584,6 +9620,26 @@ Pick ~ 5pF
 <pinref part="J4" gate="G$1" pin="1"/>
 <wire x1="200.66" y1="114.3" x2="198.12" y2="114.3" width="0.1524" layer="91"/>
 <label x="198.12" y="114.3" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="175.006" y1="42.418" x2="177.546" y2="42.418" width="0.1524" layer="91"/>
+<label x="177.546" y="42.418" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="175.006" y1="37.338" x2="177.546" y2="37.338" width="0.1524" layer="91"/>
+<label x="177.546" y="37.338" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="205.486" y1="42.418" x2="208.026" y2="42.418" width="0.1524" layer="91"/>
+<label x="208.026" y="42.418" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="205.486" y1="37.338" x2="208.026" y2="37.338" width="0.1524" layer="91"/>
+<label x="208.026" y="37.338" size="0.8128" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -10166,6 +10222,11 @@ Pick ~ 5pF
 <wire x1="200.66" y1="99.06" x2="198.12" y2="99.06" width="0.1524" layer="91"/>
 <label x="198.12" y="99.06" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="164.846" y1="42.418" x2="162.306" y2="42.418" width="0.1524" layer="91"/>
+<label x="162.306" y="42.418" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="PB7" class="0">
 <segment>
@@ -10177,6 +10238,11 @@ Pick ~ 5pF
 <pinref part="J4" gate="G$1" pin="6"/>
 <wire x1="198.12" y1="101.6" x2="200.66" y2="101.6" width="0.1524" layer="91"/>
 <label x="198.12" y="101.6" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="164.846" y1="37.338" x2="162.306" y2="37.338" width="0.1524" layer="91"/>
+<label x="162.306" y="37.338" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PB8" class="0">
@@ -10214,6 +10280,11 @@ Pick ~ 5pF
 <wire x1="172.72" y1="78.74" x2="170.18" y2="78.74" width="0.1524" layer="91"/>
 <label x="170.18" y="78.74" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="195.326" y1="42.418" x2="192.786" y2="42.418" width="0.1524" layer="91"/>
+<label x="192.786" y="42.418" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="PB11" class="0">
 <segment>
@@ -10225,6 +10296,11 @@ Pick ~ 5pF
 <pinref part="J3" gate="G$1" pin="16"/>
 <wire x1="172.72" y1="76.2" x2="170.18" y2="76.2" width="0.1524" layer="91"/>
 <label x="170.18" y="76.2" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="195.326" y1="37.338" x2="192.786" y2="37.338" width="0.1524" layer="91"/>
+<label x="192.786" y="37.338" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PB12" class="0">
@@ -10293,13 +10369,6 @@ Pick ~ 5pF
 <sheet>
 <description>BMP280 - Barometer</description>
 <plain>
-<text x="30.988" y="141.224" size="1.016" layer="105" font="vector">I2C 7-bit Address
-1110110 (0x76)</text>
-<text x="30.988" y="159.004" size="2.54" layer="105" font="vector">BMP280 - Barometer</text>
-<wire x1="27.94" y1="165.1" x2="27.94" y2="127" width="0.254" layer="97"/>
-<wire x1="27.94" y1="127" x2="96.52" y2="127" width="0.254" layer="97"/>
-<wire x1="96.52" y1="127" x2="96.52" y2="165.1" width="0.254" layer="97"/>
-<wire x1="96.52" y1="165.1" x2="27.94" y2="165.1" width="0.254" layer="97"/>
 <text x="56.134" y="31.75" size="1.016" layer="105" font="vector">I2C 7-bit Address
 1101000 (0x68)</text>
 <text x="30.988" y="115.824" size="2.54" layer="105" font="vector">MPU6050 - 6 DOF IMU</text>
@@ -10314,40 +10383,22 @@ Pick ~ 5pF
 <wire x1="111.76" y1="27.94" x2="111.76" y2="101.6" width="0.254" layer="97"/>
 <text x="213.868" y="82.804" size="1.016" layer="105" font="vector">50 Ohm SMT Antenna</text>
 <wire x1="111.76" y1="111.76" x2="111.76" y2="165.1" width="0.254" layer="97"/>
-<wire x1="111.76" y1="165.1" x2="238.76" y2="165.1" width="0.254" layer="97"/>
-<wire x1="238.76" y1="165.1" x2="238.76" y2="111.76" width="0.254" layer="97"/>
-<wire x1="111.76" y1="111.76" x2="238.76" y2="111.76" width="0.254" layer="97"/>
-<text x="114.808" y="159.004" size="2.54" layer="105" font="vector">MOSFETs - Motor Controller &lt;TBD&gt;</text>
-<text x="116.586" y="86.106" size="1.016" layer="105" font="vector">C1 = C2 = 2*(CL - CStray)
+<wire x1="111.76" y1="165.1" x2="172.72" y2="165.1" width="0.254" layer="97"/>
+<wire x1="172.72" y1="165.1" x2="172.72" y2="111.76" width="0.254" layer="97"/>
+<wire x1="111.76" y1="111.76" x2="172.72" y2="111.76" width="0.254" layer="97"/>
+<text x="30.988" y="161.544" size="2.54" layer="105" font="vector">MOSFETs - Motor Controller &lt;TBD&gt;</text>
+<text x="116.586" y="88.646" size="1.016" layer="105" font="vector">C1 = C2 = 2*(CL - CStray)
 CStray for NRF is ~1pF
 2*(10pF - 1pF) = 18pF</text>
+<text x="114.808" y="159.004" size="2.54" layer="105" font="vector">BMP388 - Barometer</text>
+<text x="114.808" y="120.904" size="1.016" layer="105" font="vector">I2C 7-bit Address
+1110110 (0x76)</text>
 </plain>
 <instances>
-<instance part="C2" gate="G$1" x="83.82" y="142.24" smashed="yes">
-<attribute name="NAME" x="88.138" y="141.351" size="1.016" layer="95" font="vector" rot="MR0"/>
-<attribute name="VALUE" x="86.868" y="139.319" size="1.016" layer="96" font="vector"/>
-</instance>
-<instance part="GND1" gate="1" x="83.82" y="160.02" smashed="yes" rot="R180">
-<attribute name="VALUE" x="85.09" y="161.544" size="1.016" layer="96" font="vector" rot="R180"/>
-</instance>
-<instance part="GND2" gate="1" x="83.82" y="132.08" smashed="yes">
-<attribute name="VALUE" x="82.55" y="130.302" size="1.016" layer="96" font="vector"/>
-</instance>
-<instance part="GND3" gate="1" x="43.18" y="139.7" smashed="yes">
-<attribute name="VALUE" x="41.91" y="137.668" size="1.016" layer="96" font="vector"/>
-</instance>
 <instance part="FRAME4" gate="G$1" x="0" y="0" smashed="yes">
 <attribute name="DRAWING_NAME" x="217.17" y="15.24" size="2.54" layer="94"/>
 <attribute name="LAST_DATE_TIME" x="217.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="230.505" y="5.08" size="2.54" layer="94"/>
-</instance>
-<instance part="U3" gate="G$1" x="68.58" y="142.24" smashed="yes">
-<attribute name="NAME" x="58.4004" y="149.87466875" size="1.016" layer="95" font="vector"/>
-<attribute name="VALUE" x="58.4107" y="132.0707" size="1.016" layer="96" font="vector"/>
-</instance>
-<instance part="C1" gate="G$1" x="83.82" y="152.4" smashed="yes">
-<attribute name="NAME" x="88.138" y="151.511" size="1.016" layer="95" font="vector" rot="MR0"/>
-<attribute name="VALUE" x="86.868" y="149.479" size="1.016" layer="96" font="vector"/>
 </instance>
 <instance part="U2" gate="G$1" x="60.96" y="78.74" smashed="yes">
 <attribute name="NAME" x="43.18" y="91.44" size="1.016" layer="95" font="vector" ratio="10"/>
@@ -10394,9 +10445,9 @@ CStray for NRF is ~1pF
 <attribute name="NAME" x="147.3046" y="92.1065" size="1.016" layer="95"/>
 <attribute name="VALUE" x="147.3127" y="40.6254" size="1.016" layer="96"/>
 </instance>
-<instance part="C7" gate="G$1" x="127" y="81.28" smashed="yes" rot="R270">
-<attribute name="NAME" x="124.206" y="82.931" size="1.016" layer="95" rot="R180"/>
-<attribute name="VALUE" x="121.158" y="79.629" size="1.016" layer="96"/>
+<instance part="C7" gate="G$1" x="127" y="83.82" smashed="yes" rot="R270">
+<attribute name="NAME" x="124.206" y="85.471" size="1.016" layer="95" rot="R180"/>
+<attribute name="VALUE" x="121.158" y="82.169" size="1.016" layer="96"/>
 </instance>
 <instance part="C8" gate="G$1" x="127" y="73.66" smashed="yes" rot="R270">
 <attribute name="NAME" x="124.206" y="75.311" size="1.016" layer="95" rot="R180"/>
@@ -10460,36 +10511,40 @@ CStray for NRF is ~1pF
 <instance part="GND19" gate="1" x="198.12" y="83.82" smashed="yes">
 <attribute name="VALUE" x="196.596" y="81.788" size="1.016" layer="96"/>
 </instance>
-<instance part="Y3" gate="G$1" x="133.858" y="77.47" smashed="yes" rot="R90">
-<attribute name="NAME" x="129.286" y="78.74" size="1.016" layer="95" font="vector" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="129.54" y="76.2" size="1.016" layer="96" font="vector" rot="R180" align="top-center"/>
+<instance part="Y3" gate="G$1" x="131.318" y="77.47" smashed="yes" rot="R90">
+<attribute name="NAME" x="126.746" y="78.74" size="1.016" layer="95" font="vector" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="127" y="76.2" size="1.016" layer="96" font="vector" rot="R180" align="top-center"/>
+</instance>
+<instance part="R4" gate="G$1" x="137.16" y="78.74" smashed="yes" rot="R270">
+<attribute name="NAME" x="134.3406" y="77.724" size="1.016" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="134.366" y="81.28" size="1.016" layer="96" font="vector" rot="R270"/>
+</instance>
+<instance part="U6" gate="G$1" x="137.16" y="134.62" smashed="yes">
+<attribute name="NAME" x="129.531890625" y="149.8762" size="1.779890625" layer="95" ratio="10"/>
+<attribute name="VALUE" x="129.5332" y="119.3664" size="1.779590625" layer="96" ratio="10"/>
+</instance>
+<instance part="GND14" gate="1" x="121.92" y="127" smashed="yes">
+<attribute name="VALUE" x="120.65" y="124.968" size="1.016" layer="96" font="vector"/>
+</instance>
+<instance part="GND20" gate="1" x="157.48" y="121.92" smashed="yes">
+<attribute name="VALUE" x="156.21" y="119.888" size="1.016" layer="96" font="vector"/>
+</instance>
+<instance part="C14" gate="G$1" x="157.48" y="149.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="153.162" y="150.749" size="1.016" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="154.432" y="152.781" size="1.016" layer="96" font="vector" rot="R180"/>
+</instance>
+<instance part="C15" gate="G$1" x="157.48" y="139.7" smashed="yes" rot="R180">
+<attribute name="NAME" x="160.02" y="142.113" size="1.016" layer="95" font="vector" rot="MR180"/>
+<attribute name="VALUE" x="164.592" y="140.589" size="1.016" layer="96" font="vector" rot="R180"/>
+</instance>
+<instance part="GND33" gate="1" x="157.48" y="160.02" smashed="yes" rot="R180">
+<attribute name="VALUE" x="158.75" y="161.544" size="1.016" layer="96" font="vector" rot="R180"/>
 </instance>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="VDD" class="0">
-<segment>
-<label x="86.36" y="147.32" size="1.016" layer="95" font="vector" xref="yes"/>
-<wire x1="81.28" y1="147.32" x2="83.82" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="VDD"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="147.32" x2="86.36" y2="147.32" width="0.1524" layer="91"/>
-<junction x="83.82" y="147.32"/>
-</segment>
-<segment>
-<wire x1="81.28" y1="144.78" x2="83.82" y2="144.78" width="0.1524" layer="91"/>
-<label x="86.36" y="144.78" size="1.016" layer="95" font="vector" xref="yes"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="144.78" x2="86.36" y2="144.78" width="0.1524" layer="91"/>
-<junction x="83.82" y="144.78"/>
-<pinref part="U3" gate="G$1" pin="VDDIO"/>
-</segment>
-<segment>
-<pinref part="U3" gate="G$1" pin="CSB"/>
-<wire x1="55.88" y1="147.32" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
-<label x="53.34" y="147.32" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VDD"/>
 <wire x1="86.36" y1="71.12" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
@@ -10504,21 +10559,29 @@ CStray for NRF is ~1pF
 <wire x1="177.8" y1="88.9" x2="180.34" y2="88.9" width="0.1524" layer="91"/>
 <label x="180.34" y="88.9" size="0.8128" layer="95" font="vector" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="VDD"/>
+<pinref part="C14" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="147.32" x2="157.48" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="147.32" x2="160.02" y2="147.32" width="0.1524" layer="91"/>
+<junction x="157.48" y="147.32"/>
+<label x="160.02" y="147.32" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="VDDIO"/>
+<pinref part="C15" gate="G$1" pin="2"/>
+<wire x1="149.86" y1="144.78" x2="157.48" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="144.78" x2="160.02" y2="144.78" width="0.1524" layer="91"/>
+<junction x="157.48" y="144.78"/>
+<label x="160.02" y="144.78" size="0.8128" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="CSB"/>
+<wire x1="124.46" y1="139.7" x2="121.92" y2="139.7" width="0.1524" layer="91"/>
+<label x="121.92" y="139.7" size="0.8128" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="GND" class="0">
-<segment>
-<pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="83.82" y1="134.62" x2="83.82" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="GND"/>
-<wire x1="81.28" y1="137.16" x2="83.82" y2="137.16" width="0.1524" layer="91"/>
-<junction x="83.82" y="137.16"/>
-</segment>
-<segment>
-<pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="83.82" y1="154.94" x2="83.82" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-</segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="AD0"/>
 <wire x1="60.96" y1="58.42" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
@@ -10590,40 +10653,44 @@ CStray for NRF is ~1pF
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="121.92" y1="81.28" x2="116.84" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="81.28" x2="116.84" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="83.82" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="83.82" x2="116.84" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="116.84" y1="73.66" x2="121.92" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <junction x="116.84" y="73.66"/>
 </segment>
-</net>
-<net name="BMP_SCL" class="0">
 <segment>
-<wire x1="55.88" y1="139.7" x2="53.34" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="BMP_SCK"/>
-<label x="53.34" y="139.7" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
+<pinref part="U6" gate="G$1" pin="SDO"/>
+<wire x1="124.46" y1="129.54" x2="121.92" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U6" gate="G$1" pin="VSS"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="149.86" y1="124.46" x2="157.48" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="C15" gate="G$1" pin="1"/>
+<wire x1="157.48" y1="137.16" x2="157.48" y2="124.46" width="0.1524" layer="91"/>
+<junction x="157.48" y="124.46"/>
+</segment>
+<segment>
+<pinref part="C14" gate="G$1" pin="2"/>
+<pinref part="GND33" gate="1" pin="GND"/>
+<wire x1="157.48" y1="154.94" x2="157.48" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="PB6" class="0">
 <segment>
-<wire x1="55.88" y1="142.24" x2="43.18" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="U3" gate="G$1" pin="SDO"/>
+<pinref part="U6" gate="G$1" pin="SCK"/>
+<wire x1="124.46" y1="137.16" x2="121.92" y2="137.16" width="0.1524" layer="91"/>
+<label x="121.92" y="137.16" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="BMP_SDA" class="0">
+<net name="PB7" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="SDI"/>
-<wire x1="55.88" y1="144.78" x2="53.34" y2="144.78" width="0.1524" layer="91"/>
-<label x="53.34" y="144.78" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="IMU_SDA" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="SDA"/>
-<wire x1="55.88" y1="96.52" x2="55.88" y2="99.06" width="0.1524" layer="91"/>
-<label x="55.88" y="99.06" size="0.8128" layer="95" font="vector" rot="R90" xref="yes"/>
+<pinref part="U6" gate="G$1" pin="SDI"/>
+<wire x1="124.46" y1="132.08" x2="121.92" y2="132.08" width="0.1524" layer="91"/>
+<label x="121.92" y="132.08" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -10642,7 +10709,7 @@ CStray for NRF is ~1pF
 <pinref part="C4" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="IMU_SCL" class="0">
+<net name="PB10" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="SCL"/>
 <wire x1="58.42" y1="96.52" x2="58.42" y2="99.06" width="0.1524" layer="91"/>
@@ -10656,7 +10723,7 @@ CStray for NRF is ~1pF
 <pinref part="C6" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="IMU_INT" class="0">
+<net name="PA1" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="INT"/>
 <wire x1="68.58" y1="58.42" x2="68.58" y2="55.88" width="0.1524" layer="91"/>
@@ -10675,35 +10742,35 @@ CStray for NRF is ~1pF
 <label x="180.34" y="45.72" size="1.016" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="CE" class="0">
+<net name="PA4" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="CE"/>
 <wire x1="142.24" y1="71.12" x2="139.7" y2="71.12" width="0.1524" layer="91"/>
 <label x="139.7" y="71.12" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="CSN" class="0">
+<net name="PB0" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="CSN"/>
 <wire x1="142.24" y1="66.04" x2="139.7" y2="66.04" width="0.1524" layer="91"/>
 <label x="139.7" y="66.04" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="MOSI" class="0">
+<net name="PA7" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="MOSI"/>
 <wire x1="142.24" y1="60.96" x2="139.7" y2="60.96" width="0.1524" layer="91"/>
 <label x="139.7" y="60.96" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="MISO" class="0">
+<net name="PA6" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="MISO"/>
 <wire x1="142.24" y1="58.42" x2="139.7" y2="58.42" width="0.1524" layer="91"/>
 <label x="139.7" y="58.42" size="0.8128" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="IRQ" class="0">
+<net name="PB1" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="!IRQ"/>
 <wire x1="177.8" y1="68.58" x2="180.34" y2="68.58" width="0.1524" layer="91"/>
@@ -10712,26 +10779,37 @@ CStray for NRF is ~1pF
 </net>
 <net name="N$7" class="0">
 <segment>
-<wire x1="133.858" y1="73.66" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="73.66" x2="132.08" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="XC2"/>
+<wire x1="132.08" y1="73.66" x2="129.54" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="142.24" y1="76.2" x2="139.7" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="76.2" x2="139.7" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="73.66" x2="133.858" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="73.66" x2="137.16" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<junction x="137.16" y="73.66"/>
 <pinref part="Y3" gate="G$1" pin="1"/>
-<wire x1="133.858" y1="74.93" x2="133.858" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="73.66" x2="132.08" y2="74.93" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="74.93" x2="131.318" y2="74.93" width="0.1524" layer="91"/>
+<junction x="132.08" y="73.66"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<wire x1="133.858" y1="81.28" x2="129.54" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="128.778" y1="83.82" x2="129.54" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="XC1"/>
 <wire x1="142.24" y1="78.74" x2="139.7" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="78.74" x2="139.7" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="81.28" x2="133.858" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="78.74" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="83.82" x2="137.16" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="83.82" x2="132.08" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<junction x="137.16" y="83.82"/>
 <pinref part="Y3" gate="G$1" pin="2"/>
-<wire x1="133.858" y1="80.01" x2="133.858" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="83.82" x2="129.54" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="131.318" y1="80.01" x2="132.08" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="80.01" x2="132.08" y2="83.82" width="0.1524" layer="91"/>
+<junction x="132.08" y="83.82"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -10784,7 +10862,7 @@ CStray for NRF is ~1pF
 <pinref part="C13" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="SCK" class="0">
+<net name="PA5" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="SCK"/>
 <wire x1="142.24" y1="63.5" x2="139.7" y2="63.5" width="0.1524" layer="91"/>
@@ -10819,15 +10897,28 @@ CStray for NRF is ~1pF
 <label x="198.12" y="55.88" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
+<net name="PB11" class="0">
+<segment>
+<pinref part="U2" gate="G$1" pin="SDA"/>
+<wire x1="55.88" y1="96.52" x2="55.88" y2="99.06" width="0.1524" layer="91"/>
+<label x="55.88" y="99.06" size="0.8128" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="PB9" class="0">
+<segment>
+<pinref part="U6" gate="G$1" pin="INT"/>
+<wire x1="149.86" y1="139.7" x2="152.4" y2="139.7" width="0.1524" layer="91"/>
+<label x="152.4" y="139.7" size="0.8128" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
 <plain>
 <text x="15.24" y="27.94" size="5.08" layer="105" font="vector">TODO:
-2. Create BOM
-3. openocd.gdb for debugging
-5. Make correct SDA,SCL, and SPI connections
-6. Check all values -&gt; Collect all reference material</text>
+2. Validate BOMs
+6. Check all values -&gt; Collect all reference material
+7. UART connector</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="0" y="0" smashed="yes">
