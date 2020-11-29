@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2020-11-29T21:11:04Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.4.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "mosfet_smt_test"
+        },
+        "Owner": "Carl Baron <cbaron3@uwo.ca>",
+        "Size": {
+            "X": 58.4,
+            "Y": 88.57
+        }
+    }
+}

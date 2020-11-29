@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9299,6 +9299,10 @@ Datasheet</description>
 <part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_04" device="" package3d_urn="urn:adsk.eagle:package:38085/1"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device="">
+<attribute name="SPICEPREFIX" value="G"/>
+</part>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9570,6 +9574,12 @@ Pick ~ 5pF
 <instance part="GND1" gate="1" x="233.68" y="99.06" smashed="yes">
 <attribute name="VALUE" x="231.14" y="96.52" size="1.016" layer="96" font="vector"/>
 </instance>
+<instance part="GND2" gate="1" x="142.24" y="86.36" smashed="yes">
+<attribute name="VALUE" x="140.97" y="84.328" size="1.016" layer="96" font="vector"/>
+</instance>
+<instance part="GND3" gate="1" x="63.5" y="139.7" smashed="yes">
+<attribute name="VALUE" x="60.96" y="137.16" size="1.016" layer="96" font="vector"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9789,6 +9799,23 @@ Pick ~ 5pF
 <wire x1="231.14" y1="101.6" x2="233.68" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PB2"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="132.08" y1="88.9" x2="142.24" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U5" gate="U1" pin="GND"/>
+<pinref part="C26" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="142.24" x2="71.12" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="142.24" x2="78.74" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="144.78" x2="63.5" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="C25" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="144.78" x2="71.12" y2="142.24" width="0.1524" layer="91"/>
+<junction x="71.12" y="142.24"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<junction x="63.5" y="142.24"/>
+</segment>
 </net>
 <net name="N$4" class="0">
 <segment>
@@ -9829,18 +9856,6 @@ Pick ~ 5pF
 <pinref part="U5" gate="U1" pin="BP"/>
 <wire x1="96.52" y1="142.24" x2="99.06" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="C24" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="U5" gate="U1" pin="GND"/>
-<pinref part="C26" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="142.24" x2="71.12" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="142.24" x2="78.74" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="144.78" x2="63.5" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="C25" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="144.78" x2="71.12" y2="142.24" width="0.1524" layer="91"/>
-<junction x="71.12" y="142.24"/>
 </segment>
 </net>
 <net name="SWDIO" class="0">
@@ -9983,18 +9998,6 @@ Pick ~ 5pF
 <pinref part="J3" gate="G$1" pin="17"/>
 <wire x1="172.72" y1="73.66" x2="170.18" y2="73.66" width="0.1524" layer="91"/>
 <label x="170.18" y="73.66" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="VBAT" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="VBAT"/>
-<wire x1="81.28" y1="104.14" x2="78.74" y2="104.14" width="0.1524" layer="91"/>
-<label x="78.74" y="104.14" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$1" pin="1"/>
-<wire x1="172.72" y1="114.3" x2="170.18" y2="114.3" width="0.1524" layer="91"/>
-<label x="170.18" y="114.3" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PA0" class="0">
@@ -10162,11 +10165,6 @@ Pick ~ 5pF
 <wire x1="200.66" y1="86.36" x2="198.12" y2="86.36" width="0.1524" layer="91"/>
 <label x="198.12" y="86.36" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
-<segment>
-<pinref part="J4" gate="G$1" pin="20"/>
-<wire x1="200.66" y1="66.04" x2="198.12" y2="66.04" width="0.1524" layer="91"/>
-<label x="198.12" y="66.04" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="PA15" class="0">
 <segment>
@@ -10202,13 +10200,6 @@ Pick ~ 5pF
 <pinref part="J3" gate="G$1" pin="14"/>
 <wire x1="172.72" y1="81.28" x2="170.18" y2="81.28" width="0.1524" layer="91"/>
 <label x="170.18" y="81.28" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="PB2" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PB2"/>
-<wire x1="132.08" y1="88.9" x2="134.62" y2="88.9" width="0.1524" layer="91"/>
-<label x="134.62" y="88.9" size="0.8128" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
 <net name="PB3" class="0">
@@ -10345,6 +10336,11 @@ Pick ~ 5pF
 <wire x1="132.08" y1="63.5" x2="134.62" y2="63.5" width="0.1524" layer="91"/>
 <label x="134.62" y="63.5" size="0.8128" layer="95" font="vector" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="20"/>
+<wire x1="200.66" y1="66.04" x2="198.12" y2="66.04" width="0.1524" layer="91"/>
+<label x="198.12" y="66.04" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="PB13" class="0">
 <segment>
@@ -10352,12 +10348,22 @@ Pick ~ 5pF
 <wire x1="132.08" y1="60.96" x2="134.62" y2="60.96" width="0.1524" layer="91"/>
 <label x="134.62" y="60.96" size="0.8128" layer="95" font="vector" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="19"/>
+<wire x1="200.66" y1="68.58" x2="198.12" y2="68.58" width="0.1524" layer="91"/>
+<label x="198.12" y="68.58" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="PB14" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="PB14"/>
 <wire x1="132.08" y1="58.42" x2="134.62" y2="58.42" width="0.1524" layer="91"/>
 <label x="134.62" y="58.42" size="0.8128" layer="95" font="vector" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="18"/>
+<wire x1="200.66" y1="71.12" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
+<label x="198.12" y="71.12" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PB15" class="0">
@@ -10384,20 +10390,6 @@ Pick ~ 5pF
 <pinref part="J3" gate="G$1" pin="4"/>
 <wire x1="172.72" y1="106.68" x2="170.18" y2="106.68" width="0.1524" layer="91"/>
 <label x="170.18" y="106.68" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="PA14" class="0">
-<segment>
-<pinref part="J4" gate="G$1" pin="18"/>
-<wire x1="200.66" y1="71.12" x2="198.12" y2="71.12" width="0.1524" layer="91"/>
-<label x="198.12" y="71.12" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="PA13" class="0">
-<segment>
-<pinref part="J4" gate="G$1" pin="19"/>
-<wire x1="200.66" y1="68.58" x2="198.12" y2="68.58" width="0.1524" layer="91"/>
-<label x="198.12" y="68.58" size="0.8128" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -10760,13 +10752,6 @@ CStray for NRF is ~1pF
 <pinref part="C6" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="PA1" class="0">
-<segment>
-<pinref part="U2" gate="G$1" pin="INT"/>
-<wire x1="68.58" y1="58.42" x2="68.58" y2="55.88" width="0.1524" layer="91"/>
-<label x="68.58" y="55.88" size="0.8128" layer="95" font="vector" xref="yes"/>
-</segment>
-</net>
 <net name="EP" class="0">
 <segment>
 <pinref part="U2" gate="G$1" pin="EP"/>
@@ -10941,21 +10926,13 @@ CStray for NRF is ~1pF
 <label x="55.88" y="99.06" size="0.8128" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="PB9" class="0">
-<segment>
-<pinref part="U6" gate="G$1" pin="INT"/>
-<wire x1="149.86" y1="139.7" x2="152.4" y2="139.7" width="0.1524" layer="91"/>
-<label x="152.4" y="139.7" size="0.8128" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
 </nets>
 </sheet>
 <sheet>
 <plain>
 <text x="15.24" y="27.94" size="5.08" layer="105" font="vector">TODO:
-2. Validate BOMs
-6. Check all values -&gt; Collect all reference material
-7. Clean up schematic</text>
+1. Board design
+2. Clean up schematic</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="0" y="0" smashed="yes">

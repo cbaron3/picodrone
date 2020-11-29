@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.4.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="2.54" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1.27" altunitdist="mm" altunit="mm"/>
+<grid distance="2.54" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.254" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -174,7 +174,6 @@
 <wire x1="2.54" y1="0" x2="4.801565625" y2="0" width="0" layer="20"/>
 <wire x1="4.801565625" y1="0" x2="5.24084375" y2="0.227278125" width="0" layer="20" curve="54.713142"/>
 <wire x1="17.542565625" y1="0.308665625" x2="18.169421875" y2="0" width="0" layer="20" curve="52.431422"/>
-<wire x1="12.7" y1="-5.08" x2="17.78" y2="-5.08" width="0" layer="20"/>
 <wire x1="5.24084375" y1="0.227278125" x2="7.314171875" y2="1.3" width="0" layer="20" curve="-54.713255"/>
 <wire x1="7.314171875" y1="1.3" x2="15.5293" y2="1.3" width="0" layer="20"/>
 <wire x1="15.5293" y1="1.3" x2="17.542565625" y2="0.308665625" width="0" layer="20" curve="-52.431412"/>
@@ -4065,252 +4064,249 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C10" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="1pF" x="-15.24" y="44.45" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-16.51" y="45.212" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-16.51" y="43.18" size="0.5" layer="27" ratio="10"/>
+<element name="C10" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="1pF" x="5.588" y="70.358" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="20.828" y="25.908" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="20.828" y="25.908" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="20.828" y="25.908" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="20.828" y="25.908" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="4.318" y="71.12" size="0.5" layer="25" ratio="10"/>
+<attribute name="PACKAGE" value="SMD 0603" x="20.828" y="25.908" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="4.318" y="69.088" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="C11" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="4.7 pF" x="-19.05" y="44.45" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-20.32" y="45.212" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-20.32" y="43.18" size="0.5" layer="27" ratio="10"/>
+<element name="C11" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="4.7 pF" x="5.588" y="75.184" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="24.638" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="24.638" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="24.638" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="24.638" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="4.318" y="75.946" size="0.5" layer="25" ratio="10"/>
+<attribute name="PACKAGE" value="SMD 0603" x="24.638" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="4.318" y="73.914" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="C12" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="2.2nF" x="-22.86" y="44.45" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-24.13" y="45.212" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-24.13" y="43.18" size="0.5" layer="27" ratio="10"/>
+<element name="C12" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="2.2nF" x="2.54" y="75.184" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="25.4" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="25.4" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="25.4" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="25.4" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="1.27" y="75.946" size="0.5" layer="25" ratio="10"/>
+<attribute name="PACKAGE" value="SMD 0603" x="25.4" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="1.27" y="73.914" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="C13" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="33 nF" x="-26.67" y="44.45" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-27.94" y="45.212" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-27.94" y="43.18" size="0.5" layer="27" ratio="10"/>
+<element name="C13" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="33 nF" x="2.54" y="72.644" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="29.21" y="28.194" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="29.21" y="28.194" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="29.21" y="28.194" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="29.21" y="28.194" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="1.27" y="73.406" size="0.5" layer="25" ratio="10"/>
+<attribute name="PACKAGE" value="SMD 0603" x="29.21" y="28.194" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="1.27" y="71.374" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="C16" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="15pF" x="-30.48" y="44.45" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-31.75" y="45.212" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-31.75" y="43.18" size="0.5" layer="27" ratio="10"/>
+<element name="C16" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="15pF" x="46.228" y="34.544" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="76.708" y="-9.906" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="76.708" y="-9.906" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="76.708" y="-9.906" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="76.708" y="-9.906" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="44.958" y="35.306" size="0.5" layer="25" ratio="10"/>
+<attribute name="PACKAGE" value="SMD 0603" x="76.708" y="-9.906" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="44.958" y="33.274" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="C17" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="15pF" x="-34.29" y="44.45" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-35.56" y="45.212" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-35.56" y="43.18" size="0.5" layer="27" ratio="10"/>
+<element name="C17" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="15pF" x="46.228" y="37.338" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="80.518" y="-7.112" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="80.518" y="-7.112" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="80.518" y="-7.112" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="80.518" y="-7.112" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="SMD 0603" x="80.518" y="-7.112" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="44.958" y="36.068" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="C18" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100nF" x="-38.1" y="44.45" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-39.37" y="45.212" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-39.37" y="43.18" size="0.5" layer="27" ratio="10"/>
+<element name="C18" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100nF" x="33.02" y="25.4" smashed="yes" rot="MR90">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="-11.43" y="63.5" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="-11.43" y="63.5" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="-11.43" y="63.5" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="-11.43" y="63.5" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="33.782" y="24.13" size="0.5" layer="26" ratio="10" rot="MR90"/>
+<attribute name="PACKAGE" value="SMD 0603" x="-11.43" y="63.5" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="31.75" y="24.13" size="0.5" layer="28" ratio="10" rot="MR90"/>
 </element>
-<element name="C19" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100nF" x="-41.91" y="44.45" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-43.18" y="45.212" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-43.18" y="43.18" size="0.5" layer="27" ratio="10"/>
+<element name="C19" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100nF" x="35.56" y="25.4" smashed="yes" rot="MR90">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="-8.89" y="67.31" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="-8.89" y="67.31" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="-8.89" y="67.31" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="-8.89" y="67.31" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="36.322" y="24.13" size="0.5" layer="26" ratio="10" rot="MR90"/>
+<attribute name="PACKAGE" value="SMD 0603" x="-8.89" y="67.31" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="34.29" y="24.13" size="0.5" layer="28" ratio="10" rot="MR90"/>
 </element>
-<element name="C20" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100nF" x="-45.72" y="44.45" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-46.99" y="45.212" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-46.99" y="43.18" size="0.5" layer="27" ratio="10"/>
+<element name="C20" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100nF" x="38.1" y="25.4" smashed="yes" rot="MR90">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="-6.35" y="71.12" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="-6.35" y="71.12" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="-6.35" y="71.12" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="-6.35" y="71.12" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="38.862" y="24.13" size="0.5" layer="26" ratio="10" rot="MR90"/>
+<attribute name="PACKAGE" value="SMD 0603" x="-6.35" y="71.12" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="36.83" y="24.13" size="0.5" layer="28" ratio="10" rot="MR90"/>
 </element>
-<element name="C21" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100nF" x="-49.53" y="44.45" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-50.8" y="45.212" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-50.8" y="43.18" size="0.5" layer="27" ratio="10"/>
+<element name="C21" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100nF" x="27.94" y="25.4" smashed="yes" rot="MR90">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="-16.51" y="74.93" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="-16.51" y="74.93" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="-16.51" y="74.93" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="-16.51" y="74.93" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="28.702" y="24.13" size="0.5" layer="26" ratio="10" rot="MR90"/>
+<attribute name="PACKAGE" value="SMD 0603" x="-16.51" y="74.93" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="26.67" y="24.13" size="0.5" layer="28" ratio="10" rot="MR90"/>
 </element>
-<element name="C22" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="1uF" x="-53.34" y="44.45" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-54.61" y="45.212" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-54.61" y="43.18" size="0.5" layer="27" ratio="10"/>
+<element name="C22" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="1uF" x="44.45" y="48.26" smashed="yes" rot="R90">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="88.9" y="101.6" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="88.9" y="101.6" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="88.9" y="101.6" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="88.9" y="101.6" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="43.688" y="46.99" size="0.5" layer="25" ratio="10" rot="R90"/>
+<attribute name="PACKAGE" value="SMD 0603" x="88.9" y="101.6" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="45.72" y="46.99" size="0.5" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="C24" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="22nF" x="-57.15" y="44.45" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-58.42" y="45.212" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-58.42" y="43.18" size="0.5" layer="27" ratio="10"/>
+<element name="C24" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="22nF" x="36.83" y="15.494" smashed="yes" rot="MR90">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="-7.62" y="72.644" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="-7.62" y="72.644" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="-7.62" y="72.644" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="-7.62" y="72.644" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="NAME" x="37.592" y="14.224" size="0.5" layer="26" ratio="10" rot="MR90"/>
+<attribute name="PACKAGE" value="SMD 0603" x="-7.62" y="72.644" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="VALUE" x="35.56" y="14.224" size="0.5" layer="28" ratio="10" rot="MR90"/>
 </element>
-<element name="C25" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100nF" x="-15.24" y="48.26" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-16.51" y="49.022" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-16.51" y="46.99" size="0.5" layer="27" ratio="10"/>
+<element name="C25" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100nF" x="41.91" y="9.652" smashed="yes" rot="MR180">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="57.15" y="57.912" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="57.15" y="57.912" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="57.15" y="57.912" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="57.15" y="57.912" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="40.64" y="8.89" size="0.5" layer="26" ratio="10" rot="MR180"/>
+<attribute name="PACKAGE" value="SMD 0603" x="57.15" y="57.912" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="40.64" y="10.922" size="0.5" layer="28" ratio="10" rot="MR180"/>
 </element>
-<element name="C26" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="1uF" x="-19.05" y="48.26" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-20.32" y="49.022" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-20.32" y="46.99" size="0.5" layer="27" ratio="10"/>
+<element name="C26" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="1uF" x="46.99" y="3.81" smashed="yes" rot="MR180">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="66.04" y="52.07" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="66.04" y="52.07" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="66.04" y="52.07" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="66.04" y="52.07" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="45.72" y="3.048" size="0.5" layer="26" ratio="10" rot="MR180"/>
+<attribute name="PACKAGE" value="SMD 0603" x="66.04" y="52.07" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="VALUE" x="45.72" y="5.08" size="0.5" layer="28" ratio="10" rot="MR180"/>
 </element>
-<element name="C27" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100nF" x="-22.86" y="48.26" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-24.13" y="49.022" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-24.13" y="46.99" size="0.5" layer="27" ratio="10"/>
+<element name="C27" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100nF" x="45.72" y="6.858" smashed="yes" rot="MR270">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="93.98" y="-16.002" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="93.98" y="-16.002" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="93.98" y="-16.002" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="93.98" y="-16.002" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="44.958" y="8.128" size="0.5" layer="26" ratio="10" rot="MR270"/>
+<attribute name="PACKAGE" value="SMD 0603" x="93.98" y="-16.002" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="46.99" y="8.128" size="0.5" layer="28" ratio="10" rot="MR270"/>
 </element>
-<element name="C28" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="10uF" x="-26.67" y="48.26" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-27.94" y="49.022" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-27.94" y="46.99" size="0.5" layer="27" ratio="10"/>
+<element name="C28" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="10uF" x="46.99" y="15.24" smashed="yes" rot="MR270">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="95.25" y="-11.43" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="95.25" y="-11.43" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="95.25" y="-11.43" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="95.25" y="-11.43" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="NAME" x="46.228" y="16.51" size="0.5" layer="26" ratio="10" rot="MR270"/>
+<attribute name="PACKAGE" value="SMD 0603" x="95.25" y="-11.43" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="VALUE" x="48.26" y="16.51" size="0.5" layer="28" ratio="10" rot="MR270"/>
 </element>
-<element name="C29" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100nF" x="-30.48" y="48.26" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-31.75" y="49.022" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-31.75" y="46.99" size="0.5" layer="27" ratio="10"/>
+<element name="C29" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100nF" x="46.736" y="47.244" smashed="yes" rot="R90">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="94.996" y="77.724" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="94.996" y="77.724" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="94.996" y="77.724" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="94.996" y="77.724" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="45.974" y="45.974" size="0.5" layer="25" ratio="10" rot="R90"/>
+<attribute name="PACKAGE" value="SMD 0603" x="94.996" y="77.724" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="48.006" y="45.974" size="0.5" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="C3" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100nF" x="-38.1" y="40.64" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-39.37" y="41.402" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-39.37" y="39.37" size="0.5" layer="27" ratio="10"/>
+<element name="C3" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100nF" x="21.082" y="71.374" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="59.182" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="59.182" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="59.182" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="59.182" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="19.812" y="72.136" size="0.5" layer="25" ratio="10"/>
+<attribute name="PACKAGE" value="SMD 0603" x="59.182" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="19.812" y="70.104" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="C30" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="10pF" x="-34.29" y="48.26" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-35.56" y="49.022" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-35.56" y="46.99" size="0.5" layer="27" ratio="10"/>
+<element name="C30" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="10pF" x="41.91" y="30.988" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="76.2" y="-17.272" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="76.2" y="-17.272" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="76.2" y="-17.272" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="76.2" y="-17.272" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="SMD 0603" x="76.2" y="-17.272" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="40.64" y="29.718" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="C31" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="10pF" x="-38.1" y="48.26" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-39.37" y="49.022" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-39.37" y="46.99" size="0.5" layer="27" ratio="10"/>
+<element name="C31" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="10pF" x="41.91" y="33.274" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="80.01" y="-14.986" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="80.01" y="-14.986" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="80.01" y="-14.986" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="80.01" y="-14.986" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="SMD 0603" x="80.01" y="-14.986" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="40.64" y="32.004" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="C4" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="0.01uF" x="-41.91" y="40.64" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-43.18" y="41.402" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-43.18" y="39.37" size="0.5" layer="27" ratio="10"/>
+<element name="C4" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="0.01uF" x="12.192" y="71.374" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="54.102" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="54.102" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="54.102" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="54.102" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="10.922" y="72.136" size="0.5" layer="25" ratio="10"/>
+<attribute name="PACKAGE" value="SMD 0603" x="54.102" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="10.922" y="70.104" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="C5" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100 nF" x="-45.72" y="40.64" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-46.99" y="41.402" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-46.99" y="39.37" size="0.5" layer="27" ratio="10"/>
+<element name="C5" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100 nF" x="18.542" y="71.374" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="64.262" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="64.262" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="64.262" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="64.262" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="17.272" y="72.136" size="0.5" layer="25" ratio="10"/>
+<attribute name="PACKAGE" value="SMD 0603" x="64.262" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="17.272" y="70.104" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="C6" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="2.2nF" x="-26.67" y="40.64" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-27.94" y="41.402" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-27.94" y="39.37" size="0.5" layer="27" ratio="10"/>
+<element name="C6" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="2.2nF" x="14.732" y="71.374" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="41.402" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="41.402" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="41.402" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="41.402" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="13.462" y="72.136" size="0.5" layer="25" ratio="10"/>
+<attribute name="PACKAGE" value="SMD 0603" x="41.402" y="30.734" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="13.462" y="70.104" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="C7" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="18pF" x="-49.53" y="40.64" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-50.8" y="41.402" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-50.8" y="39.37" size="0.5" layer="27" ratio="10"/>
+<element name="C7" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="18pF" x="15.24" y="88.9" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="64.77" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="64.77" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="64.77" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="64.77" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="13.97" y="89.662" size="0.5" layer="25" ratio="10"/>
+<attribute name="PACKAGE" value="SMD 0603" x="64.77" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="13.97" y="87.63" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="C8" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="18pF" x="-53.34" y="40.64" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-54.61" y="41.402" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-54.61" y="39.37" size="0.5" layer="27" ratio="10"/>
+<element name="C8" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="18pF" x="11.43" y="88.9" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="64.77" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="64.77" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="64.77" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="64.77" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="10.16" y="89.662" size="0.5" layer="25" ratio="10"/>
+<attribute name="PACKAGE" value="SMD 0603" x="64.77" y="48.26" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="10.16" y="87.63" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="C9" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="1.5pF" x="-57.15" y="40.64" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-58.42" y="41.402" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-58.42" y="39.37" size="0.5" layer="27" ratio="10"/>
+<element name="C9" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="1.5pF" x="5.588" y="72.644" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="62.738" y="32.004" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="62.738" y="32.004" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="62.738" y="32.004" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="62.738" y="32.004" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="4.318" y="73.406" size="0.5" layer="25" ratio="10"/>
+<attribute name="PACKAGE" value="SMD 0603" x="62.738" y="32.004" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="4.318" y="71.374" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="D1" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" package="LED-0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="" x="6.35" y="12.7" smashed="yes" rot="R90">
-<attribute name="NAME" x="5.715" y="12.7" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="6.985" y="12.7" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="D1" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" package="LED-0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="" x="36.83" y="12.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="36.195" y="12.7" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="37.465" y="12.7" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="D2" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" package="LED-0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="" x="16.51" y="12.7" smashed="yes" rot="R90">
-<attribute name="NAME" x="15.875" y="12.7" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="17.145" y="12.7" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="D2" library="SparkFun-LED" library_urn="urn:adsk.eagle:library:529" package="LED-0603" package3d_urn="urn:adsk.eagle:package:39354/1" value="" x="46.99" y="12.7" smashed="yes" rot="R90">
+<attribute name="NAME" x="46.355" y="12.7" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="VALUE" x="47.625" y="12.7" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04" package3d_urn="urn:adsk.eagle:package:38085/1" value="" x="7.62" y="50.8" smashed="yes" rot="R270">
-<attribute name="NAME" x="9.017" y="52.07" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
-<attribute name="PROD_ID" value="CONN-09696" x="-31.75" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="5.588" y="52.07" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
+<element name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04" package3d_urn="urn:adsk.eagle:package:38085/1" value="" x="2.54" y="60.96" smashed="yes" rot="R270">
+<attribute name="NAME" x="3.937" y="62.23" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="PROD_ID" value="CONN-09696" x="-36.83" y="38.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="0.508" y="62.23" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 <element name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X20" package3d_urn="urn:adsk.eagle:package:38196/1" value="" x="19.96" y="2.54" smashed="yes" rot="R90">
 <attribute name="NAME" x="18.563" y="1.27" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
@@ -4320,73 +4316,72 @@ design rules under a new name.</description>
 <attribute name="NAME" x="1.143" y="1.27" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="4.572" y="1.27" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
 </element>
-<element name="J5" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="USB-B-MICRO-SMD" package3d_urn="urn:adsk.eagle:package:38238/1" value="" x="11.43" y="3.81" smashed="yes" rot="R90">
-<attribute name="NAME" x="6.731" y="2.54" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
-<attribute name="PROD_ID" value="CONN-11752" x="16.51" y="36.83" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="16.129" y="2.54" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-left"/>
+<element name="J5" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="USB-B-MICRO-SMD" package3d_urn="urn:adsk.eagle:package:38238/1" value="" x="41.91" y="3.81" smashed="yes" rot="R90">
+<attribute name="NAME" x="37.211" y="2.54" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="PROD_ID" value="CONN-11752" x="46.99" y="36.83" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="46.609" y="2.54" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-left"/>
 </element>
-<element name="L1" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" package="RESC0603_M" package3d_urn="urn:adsk.eagle:package:2593735/1" value="2.7 nH" x="-27.94" y="19.05" smashed="yes">
-<attribute name="NAME" x="-28.94" y="21.05" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-28.94" y="16.05" size="1.27" layer="27"/>
+<element name="L1" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" package="RESC0603_M" package3d_urn="urn:adsk.eagle:package:2593735/1" value="2.7 nH" x="3.81" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="1.81" y="77.74" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="6.81" y="77.74" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="L2" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" package="RESC0603_M" package3d_urn="urn:adsk.eagle:package:2593735/1" value="8.2 nH" x="-35.56" y="19.05" smashed="yes">
-<attribute name="NAME" x="-36.56" y="21.05" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-36.56" y="16.05" size="1.27" layer="27"/>
+<element name="L2" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" package="RESC0603_M" package3d_urn="urn:adsk.eagle:package:2593735/1" value="8.2 nH" x="11.43" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="9.43" y="77.74" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="14.43" y="77.74" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="L3" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" package="RESC0603_M" package3d_urn="urn:adsk.eagle:package:2593735/1" value="3.9 nH" x="-43.18" y="19.05" smashed="yes">
-<attribute name="NAME" x="-44.18" y="21.05" size="1.27" layer="25"/>
-<attribute name="VALUE" x="-44.18" y="16.05" size="1.27" layer="27"/>
+<element name="L3" library="Nordic_nRF" library_urn="urn:adsk.eagle:library:169009" package="RESC0603_M" package3d_urn="urn:adsk.eagle:package:2593735/1" value="3.9 nH" x="17.78" y="77.47" smashed="yes">
+<attribute name="NAME" x="16.78" y="79.47" size="1.27" layer="25"/>
+<attribute name="VALUE" x="16.78" y="74.47" size="1.27" layer="27"/>
 </element>
-<element name="R1" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="220" x="-41.91" y="48.26" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="RC0603JR-070RL" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-43.18" y="49.022" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-43.18" y="46.99" size="0.5" layer="27" ratio="10"/>
+<element name="R1" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="220" x="46.99" y="8.89" smashed="yes" rot="R90">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="95.25" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="95.25" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="95.25" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="RC0603JR-070RL" x="95.25" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="46.228" y="7.62" size="0.5" layer="25" ratio="10" rot="R90"/>
+<attribute name="PACKAGE" value="SMD 0603" x="95.25" y="50.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="48.26" y="7.62" size="0.5" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R2" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="22k" x="-45.72" y="48.26" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="RC0603JR-070RL" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-46.99" y="49.022" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-46.99" y="46.99" size="0.5" layer="27" ratio="10"/>
+<element name="R2" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="22k" x="12.7" y="83.82" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="58.42" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="58.42" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="58.42" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RC0603JR-070RL" x="58.42" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="11.43" y="84.582" size="0.5" layer="25" ratio="10"/>
+<attribute name="PACKAGE" value="SMD 0603" x="58.42" y="35.56" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="11.43" y="82.55" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="R3" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="1M" x="-49.53" y="48.26" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="RC0603JR-070RL" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-50.8" y="49.022" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-50.8" y="46.99" size="0.5" layer="27" ratio="10"/>
+<element name="R3" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="1M" x="46.228" y="39.878" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="95.758" y="-8.382" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="95.758" y="-8.382" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="95.758" y="-8.382" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RC0603JR-070RL" x="95.758" y="-8.382" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="SMD 0603" x="95.758" y="-8.382" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="44.958" y="38.608" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="R5" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="10k" x="-53.34" y="48.26" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="RC0603JR-070RL" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-54.61" y="49.022" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-54.61" y="46.99" size="0.5" layer="27" ratio="10"/>
+<element name="R5" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="10k" x="41.402" y="54.61" smashed="yes" rot="R270">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="-6.858" y="1.27" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="-6.858" y="1.27" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="-6.858" y="1.27" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="RC0603JR-070RL" x="-6.858" y="1.27" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="42.164" y="55.88" size="0.5" layer="25" ratio="10" rot="R270"/>
+<attribute name="PACKAGE" value="SMD 0603" x="-6.858" y="1.27" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="40.132" y="55.88" size="0.5" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R6" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="220" x="-57.15" y="48.26" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="RC0603JR-070RL" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-58.42" y="49.022" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="0" y="0" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-58.42" y="46.99" size="0.5" layer="27" ratio="10"/>
+<element name="R6" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="220" x="36.83" y="8.89" smashed="yes" rot="R90">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="85.09" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="85.09" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="85.09" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="RC0603JR-070RL" x="85.09" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="36.068" y="7.62" size="0.5" layer="25" ratio="10" rot="R90"/>
+<attribute name="PACKAGE" value="SMD 0603" x="85.09" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="38.1" y="7.62" size="0.5" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="S1" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_PTH_6.0MM" package3d_urn="urn:adsk.eagle:package:40163/1" value="" x="11.43" y="12.7" smashed="yes">
-<attribute name="NAME" x="11.43" y="16.002" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="PROD_ID" value=" SWCH-08441" x="29.21" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="SF_SKU" value="COM-00097" x="29.21" y="-6.35" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="11.43" y="9.525" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="S1" library="SparkFun-Switches" library_urn="urn:adsk.eagle:library:535" package="TACTILE_SWITCH_PTH_6.0MM" package3d_urn="urn:adsk.eagle:package:40163/1" value="" x="46.99" y="54.864" smashed="yes" rot="R90">
+<attribute name="NAME" x="43.688" y="54.864" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="PROD_ID" value=" SWCH-08441" x="66.04" y="72.644" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SF_SKU" value="COM-00097" x="66.04" y="72.644" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="50.165" y="54.864" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
 <element name="U$4" library="SparkFun-RF" library_urn="urn:adsk.eagle:library:531" package="ANT-2.4GHZ-6.5X2.2MM" package3d_urn="urn:adsk.eagle:package:39539/1" value="2.45GHz" x="11.43" y="95.25" smashed="yes" rot="R90">
 <attribute name="NAME" x="10.033" y="95.25" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
@@ -4399,21 +4394,19 @@ design rules under a new name.</description>
 <attribute name="DESCRIPTION" value=" ARM® Cortex®-M3 STM32F1 Microcontroller IC 32-Bit 72MHz 64KB (64K x 8) FLASH 48-LQFP (7x7) " x="22.2063" y="3.847396875" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="MF" value="STMicroelectronics" x="22.2063" y="3.847396875" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="MP" value="STM32F103C8T6" x="22.2063" y="3.847396875" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="NAME" x="11.43" y="33.178175" size="1.27" layer="25" rot="R315"/>
 <attribute name="PACKAGE" value="LQFP-48 STMicroelectronics" x="22.2063" y="3.847396875" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="PRICE" value="None" x="22.2063" y="3.847396875" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/STM32F103C8T6/?ref=eda" x="22.2063" y="3.847396875" size="1.778" layer="27" rot="R315" display="off"/>
 <attribute name="SPICEPREFIX" value="X" x="22.2063" y="3.847396875" size="1.778" layer="27" rot="R315" display="off"/>
-<attribute name="VALUE" x="2.94471875" y="23.98578125" size="1.27" layer="27" rot="R315"/>
 </element>
-<element name="U2" library="Sensor" library_urn="urn:adsk.eagle:library:11396555" package="24-VFQFN" package3d_urn="urn:adsk.eagle:package:10907357/2" value="MPU-6050" x="16.51" y="60.96" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="71.12" y="55.88" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="1428-1007-1-ND" x="71.12" y="55.88" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="TDK InvenSense" x="71.12" y="55.88" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="MPU-6050" x="71.12" y="55.88" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="12.97" y="63.5" size="1.2" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="24-VFQFN" x="71.12" y="55.88" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="12.97" y="56.88" size="1.2" layer="27" ratio="10"/>
+<element name="U2" library="Sensor" library_urn="urn:adsk.eagle:library:11396555" package="24-VFQFN" package3d_urn="urn:adsk.eagle:package:10907357/2" value="MPU-6050" x="19.05" y="66.04" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="73.66" y="60.96" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="1428-1007-1-ND" x="73.66" y="60.96" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="TDK InvenSense" x="73.66" y="60.96" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="MPU-6050" x="73.66" y="60.96" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="15.51" y="68.58" size="1.2" layer="25" ratio="10"/>
+<attribute name="PACKAGE" value="24-VFQFN" x="73.66" y="60.96" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="10.43" y="64.5" size="1.2" layer="27" ratio="10"/>
 </element>
 <element name="U4" library="NRF24L01" package="QFN50P400X400X95-21N" value="NRF24L01" x="17.78" y="85.09" smashed="yes">
 <attribute name="AVAILABILITY" value="Warning" x="63.5" y="78.74" size="1.778" layer="27" display="off"/>
@@ -4426,15 +4419,15 @@ design rules under a new name.</description>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/NRF24L01/?ref=eda" x="63.5" y="78.74" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="14.96686875" y="81.48098125" size="1.27141875" layer="27" align="top-left"/>
 </element>
-<element name="U5" library="SparkFun-IC-Power" library_urn="urn:adsk.eagle:library:526" package="SOT23-5" package3d_urn="urn:adsk.eagle:package:39060/1" value="RT9193-33GB" x="11.43" y="5.08" smashed="yes" rot="MR0">
-<attribute name="NAME" x="12.319" y="7.239" size="0.4064" layer="26" rot="MR0"/>
-<attribute name="PROD_ID" value="VREG-12594" x="-11.43" y="-20.32" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="VALUE" x="12.3825" y="4.8895" size="0.4064" layer="28" rot="MR0"/>
+<element name="U5" library="SparkFun-IC-Power" library_urn="urn:adsk.eagle:library:526" package="SOT23-5" package3d_urn="urn:adsk.eagle:package:39060/1" value="RT9193-33GB" x="41.91" y="13.208" smashed="yes">
+<attribute name="NAME" x="41.021" y="15.367" size="0.4064" layer="25"/>
+<attribute name="PROD_ID" value="VREG-12594" x="64.77" y="-12.192" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="40.9575" y="13.0175" size="0.4064" layer="27"/>
 </element>
-<element name="Y1" library="SparkFun-Clocks" library_urn="urn:adsk.eagle:library:511" package="CRYSTAL-SMD-5X3.2-4PAD" package3d_urn="urn:adsk.eagle:package:37518/1" value="8MHz" x="15.24" y="36.83" smashed="yes" rot="R90">
-<attribute name="NAME" x="13.335" y="36.83" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="XTAL-09431" x="33.02" y="91.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="17.145" y="36.83" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="Y1" library="SparkFun-Clocks" library_urn="urn:adsk.eagle:library:511" package="CRYSTAL-SMD-5X3.2-4PAD" package3d_urn="urn:adsk.eagle:package:37518/1" value="8MHz" x="50.8" y="39.37" smashed="yes" rot="R90">
+<attribute name="NAME" x="48.895" y="39.37" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="PROD_ID" value="XTAL-09431" x="68.58" y="93.98" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="52.705" y="39.37" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
 <element name="Y3" library="SparkFun-Clocks" library_urn="urn:adsk.eagle:library:511" package="CRYSTAL-SMD-5X3.2-4PAD" package3d_urn="urn:adsk.eagle:package:37518/1" value="16MHz" x="6.35" y="85.09" smashed="yes">
 <attribute name="NAME" x="6.35" y="86.995" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
@@ -4442,88 +4435,86 @@ design rules under a new name.</description>
 <attribute name="SF_ID" value="COM-00094" x="22.86" y="58.42" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="6.35" y="83.185" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="Y4" library="SparkFun-Clocks" library_urn="urn:adsk.eagle:library:511" package="CRYSTAL-SMD-3.2X1.5MM" package3d_urn="urn:adsk.eagle:package:37548/1" value="32.768kHz" x="6.35" y="36.83" smashed="yes" rot="R90">
-<attribute name="NAME" x="5.307" y="36.83" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="XTAL-13062" x="31.75" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="7.393" y="36.83" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="Y4" library="SparkFun-Clocks" library_urn="urn:adsk.eagle:library:511" package="CRYSTAL-SMD-3.2X1.5MM" package3d_urn="urn:adsk.eagle:package:37548/1" value="32.768kHz" x="41.91" y="36.83" smashed="yes" rot="R90">
+<attribute name="NAME" x="40.867" y="36.83" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="PROD_ID" value="XTAL-13062" x="67.31" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="42.953" y="36.83" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R4" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="1M" x="-53.34" y="30.48" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="-53.34" y="30.48" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="-53.34" y="30.48" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="-53.34" y="30.48" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="RC0603JR-070RL" x="-53.34" y="30.48" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-54.61" y="31.242" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="-53.34" y="30.48" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-54.61" y="29.21" size="0.5" layer="27" ratio="10"/>
+<element name="R4" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="1M" x="7.62" y="88.9" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="7.62" y="88.9" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="7.62" y="88.9" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="7.62" y="88.9" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="RC0603JR-070RL" x="7.62" y="88.9" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="6.35" y="89.662" size="0.5" layer="25" ratio="10"/>
+<attribute name="PACKAGE" value="SMD 0603" x="7.62" y="88.9" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="6.35" y="87.63" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="R7" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="4.7k" x="-53.34" y="26.67" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="-53.34" y="26.67" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="-53.34" y="26.67" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="-53.34" y="26.67" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="RC0603JR-070RL" x="-53.34" y="26.67" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-54.61" y="27.432" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="-53.34" y="26.67" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-54.61" y="25.4" size="0.5" layer="27" ratio="10"/>
+<element name="R7" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="4.7k" x="46.99" y="17.78" smashed="yes" rot="R270">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="46.99" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="46.99" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="46.99" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="RC0603JR-070RL" x="46.99" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="47.752" y="19.05" size="0.5" layer="25" ratio="10" rot="R270"/>
+<attribute name="PACKAGE" value="SMD 0603" x="46.99" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="45.72" y="19.05" size="0.5" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R8" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="4.7k" x="-53.34" y="22.86" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="-53.34" y="22.86" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="-53.34" y="22.86" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="-53.34" y="22.86" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="RC0603JR-070RL" x="-53.34" y="22.86" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-54.61" y="23.622" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="-53.34" y="22.86" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-54.61" y="21.59" size="0.5" layer="27" ratio="10"/>
+<element name="R8" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="4.7k" x="44.45" y="17.78" smashed="yes" rot="R270">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="44.45" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="44.45" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="44.45" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="RC0603JR-070RL" x="44.45" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="45.212" y="19.05" size="0.5" layer="25" ratio="10" rot="R270"/>
+<attribute name="PACKAGE" value="SMD 0603" x="44.45" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="43.18" y="19.05" size="0.5" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R9" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="4.7k" x="-53.34" y="19.05" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="-53.34" y="19.05" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="-53.34" y="19.05" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="-53.34" y="19.05" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="RC0603JR-070RL" x="-53.34" y="19.05" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-54.61" y="19.812" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="-53.34" y="19.05" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-54.61" y="17.78" size="0.5" layer="27" ratio="10"/>
+<element name="R9" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="4.7k" x="39.37" y="17.78" smashed="yes" rot="R270">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="39.37" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="39.37" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="39.37" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="RC0603JR-070RL" x="39.37" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="40.132" y="19.05" size="0.5" layer="25" ratio="10" rot="R270"/>
+<attribute name="PACKAGE" value="SMD 0603" x="39.37" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="38.1" y="19.05" size="0.5" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R10" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="4.7k" x="-53.34" y="15.24" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="-53.34" y="15.24" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="-53.34" y="15.24" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="-53.34" y="15.24" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="RC0603JR-070RL" x="-53.34" y="15.24" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-54.61" y="16.002" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="-53.34" y="15.24" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-54.61" y="13.97" size="0.5" layer="27" ratio="10"/>
+<element name="R10" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:11396451" package="RES_0603" package3d_urn="urn:adsk.eagle:package:10872900/2" value="4.7k" x="36.83" y="17.78" smashed="yes" rot="R270">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="36.83" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="311-0.0GRTR-ND" x="36.83" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="36.83" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="RC0603JR-070RL" x="36.83" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="37.592" y="19.05" size="0.5" layer="25" ratio="10" rot="R270"/>
+<attribute name="PACKAGE" value="SMD 0603" x="36.83" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="35.56" y="19.05" size="0.5" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="U6" library="BMP388" package="PQFN50P200X200X80-10N" value="BMP388" x="3.81" y="59.69" smashed="yes">
-<attribute name="DESCRIPTION" value=" Pressure Sensor 4.35PSI ~ 18.13PSI (30kPa ~ 125kPa) Absolute 10-WFLGA " x="3.81" y="59.69" size="1.778" layer="27" display="off"/>
-<attribute name="DIGI-KEY_PART_NUMBER" value="828-1079-1-ND" x="3.81" y="59.69" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="Bosch Sensortec" x="3.81" y="59.69" size="1.778" layer="27" display="off"/>
-<attribute name="MP" value="BMP388" x="3.81" y="59.69" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="2.508240625" y="61.0919" size="0.40695" layer="25"/>
-<attribute name="PACKAGE" value="WFLGA-10 Bosch Tools" x="3.81" y="59.69" size="1.778" layer="27" display="off"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/BMP388/?ref=eda" x="3.81" y="59.69" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="2.60816875" y="57.987409375" size="0.40701875" layer="27"/>
+<element name="U6" library="BMP388" package="PQFN50P200X200X80-10N" value="BMP388" x="3.81" y="64.77" smashed="yes">
+<attribute name="DESCRIPTION" value=" Pressure Sensor 4.35PSI ~ 18.13PSI (30kPa ~ 125kPa) Absolute 10-WFLGA " x="3.81" y="64.77" size="1.778" layer="27" display="off"/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="828-1079-1-ND" x="3.81" y="64.77" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="Bosch Sensortec" x="3.81" y="64.77" size="1.778" layer="27" display="off"/>
+<attribute name="MP" value="BMP388" x="3.81" y="64.77" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="2.508240625" y="66.1719" size="0.40695" layer="25"/>
+<attribute name="PACKAGE" value="WFLGA-10 Bosch Tools" x="3.81" y="64.77" size="1.778" layer="27" display="off"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/BMP388/?ref=eda" x="3.81" y="64.77" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="2.60816875" y="63.067409375" size="0.40701875" layer="27"/>
 </element>
-<element name="C14" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100 nF" x="-57.15" y="11.43" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="-57.15" y="11.43" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="-57.15" y="11.43" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="-57.15" y="11.43" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="-57.15" y="11.43" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-58.42" y="12.192" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="-57.15" y="11.43" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-58.42" y="10.16" size="0.5" layer="27" ratio="10"/>
+<element name="C14" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100 nF" x="8.89" y="68.072" smashed="yes">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="8.89" y="68.072" size="1.778" layer="27" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="8.89" y="68.072" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="8.89" y="68.072" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="8.89" y="68.072" size="1.778" layer="27" display="off"/>
+<attribute name="PACKAGE" value="SMD 0603" x="8.89" y="68.072" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="5.334" y="67.31" size="0.5" layer="27" ratio="10"/>
 </element>
-<element name="C15" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100 nF" x="-57.15" y="7.62" smashed="yes">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="-57.15" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="-57.15" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER" value="KEMET" x="-57.15" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="C0603C100C5GACTU" x="-57.15" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-58.42" y="8.382" size="0.5" layer="25" ratio="10"/>
-<attribute name="PACKAGE" value="SMD 0603" x="-57.15" y="7.62" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-58.42" y="6.35" size="0.5" layer="27" ratio="10"/>
+<element name="C15" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="100 nF" x="3.81" y="67.818" smashed="yes" rot="R180">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="3.81" y="67.818" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="399-7814-2-ND" x="3.81" y="67.818" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER" value="KEMET" x="3.81" y="67.818" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="C0603C100C5GACTU" x="3.81" y="67.818" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="PACKAGE" value="SMD 0603" x="3.81" y="67.818" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="2.286" y="67.564" size="0.5" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04" package3d_urn="urn:adsk.eagle:package:38085/1" value="" x="15.24" y="43.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="13.843" y="41.91" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
-<attribute name="PROD_ID" value="CONN-09696" x="15.24" y="43.18" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="17.272" y="41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R90"/>
+<element name="J1" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" package="1X04" package3d_urn="urn:adsk.eagle:package:38085/1" value="" x="19.96" y="60.96" smashed="yes" rot="R270">
+<attribute name="NAME" x="21.357" y="62.23" size="0.6096" layer="25" font="vector" ratio="20" rot="R270"/>
+<attribute name="PROD_ID" value="CONN-09696" x="19.96" y="60.96" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="17.928" y="62.23" size="0.6096" layer="27" font="vector" ratio="20" rot="R270"/>
 </element>
 </elements>
 <signals>
@@ -4562,30 +4553,45 @@ design rules under a new name.</description>
 <contactref element="J1" pad="4"/>
 <contactref element="U2" pad="8"/>
 <contactref element="C4" pad="1"/>
-<polygon width="0" layer="1">
-<vertex x="0" y="88.9"/>
-<vertex x="25.4" y="88.9"/>
-<vertex x="25.4" y="0"/>
-<vertex x="0" y="0"/>
+<polygon width="0" layer="16">
+<vertex x="-2.54" y="88.9"/>
+<vertex x="22.86" y="88.9"/>
+<vertex x="22.86" y="0"/>
+<vertex x="-2.54" y="0"/>
 </polygon>
-<wire x1="-57.855" y1="11.43" x2="-56.445" y2="7.62" width="0" layer="19" extent="1-1"/>
-<wire x1="-52.545" y1="15.24" x2="-57.855" y2="11.43" width="0" layer="19" extent="1-1"/>
-<wire x1="-52.545" y1="19.05" x2="-52.545" y2="15.24" width="0" layer="19" extent="1-1"/>
-<wire x1="-52.545" y1="22.86" x2="-52.545" y2="19.05" width="0" layer="19" extent="1-1"/>
-<wire x1="-52.545" y1="26.67" x2="-52.545" y2="22.86" width="0" layer="19" extent="1-1"/>
-<wire x1="-46.425" y1="40.64" x2="-52.545" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="-46.425" y1="44.45" x2="-46.425" y2="40.64" width="0" layer="19" extent="1-1"/>
-<wire x1="-50.235" y1="44.45" x2="-46.425" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-42.615" y1="44.45" x2="-46.425" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-38.805" y1="44.45" x2="-42.615" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-42.615" y1="40.64" x2="-46.425" y2="40.64" width="0" layer="19" extent="1-1"/>
-<wire x1="-52.545" y1="48.26" x2="-50.235" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-57.945" y1="48.26" x2="-52.545" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-31.185" y1="48.26" x2="-38.805" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-27.375" y1="48.26" x2="-31.185" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-23.565" y1="48.26" x2="-27.375" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="3.045" y1="59.94" x2="-23.565" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="2.54" y1="2.54" x2="12.38" y2="6.3801" width="0" layer="19" extent="16-16"/>
+<wire x1="19.73" y1="86.09" x2="17.78" y2="87.04" width="0" layer="19" extent="1-1"/>
+<wire x1="17.28" y1="83.14" x2="19.73" y2="86.09" width="0" layer="19" extent="1-1"/>
+<wire x1="17.837" y1="71.374" x2="17.28" y2="83.14" width="0" layer="19" extent="1-1"/>
+<wire x1="20.3" y1="67.96" x2="17.837" y2="71.374" width="0" layer="19" extent="1-1"/>
+<wire x1="20.97" y1="65.29" x2="20.3" y2="67.96" width="0" layer="19" extent="1-1"/>
+<wire x1="11.487" y1="71.374" x2="17.837" y2="71.374" width="0" layer="19" extent="1-1"/>
+<wire x1="8.185" y1="68.072" x2="11.487" y2="71.374" width="0" layer="19" extent="1-1"/>
+<wire x1="3.105" y1="67.818" x2="8.185" y2="68.072" width="0" layer="19" extent="1-1"/>
+<wire x1="3.31" y1="65.535" x2="3.105" y2="67.818" width="0" layer="19" extent="1-1"/>
+<wire x1="3.045" y1="65.02" x2="3.31" y2="65.535" width="0" layer="19" extent="1-1"/>
+<wire x1="4.575" y1="64.52" x2="3.045" y2="65.02" width="0" layer="19" extent="1-1"/>
+<wire x1="19.96" y1="53.34" x2="4.575" y2="64.52" width="0" layer="19" extent="1-1"/>
+<wire x1="46.736" y1="46.539" x2="19.96" y2="53.34" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="53.34" x2="46.736" y2="46.539" width="0" layer="19" extent="1-1"/>
+<wire x1="19.96" y1="45.72" x2="19.96" y2="53.34" width="0" layer="19" extent="1-1"/>
+<wire x1="12.4411625" y1="30.300246875" x2="2.54" y2="53.34" width="0" layer="19" extent="1-1"/>
+<wire x1="35.56" y1="24.695" x2="12.4411625" y2="30.300246875" width="0" layer="19" extent="1-16"/>
+<wire x1="38.1" y1="24.695" x2="35.56" y2="24.695" width="0" layer="19" extent="16-16"/>
+<wire x1="16.330246875" y1="24.388834375" x2="38.1" y2="24.695" width="0" layer="19" extent="1-16"/>
+<wire x1="33.02" y1="24.695" x2="35.56" y2="24.695" width="0" layer="19" extent="16-16"/>
+<wire x1="27.94" y1="24.695" x2="33.02" y2="24.695" width="0" layer="19" extent="16-16"/>
+<wire x1="7.590409375" y1="27.471821875" x2="27.94" y2="24.695" width="0" layer="19" extent="1-16"/>
+<wire x1="10.418834375" y1="20.49975" x2="33.02" y2="24.695" width="0" layer="19" extent="1-16"/>
+<wire x1="10.418834375" y1="20.49975" x2="39.37" y2="16.985" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="16.985" x2="39.37" y2="16.985" width="0" layer="19" extent="1-1"/>
+<wire x1="40.96" y1="14.5081" x2="39.37" y2="16.985" width="0" layer="19" extent="1-16"/>
+<wire x1="44.45" y1="16.985" x2="40.96" y2="14.5081" width="0" layer="19" extent="1-16"/>
+<wire x1="46.99" y1="16.985" x2="44.45" y2="16.985" width="0" layer="19" extent="1-1"/>
+<wire x1="46.99" y1="15.945" x2="46.99" y2="16.985" width="0" layer="19" extent="1-16"/>
+<wire x1="45.72" y1="7.563" x2="40.96" y2="14.5081" width="0" layer="19" extent="16-16"/>
+<wire x1="36.83" y1="8.095" x2="40.96" y2="14.5081" width="0" layer="19" extent="1-16"/>
+<wire x1="41.402" y1="53.815" x2="36.83" y2="8.095" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="2.54" x2="41.402" y2="53.815" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="C21" pad="2"/>
@@ -4644,67 +4650,73 @@ design rules under a new name.</description>
 <contactref element="C15" pad="1"/>
 <contactref element="C14" pad="2"/>
 <contactref element="J1" pad="1"/>
-<polygon width="0" layer="16">
-<vertex x="-2.54" y="88.9"/>
-<vertex x="22.86" y="88.9"/>
-<vertex x="22.86" y="0"/>
-<vertex x="-2.54" y="0"/>
+<wire x1="43.21" y1="6.535" x2="43.18" y2="6.565" width="0.1524" layer="1"/>
+<polygon width="0" layer="1">
+<vertex x="0" y="88.9"/>
+<vertex x="25.4" y="88.9"/>
+<vertex x="25.4" y="0"/>
+<vertex x="0" y="0"/>
 </polygon>
 <wire x1="16.78" y1="87.04" x2="18.28" y2="87.04" width="0" layer="19" extent="1-1"/>
+<wire x1="15.945" y1="88.9" x2="16.78" y2="87.04" width="0" layer="19" extent="1-1"/>
 <wire x1="19.73" y1="85.59" x2="18.28" y2="87.04" width="0" layer="19" extent="1-1"/>
 <wire x1="17.78" y1="83.14" x2="19.73" y2="85.59" width="0" layer="19" extent="1-1"/>
-<wire x1="15.26" y1="62.88" x2="17.78" y2="83.14" width="0" layer="19" extent="1-1"/>
-<wire x1="18.43" y1="61.71" x2="15.26" y2="62.88" width="0" layer="19" extent="1-1"/>
-<wire x1="18.43" y1="60.71" x2="18.43" y2="61.71" width="0" layer="19" extent="1-1"/>
-<wire x1="15.26" y1="59.04" x2="18.43" y2="60.71" width="0" layer="19" extent="1-1"/>
-<wire x1="19.96" y1="50.8" x2="15.26" y2="59.04" width="0" layer="19" extent="1-1"/>
-<wire x1="6.35" y1="13.577" x2="8.1788" y2="10.4394" width="0" layer="19" extent="1-1"/>
-<wire x1="2.54" y1="5.08" x2="7.745" y2="3.81" width="0" layer="19" extent="1-1"/>
-<wire x1="11.43" y1="3.81" x2="7.745" y2="3.81" width="0" layer="19" extent="1-1"/>
-<wire x1="12.08" y1="6.535" x2="11.43" y2="3.81" width="0" layer="19" extent="1-1"/>
-<wire x1="12.73" y1="6.535" x2="12.08" y2="6.535" width="0" layer="19" extent="1-1"/>
-<wire x1="15.115" y1="3.81" x2="12.73" y2="6.535" width="0" layer="19" extent="1-1"/>
-<wire x1="16.51" y1="13.577" x2="12.73" y2="6.535" width="0" layer="19" extent="1-1"/>
-<wire x1="10.06528125" y1="20.853303125" x2="6.35" y2="13.577" width="0" layer="19" extent="1-1"/>
-<wire x1="15.97669375" y1="24.03528125" x2="10.06528125" y2="20.853303125" width="0" layer="19" extent="1-1"/>
-<wire x1="13.855375" y1="28.886034375" x2="15.97669375" y2="24.03528125" width="0" layer="19" extent="1-1"/>
-<wire x1="12.794715625" y1="29.94669375" x2="13.855375" y2="28.886034375" width="0" layer="19" extent="1-1"/>
-<wire x1="7.9439625" y1="27.825375" x2="12.794715625" y2="29.94669375" width="0" layer="19" extent="1-1"/>
-<wire x1="4.31" y1="58.925" x2="7.62" y2="50.8" width="0" layer="19" extent="1-1"/>
-<wire x1="3.31" y1="58.925" x2="4.31" y2="58.925" width="0" layer="19" extent="1-1"/>
-<wire x1="4.31" y1="60.455" x2="4.31" y2="58.925" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="60.455" x2="4.31" y2="60.455" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.945" y1="44.45" x2="3.31" y2="58.925" width="0" layer="19" extent="1-1"/>
-<wire x1="-19.755" y1="44.45" x2="-15.945" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-23.565" y1="44.45" x2="-19.755" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.965" y1="44.45" x2="-23.565" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.965" y1="48.26" x2="-25.965" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.155" y1="48.26" x2="-25.965" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.775" y1="48.26" x2="-25.965" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-33.585" y1="48.26" x2="-29.775" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.775" y1="44.45" x2="-25.965" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.965" y1="40.64" x2="-25.965" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-37.395" y1="48.26" x2="-33.585" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-33.585" y1="44.45" x2="-33.585" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-37.395" y1="44.45" x2="-37.395" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="-37.395" y1="40.64" x2="-37.395" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-41.205" y1="44.45" x2="-37.395" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-45.015" y1="44.45" x2="-41.205" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-48.825" y1="44.45" x2="-45.015" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-52.635" y1="44.45" x2="-48.825" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-52.635" y1="40.64" x2="-52.635" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-48.825" y1="40.64" x2="-48.825" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-44.925" y1="48.26" x2="-45.015" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-45.015" y1="40.64" x2="-45.015" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-41.205" y1="40.64" x2="-37.395" y2="40.64" width="0" layer="19" extent="1-1"/>
-<wire x1="-57.855" y1="44.45" x2="-52.635" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-56.445" y1="11.43" x2="-52.635" y2="40.64" width="0" layer="19" extent="1-1"/>
-<wire x1="-57.855" y1="7.62" x2="-56.445" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="12.135" y1="88.9" x2="15.945" y2="88.9" width="0" layer="19" extent="1-1"/>
+<wire x1="17.8" y1="67.96" x2="17.78" y2="83.14" width="0" layer="19" extent="1-1"/>
+<wire x1="20.97" y1="66.79" x2="17.8" y2="67.96" width="0" layer="19" extent="1-1"/>
+<wire x1="20.97" y1="65.79" x2="20.97" y2="66.79" width="0" layer="19" extent="1-1"/>
+<wire x1="17.8" y1="64.12" x2="20.97" y2="65.79" width="0" layer="19" extent="1-1"/>
+<wire x1="19.96" y1="50.8" x2="17.8" y2="64.12" width="0" layer="19" extent="1-1"/>
+<wire x1="19.96" y1="48.26" x2="19.96" y2="50.8" width="0" layer="19" extent="1-1"/>
+<wire x1="19.96" y1="60.96" x2="19.96" y2="48.26" width="0" layer="19" extent="1-1"/>
+<wire x1="46.933" y1="37.338" x2="19.96" y2="60.96" width="0" layer="19" extent="1-1"/>
+<wire x1="42.615" y1="33.274" x2="46.933" y2="37.338" width="0" layer="19" extent="1-1"/>
+<wire x1="42.615" y1="30.988" x2="42.615" y2="33.274" width="0" layer="19" extent="1-1"/>
+<wire x1="7.9439625" y1="27.825375" x2="42.615" y2="30.988" width="0" layer="19" extent="1-1"/>
+<wire x1="12.794715625" y1="29.94669375" x2="7.9439625" y2="27.825375" width="0" layer="19" extent="1-1"/>
+<wire x1="13.855375" y1="28.886034375" x2="12.794715625" y2="29.94669375" width="0" layer="19" extent="1-1"/>
+<wire x1="15.97669375" y1="24.03528125" x2="13.855375" y2="28.886034375" width="0" layer="19" extent="1-1"/>
+<wire x1="10.06528125" y1="20.853303125" x2="15.97669375" y2="24.03528125" width="0" layer="19" extent="1-1"/>
+<wire x1="44.45" y1="48.965" x2="10.06528125" y2="20.853303125" width="0" layer="19" extent="1-1"/>
+<wire x1="46.99" y1="13.577" x2="44.45" y2="48.965" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="13.577" x2="44.45" y2="48.965" width="0" layer="19" extent="1-1"/>
+<wire x1="49.2506" y1="51.6128" x2="36.83" y2="13.577" width="0" layer="19" extent="1-1"/>
+<wire x1="42.56" y1="6.535" x2="49.2506" y2="51.6128" width="0" layer="19" extent="1-1"/>
+<wire x1="43.18" y1="6.565" x2="42.56" y2="6.535" width="0" layer="19" extent="1-1"/>
+<wire x1="41.91" y1="3.81" x2="42.56" y2="6.535" width="0" layer="19" extent="1-1"/>
+<wire x1="45.595" y1="3.81" x2="43.21" y2="6.535" width="0" layer="19" extent="1-1"/>
+<wire x1="38.225" y1="3.81" x2="41.91" y2="3.81" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="5.08" x2="38.225" y2="3.81" width="0" layer="19" extent="1-1"/>
+<wire x1="9.595" y1="68.072" x2="17.8" y2="67.96" width="0" layer="19" extent="1-1"/>
+<wire x1="4.515" y1="67.818" x2="9.595" y2="68.072" width="0" layer="19" extent="1-1"/>
+<wire x1="4.31" y1="65.535" x2="9.595" y2="68.072" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="65.535" x2="4.31" y2="65.535" width="0" layer="19" extent="1-1"/>
+<wire x1="4.31" y1="64.005" x2="4.31" y2="65.535" width="0" layer="19" extent="1-1"/>
+<wire x1="3.31" y1="64.005" x2="4.31" y2="64.005" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="60.96" x2="4.31" y2="64.005" width="0" layer="19" extent="1-1"/>
+<wire x1="4.883" y1="70.358" x2="3.31" y2="64.005" width="0" layer="19" extent="1-1"/>
+<wire x1="4.883" y1="75.184" x2="4.883" y2="70.358" width="0" layer="19" extent="1-1"/>
+<wire x1="1.835" y1="75.184" x2="4.883" y2="75.184" width="0" layer="19" extent="1-1"/>
+<wire x1="3.245" y1="72.644" x2="1.835" y2="75.184" width="0" layer="19" extent="1-1"/>
+<wire x1="46.99" y1="14.535" x2="3.245" y2="72.644" width="0" layer="19" extent="1-1"/>
+<wire x1="45.72" y1="6.153" x2="46.99" y2="14.535" width="0" layer="19" extent="1-1"/>
+<wire x1="46.736" y1="47.949" x2="46.99" y2="14.535" width="0" layer="19" extent="1-1"/>
+<wire x1="46.933" y1="34.544" x2="3.245" y2="72.644" width="0" layer="19" extent="1-1"/>
+<wire x1="15.437" y1="71.374" x2="3.245" y2="72.644" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="26.105" x2="46.933" y2="34.544" width="0" layer="19" extent="1-1"/>
+<wire x1="21.787" y1="71.374" x2="33.02" y2="26.105" width="0" layer="19" extent="1-1"/>
+<wire x1="35.56" y1="26.105" x2="33.02" y2="26.105" width="0" layer="19" extent="1-1"/>
+<wire x1="38.1" y1="26.105" x2="35.56" y2="26.105" width="0" layer="19" extent="1-1"/>
+<wire x1="27.94" y1="26.105" x2="38.1" y2="26.105" width="0" layer="19" extent="1-1"/>
+<wire x1="13.495" y1="83.82" x2="38.1" y2="26.105" width="0" layer="19" extent="1-1"/>
+<wire x1="19.247" y1="71.374" x2="38.1" y2="26.105" width="0" layer="19" extent="1-1"/>
+<wire x1="12.897" y1="71.374" x2="21.787" y2="71.374" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="14.789" x2="27.94" y2="26.105" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="D1" pad="A"/>
 <contactref element="R6" pad="2"/>
-<wire x1="-56.355" y1="48.26" x2="6.35" y2="11.823" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="9.685" x2="36.83" y2="11.823" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="5V">
 <contactref element="J5" pad="VBUS"/>
@@ -4713,77 +4725,77 @@ design rules under a new name.</description>
 <contactref element="C25" pad="2"/>
 <contactref element="C26" pad="2"/>
 <contactref element="J4" pad="3"/>
-<wire x1="-18.345" y1="48.26" x2="-14.535" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="2.54" y1="7.62" x2="-14.535" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="10.13" y1="6.535" x2="2.54" y2="7.62" width="0" layer="19" extent="1-1"/>
-<wire x1="10.48" y1="3.7799" x2="10.13" y2="6.535" width="0" layer="19" extent="1-16"/>
-<wire x1="12.38" y1="3.7799" x2="10.48" y2="3.7799" width="0" layer="19" extent="16-16"/>
+<wire x1="42.86" y1="11.9079" x2="40.96" y2="11.9079" width="0" layer="19" extent="1-1"/>
+<wire x1="42.615" y1="9.652" x2="42.86" y2="11.9079" width="0" layer="19" extent="1-16"/>
+<wire x1="40.61" y1="6.535" x2="42.615" y2="9.652" width="0" layer="19" extent="1-16"/>
+<wire x1="47.695" y1="3.81" x2="40.61" y2="6.535" width="0" layer="19" extent="1-16"/>
+<wire x1="2.54" y1="7.62" x2="40.61" y2="6.535" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="U5" pad="4"/>
 <contactref element="C24" pad="2"/>
-<wire x1="-56.445" y1="44.45" x2="10.48" y2="6.3801" width="0" layer="19" extent="1-16"/>
+<wire x1="36.83" y1="16.199" x2="42.86" y2="14.5081" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$14">
 <contactref element="U5" pad="2"/>
 <contactref element="C26" pad="1"/>
 <contactref element="C25" pad="1"/>
-<wire x1="-19.755" y1="48.26" x2="-15.945" y2="48.26" width="0" layer="19" extent="1-1"/>
-<wire x1="11.43" y1="3.7799" x2="-15.945" y2="48.26" width="0" layer="19" extent="1-16"/>
+<wire x1="46.285" y1="3.81" x2="41.205" y2="9.652" width="0" layer="19" extent="1-1"/>
+<wire x1="41.91" y1="11.9079" x2="41.205" y2="9.652" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="SWDIO">
 <contactref element="U1" pad="34"/>
 <contactref element="J2" pad="3"/>
-<wire x1="15.623140625" y1="23.681728125" x2="7.62" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="15.623140625" y1="23.681728125" x2="2.54" y2="55.88" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SWCLK">
 <contactref element="U1" pad="37"/>
 <contactref element="J2" pad="2"/>
-<wire x1="16.330246875" y1="26.4111625" x2="7.62" y2="48.26" width="0" layer="19" extent="1-1"/>
+<wire x1="16.330246875" y1="26.4111625" x2="2.54" y2="58.42" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OSC32_IN">
 <contactref element="U1" pad="3"/>
 <contactref element="C30" pad="1"/>
 <contactref element="Y4" pad="P$1"/>
-<wire x1="9.711728125" y1="29.593140625" x2="6.35" y2="35.58" width="0" layer="19" extent="1-1"/>
-<wire x1="-34.995" y1="48.26" x2="6.35" y2="35.58" width="0" layer="19" extent="1-1"/>
+<wire x1="9.711728125" y1="29.593140625" x2="41.91" y2="35.58" width="0" layer="19" extent="1-1"/>
+<wire x1="41.205" y1="30.988" x2="41.91" y2="35.58" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OSC32_OUT">
 <contactref element="U1" pad="4"/>
 <contactref element="C31" pad="1"/>
 <contactref element="Y4" pad="P$2"/>
-<wire x1="9.358175" y1="29.2395875" x2="6.35" y2="38.08" width="0" layer="19" extent="1-1"/>
-<wire x1="-38.805" y1="48.26" x2="6.35" y2="38.08" width="0" layer="19" extent="1-1"/>
+<wire x1="9.358175" y1="29.2395875" x2="41.91" y2="38.08" width="0" layer="19" extent="1-1"/>
+<wire x1="41.205" y1="33.274" x2="41.91" y2="38.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OSC_IN">
 <contactref element="U1" pad="5"/>
 <contactref element="R3" pad="2"/>
 <contactref element="Y1" pad="1"/>
 <contactref element="C16" pad="1"/>
-<wire x1="9.004621875" y1="28.886034375" x2="16.39" y2="34.98" width="0" layer="19" extent="1-1"/>
-<wire x1="-31.185" y1="44.45" x2="9.004621875" y2="28.886034375" width="0" layer="19" extent="1-1"/>
-<wire x1="-48.735" y1="48.26" x2="-31.185" y2="44.45" width="0" layer="19" extent="1-1"/>
+<wire x1="9.004621875" y1="28.886034375" x2="51.95" y2="37.52" width="0" layer="19" extent="1-1"/>
+<wire x1="45.523" y1="34.544" x2="9.004621875" y2="28.886034375" width="0" layer="19" extent="1-1"/>
+<wire x1="47.023" y1="39.878" x2="45.523" y2="34.544" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="OSC_OUT">
 <contactref element="U1" pad="6"/>
 <contactref element="R3" pad="1"/>
 <contactref element="Y1" pad="3"/>
 <contactref element="C17" pad="1"/>
-<wire x1="8.65106875" y1="28.53248125" x2="14.09" y2="38.68" width="0" layer="19" extent="1-1"/>
-<wire x1="-34.995" y1="44.45" x2="8.65106875" y2="28.53248125" width="0" layer="19" extent="1-1"/>
-<wire x1="-50.325" y1="48.26" x2="-34.995" y2="44.45" width="0" layer="19" extent="1-1"/>
+<wire x1="8.65106875" y1="28.53248125" x2="49.65" y2="41.22" width="0" layer="19" extent="1-1"/>
+<wire x1="45.523" y1="37.338" x2="8.65106875" y2="28.53248125" width="0" layer="19" extent="1-1"/>
+<wire x1="45.433" y1="39.878" x2="45.523" y2="37.338" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PC13">
 <contactref element="U1" pad="2"/>
 <contactref element="R1" pad="1"/>
 <contactref element="J3" pad="2"/>
 <wire x1="19.96" y1="5.08" x2="10.06528125" y2="29.94669375" width="0" layer="19" extent="1-1"/>
-<wire x1="-42.705" y1="48.26" x2="10.06528125" y2="29.94669375" width="0" layer="19" extent="1-1"/>
+<wire x1="46.99" y1="8.095" x2="10.06528125" y2="29.94669375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="D2" pad="A"/>
 <contactref element="R1" pad="2"/>
-<wire x1="-41.115" y1="48.26" x2="16.51" y2="11.823" width="0" layer="19" extent="1-1"/>
+<wire x1="46.99" y1="9.685" x2="46.99" y2="11.823" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RESET">
 <contactref element="S1" pad="1"/>
@@ -4792,9 +4804,9 @@ design rules under a new name.</description>
 <contactref element="U1" pad="7"/>
 <contactref element="J3" pad="17"/>
 <wire x1="8.297515625" y1="28.178928125" x2="19.96" y2="43.18" width="0" layer="19" extent="1-1"/>
-<wire x1="8.1788" y1="14.9606" x2="8.297515625" y2="28.178928125" width="0" layer="19" extent="1-1"/>
-<wire x1="-54.045" y1="44.45" x2="8.297515625" y2="28.178928125" width="0" layer="19" extent="1-1"/>
-<wire x1="-54.135" y1="48.26" x2="-54.045" y2="44.45" width="0" layer="19" extent="1-1"/>
+<wire x1="44.7294" y1="51.6128" x2="8.297515625" y2="28.178928125" width="0" layer="19" extent="1-1"/>
+<wire x1="44.45" y1="47.555" x2="8.297515625" y2="28.178928125" width="0" layer="19" extent="1-1"/>
+<wire x1="41.402" y1="55.405" x2="44.45" y2="47.555" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBAT">
 <contactref element="U1" pad="1"/>
@@ -4810,7 +4822,7 @@ design rules under a new name.</description>
 <contactref element="U1" pad="11"/>
 <contactref element="J3" pad="6"/>
 <contactref element="U2" pad="12"/>
-<wire x1="6.883303125" y1="26.764715625" x2="18.43" y2="62.21" width="0" layer="19" extent="1-1"/>
+<wire x1="6.883303125" y1="26.764715625" x2="20.97" y2="67.29" width="0" layer="19" extent="1-1"/>
 <wire x1="19.96" y1="15.24" x2="6.883303125" y2="26.764715625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PA2">
@@ -4860,14 +4872,14 @@ design rules under a new name.</description>
 <contactref element="U1" pad="30"/>
 <contactref element="J4" pad="15"/>
 <contactref element="J1" pad="3"/>
-<wire x1="2.54" y1="38.1" x2="15.24" y2="48.26" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="38.1" x2="19.96" y2="55.88" width="0" layer="19" extent="1-1"/>
 <wire x1="14.208928125" y1="22.267515625" x2="2.54" y2="38.1" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PA10">
 <contactref element="U1" pad="31"/>
 <contactref element="J4" pad="14"/>
 <contactref element="J1" pad="2"/>
-<wire x1="2.54" y1="35.56" x2="15.24" y2="45.72" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="35.56" x2="19.96" y2="58.42" width="0" layer="19" extent="1-1"/>
 <wire x1="14.56248125" y1="22.62106875" x2="2.54" y2="35.56" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PA11">
@@ -4878,9 +4890,7 @@ design rules under a new name.</description>
 <signal name="PA12">
 <contactref element="U1" pad="33"/>
 <contactref element="J4" pad="12"/>
-<contactref element="J4" pad="20"/>
-<wire x1="2.54" y1="30.48" x2="2.54" y2="50.8" width="0" layer="19" extent="1-1"/>
-<wire x1="15.2695875" y1="23.328175" x2="2.54" y2="30.48" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="30.48" x2="15.2695875" y2="23.328175" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PA15">
 <contactref element="U1" pad="38"/>
@@ -4924,18 +4934,18 @@ design rules under a new name.</description>
 <contactref element="J4" pad="7"/>
 <contactref element="R7" pad="1"/>
 <contactref element="U6" pad="2"/>
-<wire x1="14.56248125" y1="28.178928125" x2="3.045" y2="59.44" width="0" layer="19" extent="1-1"/>
+<wire x1="14.56248125" y1="28.178928125" x2="3.045" y2="64.52" width="0" layer="19" extent="1-1"/>
 <wire x1="2.54" y1="17.78" x2="14.56248125" y2="28.178928125" width="0" layer="19" extent="1-1"/>
-<wire x1="-54.135" y1="26.67" x2="2.54" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="46.99" y1="18.575" x2="2.54" y2="17.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB7">
 <contactref element="U1" pad="43"/>
 <contactref element="J4" pad="6"/>
 <contactref element="R8" pad="1"/>
 <contactref element="U6" pad="4"/>
-<wire x1="14.208928125" y1="28.53248125" x2="3.81" y2="58.925" width="0" layer="19" extent="1-1"/>
+<wire x1="14.208928125" y1="28.53248125" x2="3.81" y2="64.005" width="0" layer="19" extent="1-1"/>
 <wire x1="2.54" y1="15.24" x2="14.208928125" y2="28.53248125" width="0" layer="19" extent="1-1"/>
-<wire x1="-54.135" y1="22.86" x2="2.54" y2="15.24" width="0" layer="19" extent="1-1"/>
+<wire x1="44.45" y1="18.575" x2="2.54" y2="15.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB8">
 <contactref element="U1" pad="45"/>
@@ -4946,7 +4956,7 @@ design rules under a new name.</description>
 <contactref element="U1" pad="46"/>
 <contactref element="J4" pad="4"/>
 <contactref element="U6" pad="7"/>
-<wire x1="13.14826875" y1="29.593140625" x2="4.575" y2="59.94" width="0" layer="19" extent="1-1"/>
+<wire x1="13.14826875" y1="29.593140625" x2="4.575" y2="65.02" width="0" layer="19" extent="1-1"/>
 <wire x1="2.54" y1="10.16" x2="13.14826875" y2="29.593140625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB10">
@@ -4954,27 +4964,33 @@ design rules under a new name.</description>
 <contactref element="J3" pad="15"/>
 <contactref element="R9" pad="1"/>
 <contactref element="U2" pad="23"/>
-<wire x1="19.96" y1="38.1" x2="14.59" y2="60.21" width="0" layer="19" extent="1-1"/>
+<wire x1="19.96" y1="38.1" x2="17.13" y2="65.29" width="0" layer="19" extent="1-1"/>
 <wire x1="9.358175" y1="21.560409375" x2="19.96" y2="38.1" width="0" layer="19" extent="1-1"/>
-<wire x1="-54.135" y1="19.05" x2="9.358175" y2="21.560409375" width="0" layer="19" extent="1-1"/>
+<wire x1="39.37" y1="18.575" x2="9.358175" y2="21.560409375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB11">
 <contactref element="U1" pad="22"/>
 <contactref element="J3" pad="16"/>
 <contactref element="R10" pad="1"/>
 <contactref element="U2" pad="24"/>
-<wire x1="19.96" y1="40.64" x2="14.59" y2="59.71" width="0" layer="19" extent="1-1"/>
+<wire x1="19.96" y1="40.64" x2="17.13" y2="64.79" width="0" layer="19" extent="1-1"/>
 <wire x1="9.711728125" y1="21.20685625" x2="19.96" y2="40.64" width="0" layer="19" extent="1-1"/>
-<wire x1="-54.135" y1="15.24" x2="9.711728125" y2="21.20685625" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="18.575" x2="9.711728125" y2="21.20685625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB12">
 <contactref element="U1" pad="25"/>
+<contactref element="J4" pad="20"/>
+<wire x1="12.4411625" y1="20.49975" x2="2.54" y2="50.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB13">
 <contactref element="U1" pad="26"/>
+<contactref element="J4" pad="19"/>
+<wire x1="12.794715625" y1="20.853303125" x2="2.54" y2="48.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB14">
 <contactref element="U1" pad="27"/>
+<contactref element="J4" pad="18"/>
+<wire x1="13.14826875" y1="21.20685625" x2="2.54" y2="45.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB15">
 <contactref element="U1" pad="28"/>
@@ -4987,26 +5003,20 @@ design rules under a new name.</description>
 <signal name="PC15">
 <contactref element="J3" pad="4"/>
 </signal>
-<signal name="PA14">
-<contactref element="J4" pad="18"/>
-</signal>
-<signal name="PA13">
-<contactref element="J4" pad="19"/>
-</signal>
 <signal name="N$2">
 <contactref element="U2" pad="10"/>
 <contactref element="C3" pad="1"/>
-<wire x1="-38.805" y1="40.64" x2="18.43" y2="61.21" width="0" layer="19" extent="1-1"/>
+<wire x1="20.377" y1="71.374" x2="20.97" y2="66.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="U2" pad="20"/>
 <contactref element="C6" pad="1"/>
-<wire x1="-27.375" y1="40.64" x2="14.59" y2="61.71" width="0" layer="19" extent="1-1"/>
+<wire x1="14.027" y1="71.374" x2="17.13" y2="66.79" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="EP">
 <contactref element="U2" pad="25"/>
 <contactref element="U4" pad="21"/>
-<wire x1="16.51" y1="60.96" x2="17.78" y2="85.09" width="0" layer="19" extent="1-1"/>
+<wire x1="19.05" y1="66.04" x2="17.78" y2="85.09" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="C8" pad="1"/>
@@ -5014,8 +5024,8 @@ design rules under a new name.</description>
 <contactref element="R4" pad="2"/>
 <contactref element="Y3" pad="1"/>
 <wire x1="4.5" y1="83.94" x2="18.28" y2="83.14" width="0" layer="19" extent="1-1"/>
-<wire x1="-54.045" y1="40.64" x2="4.5" y2="83.94" width="0" layer="19" extent="1-1"/>
-<wire x1="-52.545" y1="30.48" x2="-54.045" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="10.725" y1="88.9" x2="4.5" y2="83.94" width="0" layer="19" extent="1-1"/>
+<wire x1="8.415" y1="88.9" x2="10.725" y2="88.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$8">
 <contactref element="C7" pad="1"/>
@@ -5023,53 +5033,53 @@ design rules under a new name.</description>
 <contactref element="R4" pad="1"/>
 <contactref element="Y3" pad="3"/>
 <wire x1="8.2" y1="86.24" x2="18.78" y2="83.14" width="0" layer="19" extent="1-1"/>
-<wire x1="-50.235" y1="40.64" x2="8.2" y2="86.24" width="0" layer="19" extent="1-1"/>
-<wire x1="-54.135" y1="30.48" x2="-50.235" y2="40.64" width="0" layer="19" extent="1-1"/>
+<wire x1="14.535" y1="88.9" x2="8.2" y2="86.24" width="0" layer="19" extent="1-1"/>
+<wire x1="6.825" y1="88.9" x2="14.535" y2="88.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="U4" pad="16"/>
 <contactref element="R2" pad="1"/>
-<wire x1="-46.515" y1="48.26" x2="18.78" y2="87.04" width="0" layer="19" extent="1-1"/>
+<wire x1="11.905" y1="83.82" x2="18.78" y2="87.04" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
 <contactref element="C9" pad="2"/>
 <contactref element="C10" pad="2"/>
 <contactref element="U$4" pad="FEED"/>
-<wire x1="-14.535" y1="44.45" x2="11.43" y2="91.948" width="0" layer="19" extent="1-1"/>
-<wire x1="-56.445" y1="40.64" x2="-14.535" y2="44.45" width="0" layer="19" extent="1-1"/>
+<wire x1="6.293" y1="70.358" x2="11.43" y2="91.948" width="0" layer="19" extent="1-1"/>
+<wire x1="6.293" y1="72.644" x2="6.293" y2="70.358" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="L3" pad="2"/>
 <contactref element="C9" pad="1"/>
-<wire x1="-57.855" y1="40.64" x2="-42.28" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="4.883" y1="72.644" x2="18.68" y2="77.47" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VDD_PA">
 <contactref element="U4" pad="11"/>
 <contactref element="L1" pad="2"/>
 <contactref element="C11" pad="2"/>
 <contactref element="C12" pad="2"/>
-<wire x1="-18.345" y1="44.45" x2="19.73" y2="84.09" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.155" y1="44.45" x2="-18.345" y2="44.45" width="0" layer="19" extent="1-1"/>
-<wire x1="-27.04" y1="19.05" x2="-22.155" y2="44.45" width="0" layer="19" extent="1-1"/>
+<wire x1="6.293" y1="75.184" x2="19.73" y2="84.09" width="0" layer="19" extent="1-1"/>
+<wire x1="3.245" y1="75.184" x2="6.293" y2="75.184" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="79.64" x2="3.245" y2="75.184" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 <contactref element="U4" pad="19"/>
 <contactref element="C13" pad="1"/>
-<wire x1="-27.375" y1="44.45" x2="17.28" y2="87.04" width="0" layer="19" extent="1-1"/>
+<wire x1="1.835" y1="72.644" x2="17.28" y2="87.04" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ANT2">
 <contactref element="U4" pad="13"/>
 <contactref element="L2" pad="2"/>
 <contactref element="L3" pad="1"/>
-<wire x1="-34.66" y1="19.05" x2="19.73" y2="85.09" width="0" layer="19" extent="1-1"/>
-<wire x1="-44.08" y1="19.05" x2="-34.66" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="11.43" y1="79.64" x2="19.73" y2="85.09" width="0" layer="19" extent="1-1"/>
+<wire x1="16.88" y1="77.47" x2="11.43" y2="79.64" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ANT1">
 <contactref element="U4" pad="12"/>
 <contactref element="L1" pad="1"/>
 <contactref element="L2" pad="1"/>
-<wire x1="-28.84" y1="19.05" x2="19.73" y2="84.59" width="0" layer="19" extent="1-1"/>
-<wire x1="-36.46" y1="19.05" x2="-28.84" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="77.84" x2="19.73" y2="84.59" width="0" layer="19" extent="1-1"/>
+<wire x1="11.43" y1="77.84" x2="3.81" y2="77.84" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

@@ -966,23 +966,23 @@ design rules under a new name.</description>
 <attribute name="PACKAGE" value="SMD 0603" x="83.82" y="81.28" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="33.02" y="53.34" size="0.5" layer="25" ratio="10" rot="R90"/>
 </element>
-<element name="C4" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="22uF - 0603" x="30.48" y="34.29" smashed="yes" rot="R90">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="82.55" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="311-1049-2-ND" x="82.55" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="82.55" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="CC0603CRNPO9BN1R0" x="82.55" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="29.718" y="33.02" size="0.5" layer="25" ratio="10" rot="R90"/>
-<attribute name="PACKAGE" value="SMD 0603" x="82.55" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="31.75" y="33.02" size="0.5" layer="25" ratio="10" rot="R90"/>
+<element name="C4" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="22uF - 0603" x="31.877" y="32.258" smashed="yes" rot="R90">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="83.947" y="64.008" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="311-1049-2-ND" x="83.947" y="64.008" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="83.947" y="64.008" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="CC0603CRNPO9BN1R0" x="83.947" y="64.008" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="31.115" y="30.988" size="0.5" layer="25" ratio="10" rot="R90"/>
+<attribute name="PACKAGE" value="SMD 0603" x="83.947" y="64.008" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="33.147" y="30.988" size="0.5" layer="25" ratio="10" rot="R90"/>
 </element>
-<element name="C5" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="10nF - 0603" x="30.48" y="39.37" smashed="yes" rot="R90">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="82.55" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="311-1049-2-ND" x="82.55" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="82.55" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="CC0603CRNPO9BN1R0" x="82.55" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="29.718" y="38.1" size="0.5" layer="25" ratio="10" rot="R90"/>
-<attribute name="PACKAGE" value="SMD 0603" x="82.55" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="31.75" y="38.1" size="0.5" layer="25" ratio="10" rot="R90"/>
+<element name="C5" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="10nF - 0603" x="31.75" y="39.37" smashed="yes" rot="R90">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="83.82" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="311-1049-2-ND" x="83.82" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="83.82" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="CC0603CRNPO9BN1R0" x="83.82" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="30.988" y="38.1" size="0.5" layer="25" ratio="10" rot="R90"/>
+<attribute name="PACKAGE" value="SMD 0603" x="83.82" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="33.02" y="38.1" size="0.5" layer="25" ratio="10" rot="R90"/>
 </element>
 <element name="C6" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="22uF - 0603" x="31.75" y="47.498" smashed="yes" rot="R90">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="83.82" y="89.408" size="1.778" layer="27" rot="R90" display="off"/>
@@ -993,23 +993,23 @@ design rules under a new name.</description>
 <attribute name="PACKAGE" value="SMD 0603" x="83.82" y="89.408" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="33.02" y="46.228" size="0.5" layer="25" ratio="10" rot="R90"/>
 </element>
-<element name="C7" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="10nF - 0603" x="33.02" y="25.4" smashed="yes" rot="R90">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="85.09" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="311-1049-2-ND" x="85.09" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="85.09" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="CC0603CRNPO9BN1R0" x="85.09" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="32.258" y="24.13" size="0.5" layer="25" ratio="10" rot="R90"/>
-<attribute name="PACKAGE" value="SMD 0603" x="85.09" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="34.29" y="24.13" size="0.5" layer="25" ratio="10" rot="R90"/>
-</element>
-<element name="C8" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="22uF - 0603" x="33.02" y="17.78" smashed="yes" rot="R90">
+<element name="C7" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="10nF - 0603" x="33.02" y="22.86" smashed="yes" rot="R90">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="85.09" y="69.85" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIGIKEY_PART_NUMBER" value="311-1049-2-ND" x="85.09" y="69.85" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER" value="Yageo" x="85.09" y="69.85" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="CC0603CRNPO9BN1R0" x="85.09" y="69.85" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="32.258" y="16.51" size="0.5" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="32.258" y="21.59" size="0.5" layer="25" ratio="10" rot="R90"/>
 <attribute name="PACKAGE" value="SMD 0603" x="85.09" y="69.85" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="34.29" y="16.51" size="0.5" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="34.29" y="21.59" size="0.5" layer="25" ratio="10" rot="R90"/>
+</element>
+<element name="C8" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="22uF - 0603" x="33.02" y="15.24" smashed="yes" rot="R90">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="85.09" y="67.31" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="311-1049-2-ND" x="85.09" y="67.31" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="85.09" y="67.31" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="CC0603CRNPO9BN1R0" x="85.09" y="67.31" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="32.258" y="13.97" size="0.5" layer="25" ratio="10" rot="R90"/>
+<attribute name="PACKAGE" value="SMD 0603" x="85.09" y="67.31" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="34.29" y="13.97" size="0.5" layer="25" ratio="10" rot="R90"/>
 </element>
 <element name="D1" library="SS34" package="DIOM7959X265N" value="SS34" x="40.64" y="67.183" smashed="yes" rot="R90">
 <attribute name="AVAILABILITY" value="Good" x="48.26" y="84.963" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1253,8 +1253,8 @@ design rules under a new name.</description>
 <via x="8.89" y="69.85" extent="1-16" drill="0.35"/>
 <wire x1="11.85" y1="58.42" x2="8.89" y2="58.42" width="0.1524" layer="1"/>
 <via x="8.89" y="58.42" extent="1-16" drill="0.35"/>
-<wire x1="33.02" y1="18.485" x2="33.02" y2="20.32" width="0.1524" layer="1"/>
-<via x="33.02" y="20.32" extent="1-16" drill="0.35"/>
+<wire x1="33.02" y1="15.945" x2="33.02" y2="17.78" width="0.1524" layer="1"/>
+<via x="33.02" y="17.78" extent="1-16" drill="0.35"/>
 <wire x1="18.669" y1="29.464" x2="18.923" y2="29.21" width="0.1524" layer="1"/>
 <wire x1="18.923" y1="29.21" x2="21.59" y2="29.21" width="0.1524" layer="1"/>
 <via x="21.59" y="29.21" extent="1-16" drill="0.35"/>
@@ -1263,25 +1263,31 @@ design rules under a new name.</description>
 <wire x1="31.75" y1="64.205" x2="31.75" y2="66.04" width="0.1524" layer="1"/>
 <via x="31.75" y="66.04" extent="1-16" drill="0.35"/>
 <wire x1="31.48" y1="8.78" x2="31.75" y2="9.05" width="0.1524" layer="1"/>
-<wire x1="31.75" y1="9.05" x2="31.75" y2="13.97" width="0.1524" layer="1"/>
-<via x="31.75" y="13.97" extent="1-16" drill="0.35"/>
 <via x="21.59" y="59.944" extent="1-16" drill="0.35"/>
 <wire x1="18.669" y1="59.944" x2="21.59" y2="59.944" width="0.1524" layer="1"/>
+<wire x1="31.75" y1="9.05" x2="37.94" y2="9.05" width="0.1524" layer="1"/>
+<wire x1="37.94" y1="9.05" x2="38.1" y2="8.89" width="0.1524" layer="1"/>
+<via x="38.1" y="8.89" extent="1-16" drill="0.35"/>
+<wire x1="31.877" y1="32.963" x2="31.75" y2="33.09" width="0.1524" layer="1"/>
+<wire x1="31.75" y1="33.09" x2="31.75" y2="35.56" width="0.1524" layer="1"/>
+<via x="31.75" y="35.56" extent="1-16" drill="0.35"/>
+<wire x1="31.75" y1="48.203" x2="31.75" y2="50.8" width="0.1524" layer="1"/>
+<via x="31.75" y="50.8" extent="1-16" drill="0.35"/>
 <wire x1="19.05" y1="83.82" x2="29.21" y2="83.82" width="0" layer="19" extent="1-1"/>
 <wire x1="18.669" y1="71.374" x2="19.05" y2="83.82" width="0" layer="19" extent="1-1"/>
 <wire x1="11.85" y1="69.85" x2="18.669" y2="71.374" width="0" layer="19" extent="1-1"/>
 <wire x1="18.669" y1="59.944" x2="18.669" y2="71.374" width="0" layer="19" extent="1-1"/>
 <wire x1="11.85" y1="58.42" x2="18.669" y2="59.944" width="0" layer="19" extent="1-1"/>
 <wire x1="6.35" y1="49.53" x2="8.89" y2="58.42" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="48.203" x2="21.59" y2="59.944" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="66.04" x2="21.0185" y2="71.4375" width="0" layer="19" extent="1-1"/>
-<wire x1="30.48" y1="34.995" x2="31.75" y2="48.203" width="0" layer="19" extent="1-1"/>
-<wire x1="21.59" y1="29.21" x2="30.48" y2="34.995" width="0" layer="19" extent="1-1"/>
+<wire x1="31.75" y1="64.205" x2="21.59" y2="59.944" width="0" layer="19" extent="1-1"/>
+<wire x1="31.75" y1="50.8" x2="31.75" y2="64.205" width="0" layer="19" extent="1-1"/>
+<wire x1="31.75" y1="35.56" x2="31.75" y2="48.203" width="0" layer="19" extent="1-1"/>
+<wire x1="21.59" y1="29.21" x2="31.877" y2="32.963" width="0" layer="19" extent="1-1"/>
 <wire x1="11.85" y1="27.94" x2="18.669" y2="29.464" width="0" layer="19" extent="1-1"/>
 <wire x1="21.082" y1="16.764" x2="21.59" y2="29.21" width="0" layer="19" extent="1-1"/>
 <wire x1="11.85" y1="15.24" x2="18.669" y2="16.764" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="13.97" x2="21.082" y2="16.764" width="0" layer="19" extent="1-1"/>
-<wire x1="33.02" y1="18.485" x2="31.75" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="15.945" x2="21.082" y2="16.764" width="0" layer="19" extent="1-1"/>
+<wire x1="31.48" y1="8.78" x2="33.02" y2="15.945" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="Q1" pad="3"/>
@@ -1292,12 +1298,15 @@ design rules under a new name.</description>
 <wire x1="17.78" y1="73.406" x2="25.146" y2="73.406" width="0.1524" layer="1"/>
 <wire x1="25.146" y1="73.406" x2="25.4" y2="73.66" width="0.1524" layer="1"/>
 <wire x1="52.044" y1="69.368" x2="52.07" y2="69.342" width="0.1524" layer="1"/>
-<wire x1="40.64" y1="70.638" x2="41.122" y2="71.12" width="0.1524" layer="1"/>
+<wire x1="40.64" y1="70.638" x2="40.881" y2="70.879" width="0.1524" layer="1"/>
+<wire x1="40.881" y1="70.879" x2="41.122" y2="71.12" width="0.1524" layer="1"/>
 <wire x1="41.122" y1="71.12" x2="52.07" y2="71.12" width="0.1524" layer="1"/>
 <wire x1="52.07" y1="71.12" x2="52.07" y2="69.394" width="0.1524" layer="1"/>
 <wire x1="52.07" y1="69.394" x2="52.044" y2="69.368" width="0.1524" layer="1"/>
-<wire x1="25.4" y1="73.66" x2="40.64" y2="70.638" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="71.825" x2="40.64" y2="70.638" width="0" layer="19" extent="1-1"/>
+<wire x1="31.75" y1="71.825" x2="39.935" y2="71.825" width="0.1524" layer="1"/>
+<wire x1="39.935" y1="71.825" x2="40.881" y2="70.879" width="0.1524" layer="1"/>
+<wire x1="25.4" y1="73.66" x2="29.915" y2="73.66" width="0.1524" layer="1"/>
+<wire x1="29.915" y1="73.66" x2="31.75" y2="71.825" width="0.1524" layer="1"/>
 </signal>
 <signal name="VIN">
 <contactref element="C1" pad="1"/>
@@ -1348,8 +1357,11 @@ design rules under a new name.</description>
 <wire x1="40.64" y1="54.636" x2="52.044" y2="54.636" width="0.1524" layer="1"/>
 <wire x1="52.044" y1="54.636" x2="52.07" y2="54.61" width="0.1524" layer="1"/>
 <wire x1="52.07" y1="54.61" x2="52.07" y2="53.34" width="0.1524" layer="1"/>
-<wire x1="31.75" y1="55.315" x2="40.64" y2="54.636" width="0" layer="19" extent="1-1"/>
-<wire x1="25.4" y1="62.23" x2="40.64" y2="54.636" width="0" layer="19" extent="1-1"/>
+<wire x1="31.75" y1="55.315" x2="39.961" y2="55.315" width="0.1524" layer="1"/>
+<wire x1="39.961" y1="55.315" x2="40.64" y2="54.636" width="0.1524" layer="1"/>
+<wire x1="25.4" y1="62.23" x2="25.4" y2="57.15" width="0.1524" layer="1"/>
+<wire x1="27.235" y1="55.315" x2="31.75" y2="55.315" width="0.1524" layer="1"/>
+<wire x1="25.4" y1="57.15" x2="27.235" y2="55.315" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="R5" pad="2"/>
@@ -1373,8 +1385,11 @@ design rules under a new name.</description>
 <wire x1="40.767" y1="39.269" x2="40.868" y2="39.37" width="0.1524" layer="1"/>
 <wire x1="40.868" y1="39.37" x2="52.07" y2="39.37" width="0.1524" layer="1"/>
 <wire x1="52.07" y1="39.37" x2="52.07" y2="38.1" width="0.1524" layer="1"/>
-<wire x1="30.48" y1="40.075" x2="40.666" y2="39.37" width="0" layer="19" extent="1-1"/>
-<wire x1="24.13" y1="31.75" x2="30.48" y2="40.075" width="0" layer="19" extent="1-1"/>
+<wire x1="31.75" y1="40.075" x2="40.163" y2="40.075" width="0.1524" layer="1"/>
+<wire x1="40.163" y1="40.075" x2="40.868" y2="39.37" width="0.1524" layer="1"/>
+<wire x1="24.13" y1="31.75" x2="24.13" y2="38.1" width="0.1524" layer="1"/>
+<wire x1="26.105" y1="40.075" x2="31.75" y2="40.075" width="0.1524" layer="1"/>
+<wire x1="24.13" y1="38.1" x2="26.105" y2="40.075" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R7" pad="2"/>
@@ -1393,7 +1408,7 @@ design rules under a new name.</description>
 <contactref element="J16" pad="1"/>
 <wire x1="17.78" y1="18.796" x2="23.876" y2="18.796" width="0.1524" layer="1"/>
 <wire x1="23.876" y1="18.796" x2="24.13" y2="19.05" width="0.1524" layer="1"/>
-<wire x1="33.077" y1="26.162" x2="33.02" y2="26.105" width="0.1524" layer="1"/>
+<wire x1="33.02" y1="23.565" x2="33.077" y2="23.622" width="0.1524" layer="1"/>
 <wire x1="40.7165" y1="68.6565" x2="40.793" y2="68.58" width="0.1524" layer="1"/>
 <wire x1="40.64" y1="23.013" x2="40.793" y2="22.86" width="0.1524" layer="1"/>
 <wire x1="40.793" y1="22.86" x2="52.07" y2="22.86" width="0.1524" layer="1"/>
@@ -1402,7 +1417,8 @@ design rules under a new name.</description>
 <wire x1="35.56" y1="19.05" x2="35.56" y2="22.86" width="0.1524" layer="16"/>
 <via x="35.56" y="22.86" extent="1-16" drill="0.35"/>
 <wire x1="35.56" y1="22.86" x2="40.793" y2="22.86" width="0.1524" layer="1"/>
-<wire x1="33.077" y1="26.162" x2="40.7165" y2="68.6565" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="23.565" x2="34.855" y2="23.565" width="0.1524" layer="1"/>
+<wire x1="34.855" y1="23.565" x2="35.56" y2="22.86" width="0.1524" layer="1"/>
 <wire x1="40.64" y1="23.013" x2="40.793" y2="68.58" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="M2_CTRL_IN">

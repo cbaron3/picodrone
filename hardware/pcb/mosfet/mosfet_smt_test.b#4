@@ -939,32 +939,32 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="10nF - 0603" x="34.29" y="73.66" smashed="yes" rot="R90">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="86.36" y="90.17" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="311-1049-2-ND" x="86.36" y="90.17" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="86.36" y="90.17" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="CC0603CRNPO9BN1R0" x="86.36" y="90.17" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="33.528" y="72.39" size="0.5" layer="25" ratio="10" rot="R90"/>
-<attribute name="PACKAGE" value="SMD 0603" x="86.36" y="90.17" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="35.56" y="72.39" size="0.5" layer="25" ratio="10" rot="R90"/>
+<element name="C1" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="10nF - 0603" x="31.75" y="71.12" smashed="yes" rot="R90">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="83.82" y="87.63" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="311-1049-2-ND" x="83.82" y="87.63" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="83.82" y="87.63" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="CC0603CRNPO9BN1R0" x="83.82" y="87.63" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="30.988" y="69.85" size="0.5" layer="25" ratio="10" rot="R90"/>
+<attribute name="PACKAGE" value="SMD 0603" x="83.82" y="87.63" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="33.02" y="69.85" size="0.5" layer="25" ratio="10" rot="R90"/>
 </element>
-<element name="C2" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="22uF - 0603" x="34.29" y="66.04" smashed="yes" rot="R90">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="86.36" y="87.63" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="311-1049-2-ND" x="86.36" y="87.63" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="86.36" y="87.63" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="CC0603CRNPO9BN1R0" x="86.36" y="87.63" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="33.528" y="64.77" size="0.5" layer="25" ratio="10" rot="R90"/>
-<attribute name="PACKAGE" value="SMD 0603" x="86.36" y="87.63" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="35.56" y="64.77" size="0.5" layer="25" ratio="10" rot="R90"/>
+<element name="C2" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="22uF - 0603" x="31.75" y="63.5" smashed="yes" rot="R90">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="83.82" y="85.09" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="311-1049-2-ND" x="83.82" y="85.09" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="83.82" y="85.09" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="CC0603CRNPO9BN1R0" x="83.82" y="85.09" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="30.988" y="62.23" size="0.5" layer="25" ratio="10" rot="R90"/>
+<attribute name="PACKAGE" value="SMD 0603" x="83.82" y="85.09" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="33.02" y="62.23" size="0.5" layer="25" ratio="10" rot="R90"/>
 </element>
-<element name="C3" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="10nF - 0603" x="34.29" y="57.15" smashed="yes" rot="R90">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="86.36" y="83.82" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="311-1049-2-ND" x="86.36" y="83.82" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="86.36" y="83.82" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="CC0603CRNPO9BN1R0" x="86.36" y="83.82" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="33.528" y="55.88" size="0.5" layer="25" ratio="10" rot="R90"/>
-<attribute name="PACKAGE" value="SMD 0603" x="86.36" y="83.82" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="35.56" y="55.88" size="0.5" layer="25" ratio="10" rot="R90"/>
+<element name="C3" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="10nF - 0603" x="31.75" y="54.61" smashed="yes" rot="R90">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="83.82" y="81.28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="311-1049-2-ND" x="83.82" y="81.28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="83.82" y="81.28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="CC0603CRNPO9BN1R0" x="83.82" y="81.28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="30.988" y="53.34" size="0.5" layer="25" ratio="10" rot="R90"/>
+<attribute name="PACKAGE" value="SMD 0603" x="83.82" y="81.28" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="33.02" y="53.34" size="0.5" layer="25" ratio="10" rot="R90"/>
 </element>
 <element name="C4" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="22uF - 0603" x="30.48" y="34.29" smashed="yes" rot="R90">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="82.55" y="66.04" size="1.778" layer="27" rot="R90" display="off"/>
@@ -984,14 +984,14 @@ design rules under a new name.</description>
 <attribute name="PACKAGE" value="SMD 0603" x="82.55" y="76.2" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="31.75" y="38.1" size="0.5" layer="25" ratio="10" rot="R90"/>
 </element>
-<element name="C6" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="22uF - 0603" x="30.48" y="49.53" smashed="yes" rot="R90">
-<attribute name="CREATED_BY" value="PCBLayout.com" x="82.55" y="91.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIGIKEY_PART_NUMBER" value="311-1049-2-ND" x="82.55" y="91.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER" value="Yageo" x="82.55" y="91.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="CC0603CRNPO9BN1R0" x="82.55" y="91.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="29.718" y="48.26" size="0.5" layer="25" ratio="10" rot="R90"/>
-<attribute name="PACKAGE" value="SMD 0603" x="82.55" y="91.44" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="31.75" y="48.26" size="0.5" layer="25" ratio="10" rot="R90"/>
+<element name="C6" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="22uF - 0603" x="31.75" y="47.498" smashed="yes" rot="R90">
+<attribute name="CREATED_BY" value="PCBLayout.com" x="83.82" y="89.408" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIGIKEY_PART_NUMBER" value="311-1049-2-ND" x="83.82" y="89.408" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER" value="Yageo" x="83.82" y="89.408" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="CC0603CRNPO9BN1R0" x="83.82" y="89.408" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="30.988" y="46.228" size="0.5" layer="25" ratio="10" rot="R90"/>
+<attribute name="PACKAGE" value="SMD 0603" x="83.82" y="89.408" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="33.02" y="46.228" size="0.5" layer="25" ratio="10" rot="R90"/>
 </element>
 <element name="C7" library="Resistor_Capacitor" library_urn="urn:adsk.eagle:library:15122775" package="CAP_0603" package3d_urn="urn:adsk.eagle:package:10872909/4" value="10nF - 0603" x="33.02" y="25.4" smashed="yes" rot="R90">
 <attribute name="CREATED_BY" value="PCBLayout.com" x="85.09" y="72.39" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1260,8 +1260,8 @@ design rules under a new name.</description>
 <via x="21.59" y="29.21" extent="1-16" drill="0.35"/>
 <wire x1="11.85" y1="27.94" x2="8.89" y2="27.94" width="0.1524" layer="1"/>
 <via x="8.89" y="27.94" extent="1-16" drill="0.35"/>
-<wire x1="34.29" y1="66.745" x2="34.29" y2="68.58" width="0.1524" layer="1"/>
-<via x="34.29" y="68.58" extent="1-16" drill="0.35"/>
+<wire x1="31.75" y1="64.205" x2="31.75" y2="66.04" width="0.1524" layer="1"/>
+<via x="31.75" y="66.04" extent="1-16" drill="0.35"/>
 <wire x1="31.48" y1="8.78" x2="31.75" y2="9.05" width="0.1524" layer="1"/>
 <wire x1="31.75" y1="9.05" x2="31.75" y2="13.97" width="0.1524" layer="1"/>
 <via x="31.75" y="13.97" extent="1-16" drill="0.35"/>
@@ -1273,9 +1273,9 @@ design rules under a new name.</description>
 <wire x1="18.669" y1="59.944" x2="18.669" y2="71.374" width="0" layer="19" extent="1-1"/>
 <wire x1="11.85" y1="58.42" x2="18.669" y2="59.944" width="0" layer="19" extent="1-1"/>
 <wire x1="6.35" y1="49.53" x2="8.89" y2="58.42" width="0" layer="19" extent="1-1"/>
-<wire x1="30.48" y1="50.235" x2="21.59" y2="59.944" width="0" layer="19" extent="1-1"/>
-<wire x1="34.29" y1="68.58" x2="21.0185" y2="71.4375" width="0" layer="19" extent="1-1"/>
-<wire x1="30.48" y1="34.995" x2="30.48" y2="50.235" width="0" layer="19" extent="1-1"/>
+<wire x1="31.75" y1="48.203" x2="21.59" y2="59.944" width="0" layer="19" extent="1-1"/>
+<wire x1="31.75" y1="66.04" x2="21.0185" y2="71.4375" width="0" layer="19" extent="1-1"/>
+<wire x1="30.48" y1="34.995" x2="31.75" y2="48.203" width="0" layer="19" extent="1-1"/>
 <wire x1="21.59" y1="29.21" x2="30.48" y2="34.995" width="0" layer="19" extent="1-1"/>
 <wire x1="11.85" y1="27.94" x2="18.669" y2="29.464" width="0" layer="19" extent="1-1"/>
 <wire x1="21.082" y1="16.764" x2="21.59" y2="29.21" width="0" layer="19" extent="1-1"/>
@@ -1297,7 +1297,7 @@ design rules under a new name.</description>
 <wire x1="52.07" y1="71.12" x2="52.07" y2="69.394" width="0.1524" layer="1"/>
 <wire x1="52.07" y1="69.394" x2="52.044" y2="69.368" width="0.1524" layer="1"/>
 <wire x1="25.4" y1="73.66" x2="40.64" y2="70.638" width="0" layer="19" extent="1-1"/>
-<wire x1="34.29" y1="74.365" x2="40.64" y2="70.638" width="0" layer="19" extent="1-1"/>
+<wire x1="31.75" y1="71.825" x2="40.64" y2="70.638" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VIN">
 <contactref element="C1" pad="1"/>
@@ -1348,7 +1348,7 @@ design rules under a new name.</description>
 <wire x1="40.64" y1="54.636" x2="52.044" y2="54.636" width="0.1524" layer="1"/>
 <wire x1="52.044" y1="54.636" x2="52.07" y2="54.61" width="0.1524" layer="1"/>
 <wire x1="52.07" y1="54.61" x2="52.07" y2="53.34" width="0.1524" layer="1"/>
-<wire x1="34.29" y1="57.855" x2="40.64" y2="54.636" width="0" layer="19" extent="1-1"/>
+<wire x1="31.75" y1="55.315" x2="40.64" y2="54.636" width="0" layer="19" extent="1-1"/>
 <wire x1="25.4" y1="62.23" x2="40.64" y2="54.636" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
@@ -1369,14 +1369,12 @@ design rules under a new name.</description>
 <wire x1="17.78" y1="31.496" x2="18.034" y2="31.75" width="0.1524" layer="1"/>
 <wire x1="18.034" y1="31.75" x2="24.13" y2="31.75" width="0.1524" layer="1"/>
 <wire x1="51.969" y1="37.999" x2="52.07" y2="38.1" width="0.1524" layer="1"/>
-<via x="35.56" y="53.34" extent="1-16" drill="0.35"/>
 <wire x1="40.666" y1="39.37" x2="40.767" y2="39.269" width="0.1524" layer="1"/>
 <wire x1="40.767" y1="39.269" x2="40.868" y2="39.37" width="0.1524" layer="1"/>
 <wire x1="40.868" y1="39.37" x2="52.07" y2="39.37" width="0.1524" layer="1"/>
 <wire x1="52.07" y1="39.37" x2="52.07" y2="38.1" width="0.1524" layer="1"/>
-<wire x1="30.48" y1="40.075" x2="35.56" y2="53.34" width="0" layer="19" extent="1-1"/>
-<wire x1="40.666" y1="39.37" x2="35.56" y2="53.34" width="0" layer="19" extent="1-1"/>
-<wire x1="24.13" y1="31.75" x2="40.666" y2="39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="30.48" y1="40.075" x2="40.666" y2="39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="24.13" y1="31.75" x2="30.48" y2="40.075" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$7">
 <contactref element="R7" pad="2"/>
