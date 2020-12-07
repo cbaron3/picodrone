@@ -92,6 +92,10 @@ SECTIONS
     } >RAM
     /* No need for data source because will be initialized to 0 */
 
+    __exidx_start = .;
+    .ARM.exidx   : { *(.ARM.exidx* .gnu.linkonce.armexidx.*) } >RAM
+    __exidx_end = .;
+
     /* Check that enough RAM is left */
     ._user_heap_stack :
     {

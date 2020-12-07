@@ -3,6 +3,7 @@
 
 #include "FreeRTOS.h"
 #include "task.h"
+
 namespace picodrone
 {
 
@@ -15,15 +16,15 @@ namespace task
     class Base {
         public:
 
-            Base(char const* name, unsigned portBASE_TYPE priority, 
+            Base(unsigned portBASE_TYPE priority, 
                       unsigned portSHORT stackDepth, portTickType frequency) : xFrequency(frequency) {
-                xTaskCreate(&TaskImpl, (char*)name, stackDepth, this, priority, &_handle);
+                          
+                xTaskCreate(&TaskImpl, "Test", stackDepth, this, priority, NULL);
             }
 
-            // xTaskHandle GetHandle(void) {
-            //     return _handle;
-            // }
-            xTaskHandle GetHandle(void);
+            xTaskHandle GetHandle(void) {
+                return _handle;
+            }
 
             portTickType GetFrequency() {
                 return xFrequency;
@@ -33,23 +34,12 @@ namespace task
             virtual void Loop() = 0;
             
 
-            static void TaskImpl(void *pvParams) {
-                static_cast<Base *>(pvParams)->Setup();
-
-                portTickType xLastWakeTime;
-                xLastWakeTime = xTaskGetTickCount();
-
-                for( ;; )
-                {
-                    static_cast<Base *>(pvParams)->Loop();
-                    vTaskDelayUntil(&xLastWakeTime, static_cast<Base *>(pvParams)->GetFrequency());
-                }                
-            }
+            static void TaskImpl(void *pvParams);
 
         protected:
             xTaskHandle _handle;
 
-            const portTickType xFrequency;
+            portTickType xFrequency;
     };
 
     // For I2C style things, can create a base class that I can pass into drivers. 

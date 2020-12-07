@@ -8,8 +8,23 @@
 namespace picodrone
 {
 
+// class I2C1 {
+// public:
+//     static ErrC_t init(void) {
+
+//     }
+// private:
+//     I2C_HandleTypeDef m_I2C1;
+//     GPIO_InitTypeDef  GPIO_InitStruct;
+// }
+
+
 namespace i2c
 {
+
+
+    
+
     I2C_HandleTypeDef m_I2C1;
     I2C_HandleTypeDef m_I2C2;
 
