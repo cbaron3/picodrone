@@ -6,9 +6,13 @@ project(common)
 
 add_library(common STATIC ${SRC})
 
+target_link_libraries(common hal freertos )
+
 target_include_directories(common PUBLIC 
-    "include"
+    "include/"
+    ${SYSTEM_INCLUDE}
     ${STM32_INCLUDE}
+    
     ${FREERTOS_INCLUDE}
 )
 

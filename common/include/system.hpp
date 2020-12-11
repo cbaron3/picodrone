@@ -22,7 +22,7 @@ namespace system
 namespace rtos
 {
     static xQueueHandle txQueue;
-    
+
     void start() {
         vTaskStartScheduler();
         //you should never get here
@@ -46,7 +46,7 @@ namespace rtos
         char received[100];
 
         for(;;) {
-            if(pdTRUE == xQueueReceive(picodrone::system::rtos::txQueue, received, 100)) {
+            if(pdTRUE == xQueueReceive((xQueueHandle) pvParameters, received, 100)) {
                 picodrone::uart::send(received);
             }   
         }
@@ -63,7 +63,7 @@ namespace rtos
         for( ;; )
         {
             
-
+            xQueueSend((xQueueHandle) pvParameters,"Blink",100);
             HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
             vTaskDelayUntil(&xLastWakeTime,xFrequency);
         }
@@ -163,8 +163,8 @@ namespace rtos
     void init() {
         txQueue = xQueueCreate(5, 50);
 
-        xTaskCreate( vUART, "UART", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
-        xTaskCreate( vDebug, "LED", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+        xTaskCreate( vUART, "UART", configMINIMAL_STACK_SIZE, (void *) txQueue,  tskIDLE_PRIORITY, NULL );
+        xTaskCreate( vDebug, "LED", configMINIMAL_STACK_SIZE, (void *) txQueue, tskIDLE_PRIORITY, NULL );
 
         xTaskCreate( vController, "Controller", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
         xTaskCreate( vI2C_IMU, "I2C_IMU", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
