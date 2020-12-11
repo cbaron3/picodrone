@@ -3,7 +3,7 @@
 
 namespace lib {
     namespace util {
-        void ErrorHandler(const char* file, int line) {
+        inline void ErrorHandler(const char* file, int line) {
             while(1){}
         }
     }

@@ -2,43 +2,38 @@
 #include "stm32f1xx.h"
 
 #include "utility.hpp"
-// #include "uart.hpp"
+#include "uart.hpp"
 #include "system.hpp"
 #include "gpio.hpp"
 #include "pwm.hpp"
 #include "i2c.hpp"
 
-#include "include/debug_task.hpp"
-
-// #include "OS/threads.h"
-
-
+#include "HeartBeatTask.hpp"
 
 int main() {
   using namespace picodrone;
 
-	//Init HAL
+	// Init HAL
 	system::hal::init();
 
-	// //Initialize clocks to max speed
+	// Initialize clocks to max speed
 	system::clock::init();
 
-	// //Init GPIOs
+	// Init GPIOs
 	gpio::init();
   
   // Init PWM
-  // pwm::init();
+  pwm::init();
 
-  // // Init UART
-  // uart::init();
+  // Init UART
+  uart::init();
 
-  // // Init I2C
-  // i2c::init();
+  // Init I2C
+  i2c::init();
 
-  //system::rtos::init();
-
+  Foo();
   
-  DebugTask debug_task {tskIDLE_PRIORITY, configMINIMAL_STACK_SIZE, 1000};
+  system::rtos::init();
 
   system::rtos::start();
 

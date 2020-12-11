@@ -15,3 +15,36 @@ set(CMAKE_SIZE arm-none-eabi-size)
 set(CMAKE_DEBUGGER arm-none-eabi-gdb)
 set(CMAKE_DEBUGGER arm-none-eabi-gdb)
 set(CMAKE_CPPFILT arm-none-eabi-c++filt)
+
+set(FREERTOS_INCLUDE 
+    "${CMAKE_SOURCE_DIR}/external/FreeRTOS/Source/portable/GCC/ARM_CM3/"
+    "${CMAKE_SOURCE_DIR}/external/FreeRTOS/Source/include/"
+)
+
+set(STM32_INCLUDE 
+    "${CMAKE_SOURCE_DIR}/external/STM32F1/Drivers/STM32F1xx_HAL_Driver/Inc"
+    "${CMAKE_SOURCE_DIR}/external/STM32F1/Drivers/CMSIS/Include"
+    "${CMAKE_SOURCE_DIR}/external/STM32F1/Drivers/CMSIS/Core/Include"
+    "${CMAKE_SOURCE_DIR}/external/STM32F1/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
+)
+
+set(SYSTEM_INCLUDE
+    "${CMAKE_SOURCE_DIR}/system"
+)
+
+set(COMPILER_FLAGS
+    -Wall 
+    -Wextra
+    -Werror
+    -Wno-unused-parameter # Disable unused parameter warnings for now
+    -Wno-unused-variable # Disable unused parameter warnings for now
+)
+
+set(TARGET_FLAGS 
+    -mcpu=cortex-m3
+    -mfloat-abi=soft
+    -mlittle-endian
+    -fno-exceptions
+    -specs=nano.specs 
+    -specs=nosys.specs
+)

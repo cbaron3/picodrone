@@ -25,10 +25,10 @@ namespace i2c
 
     
 
-    I2C_HandleTypeDef m_I2C1;
-    I2C_HandleTypeDef m_I2C2;
+    static I2C_HandleTypeDef m_I2C1;
+    static I2C_HandleTypeDef m_I2C2;
 
-    void init() {
+    inline void init() {
         // I2C1 -> SDA on PB7, SCL on PB6
         // I2C2 -> SDA on PB11, SCL on PB10
         __HAL_RCC_I2C1_CLK_ENABLE();
