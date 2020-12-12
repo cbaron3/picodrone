@@ -21,156 +21,156 @@ namespace system
 
 namespace rtos
 {
-    static xQueueHandle txQueue;
+    // static xQueueHandle txQueue;
 
-    void start() {
-        vTaskStartScheduler();
-        //you should never get here
-        while(1)
-            { }
-    }
+    // void start() {
+    //     vTaskStartScheduler();
+    //     //you should never get here
+    //     while(1)
+    //         { }
+    // }
 
-    void vController(void *pvParameters) {
-        // Call control loop and update pwm state
-        // 20ms?
-        portTickType xLastWakeTime;
-        const portTickType xFrequency = 20;
-        xLastWakeTime=xTaskGetTickCount();
-        for( ;; )
-        {
-            vTaskDelayUntil(&xLastWakeTime,xFrequency);
-        }
-    }
+    // void vController(void *pvParameters) {
+    //     // Call control loop and update pwm state
+    //     // 20ms?
+    //     portTickType xLastWakeTime;
+    //     const portTickType xFrequency = 20;
+    //     xLastWakeTime=xTaskGetTickCount();
+    //     for( ;; )
+    //     {
+    //         vTaskDelayUntil(&xLastWakeTime,xFrequency);
+    //     }
+    // }
 
-    void vUART( void *pvParameters ) {
-        char received[100];
+    // void vUART( void *pvParameters ) {
+    //     char received[100];
 
-        for(;;) {
-            if(pdTRUE == xQueueReceive((xQueueHandle) pvParameters, received, 100)) {
-                picodrone::uart::send(received);
-            }   
-        }
-    }
+    //     for(;;) {
+    //         if(pdTRUE == xQueueReceive((xQueueHandle) pvParameters, received, 100)) {
+    //             picodrone::uart::send(received);
+    //         }   
+    //     }
+    // }
 
-    void vDebug( void *pvParameters ) {
-        // UART and LED flashing
-        // Slow
+    // void vDebug( void *pvParameters ) {
+    //     // UART and LED flashing
+    //     // Slow
         
 
-        portTickType xLastWakeTime;
-        const portTickType xFrequency = 1000;
-        xLastWakeTime=xTaskGetTickCount();
-        for( ;; )
-        {
+    //     portTickType xLastWakeTime;
+    //     const portTickType xFrequency = 1000;
+    //     xLastWakeTime=xTaskGetTickCount();
+    //     for( ;; )
+    //     {
             
-            xQueueSend((xQueueHandle) pvParameters,"Blink",100);
-            HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-            vTaskDelayUntil(&xLastWakeTime,xFrequency);
-        }
-    }
+    //         xQueueSend((xQueueHandle) pvParameters,"Blink",100);
+    //         HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+    //         vTaskDelayUntil(&xLastWakeTime,xFrequency);
+    //     }
+    // }
 
-    void vSPI(void *pvParameters ) {
-        // Will be for nrf24
-        // Fast; used for control from remote
-        portTickType xLastWakeTime;
-        const portTickType xFrequency = 20;
-        xLastWakeTime=xTaskGetTickCount();
-        for( ;; )
-        {
-            vTaskDelayUntil(&xLastWakeTime,xFrequency);
-        }
-    }
+    // void vSPI(void *pvParameters ) {
+    //     // Will be for nrf24
+    //     // Fast; used for control from remote
+    //     portTickType xLastWakeTime;
+    //     const portTickType xFrequency = 20;
+    //     xLastWakeTime=xTaskGetTickCount();
+    //     for( ;; )
+    //     {
+    //         vTaskDelayUntil(&xLastWakeTime,xFrequency);
+    //     }
+    // }
 
-    void vI2C_IMU(void *pvParameters) {
+    // void vI2C_IMU(void *pvParameters) {
 
-        // INIT PERIPHERAL OUTSIDE OF TASK (i2c bus)
-        // INIT DEVICE, WITH CONFIG DATA, IN TASK
+    //     // INIT PERIPHERAL OUTSIDE OF TASK (i2c bus)
+    //     // INIT DEVICE, WITH CONFIG DATA, IN TASK
 
-        // Will be for i2c/bmp
-        // Fast for IMU, slower for BMP. Maybe two threads? Use two different I2C busses? Yes. Unless creating a sensor hub.
-        // sensors <-> sensor chip <-> main chip could be something for the future
-        portTickType xLastWakeTime;
-        const portTickType xFrequency = 20;
-        xLastWakeTime=xTaskGetTickCount();
-        for( ;; )
-        {
-            vTaskDelayUntil(&xLastWakeTime,xFrequency);
-        }
-    }
+    //     // Will be for i2c/bmp
+    //     // Fast for IMU, slower for BMP. Maybe two threads? Use two different I2C busses? Yes. Unless creating a sensor hub.
+    //     // sensors <-> sensor chip <-> main chip could be something for the future
+    //     portTickType xLastWakeTime;
+    //     const portTickType xFrequency = 20;
+    //     xLastWakeTime=xTaskGetTickCount();
+    //     for( ;; )
+    //     {
+    //         vTaskDelayUntil(&xLastWakeTime,xFrequency);
+    //     }
+    // }
 
-    void vI2C_BMP(void *pvParameters) {
-        // Will be for i2c/bmp
-        // Fast for IMU, slower for BMP. Maybe two threads? Use two different I2C busses? Yes. Unless creating a sensor hub.
-        // sensors <-> sensor chip <-> main chip could be something for the future
+    // void vI2C_BMP(void *pvParameters) {
+    //     // Will be for i2c/bmp
+    //     // Fast for IMU, slower for BMP. Maybe two threads? Use two different I2C busses? Yes. Unless creating a sensor hub.
+    //     // sensors <-> sensor chip <-> main chip could be something for the future
         
-        // Check if device is ready
-        const char* status_msg = "BME280 Ready";
-        HAL_StatusTypeDef device_status = HAL_I2C_IsDeviceReady(&i2c::m_I2C1, (0x76 << 1), 1, 100);
-        if(HAL_OK == device_status) {
-            xQueueSend(picodrone::system::rtos::txQueue,status_msg,100);
-        }
+    //     // Check if device is ready
+    //     const char* status_msg = "BME280 Ready";
+    //     HAL_StatusTypeDef device_status = HAL_I2C_IsDeviceReady(&i2c::m_I2C1, (0x76 << 1), 1, 100);
+    //     if(HAL_OK == device_status) {
+    //         xQueueSend(picodrone::system::rtos::txQueue,status_msg,100);
+    //     }
 
-        // Delay - 500 ticks at 1ms per tick
-        vTaskDelay(500);
+    //     // Delay - 500 ticks at 1ms per tick
+    //     vTaskDelay(500);
         
         
-        // Setup calibration
+    //     // Setup calibration
         
-        // 1. Reset the BME 280 to trigger the power-on reset
-        uint8_t BME_RESET_ADDR = 0xE0;
-        uint8_t BME_RESET_VAL = 0xB6;
+    //     // 1. Reset the BME 280 to trigger the power-on reset
+    //     uint8_t BME_RESET_ADDR = 0xE0;
+    //     uint8_t BME_RESET_VAL = 0xB6;
         
-        device_status = HAL_I2C_Mem_Write(&i2c::m_I2C1, (0x76 << 1), BME_RESET_ADDR, I2C_MEMADD_SIZE_8BIT, &BME_RESET_VAL, sizeof(BME_RESET_VAL), 10);
-        if(HAL_OK == device_status) {
-            xQueueSend(picodrone::system::rtos::txQueue,"RESET BME",100);
-        }
-        vTaskDelay(10);
+    //     device_status = HAL_I2C_Mem_Write(&i2c::m_I2C1, (0x76 << 1), BME_RESET_ADDR, I2C_MEMADD_SIZE_8BIT, &BME_RESET_VAL, sizeof(BME_RESET_VAL), 10);
+    //     if(HAL_OK == device_status) {
+    //         xQueueSend(picodrone::system::rtos::txQueue,"RESET BME",100);
+    //     }
+    //     vTaskDelay(10);
 
-        // 2. Check who am I register
-        uint8_t BME_ID_ADDR = 0xD0;
+    //     // 2. Check who am I register
+    //     uint8_t BME_ID_ADDR = 0xD0;
 
-        uint8_t _buffer[1];
-        device_status = HAL_I2C_Mem_Read(&i2c::m_I2C1, (0x76 << 1), BME_ID_ADDR, I2C_MEMADD_SIZE_8BIT, _buffer, sizeof(_buffer), 10);
-        if(HAL_OK == device_status && _buffer[0] == 0x60) {
-            xQueueSend(picodrone::system::rtos::txQueue,"CORRECT CHIP ID",100);
-        }
-        vTaskDelay(500);
+    //     uint8_t _buffer[1];
+    //     device_status = HAL_I2C_Mem_Read(&i2c::m_I2C1, (0x76 << 1), BME_ID_ADDR, I2C_MEMADD_SIZE_8BIT, _buffer, sizeof(_buffer), 10);
+    //     if(HAL_OK == device_status && _buffer[0] == 0x60) {
+    //         xQueueSend(picodrone::system::rtos::txQueue,"CORRECT CHIP ID",100);
+    //     }
+    //     vTaskDelay(500);
 
-        // 3. Wait for trimming parameters to be copied into registers before reading
-            // 3a. check status register
+    //     // 3. Wait for trimming parameters to be copied into registers before reading
+    //         // 3a. check status register
 
-        // 4. Read trimming parameters; manufacturing config data
+    //     // 4. Read trimming parameters; manufacturing config data
 
-        // 5. Set config data for rate, filter and interface (general)
+    //     // 5. Set config data for rate, filter and interface (general)
 
-        // 6. Set ctrl for humid - humidity data acquisition options
-            // NOTE: WRITE THIS FIRST BECAUSE THE HUMID SETTINGS WILL ONLY BE CHANGED AFTER MEAS IS WRITTEN
+    //     // 6. Set ctrl for humid - humidity data acquisition options
+    //         // NOTE: WRITE THIS FIRST BECAUSE THE HUMID SETTINGS WILL ONLY BE CHANGED AFTER MEAS IS WRITTEN
 
-        // 7. Set ctrl for meas - measurement options
+    //     // 7. Set ctrl for meas - measurement options
 
-        // read config registers to ensure they match the specified config
+    //     // read config registers to ensure they match the specified config
 
-        portTickType xLastWakeTime;
-        const portTickType xFrequency = 500;
-        xLastWakeTime=xTaskGetTickCount();
-        for( ;; )
-        {
-            HAL_I2C_IsDeviceReady(&i2c::m_I2C1, (0x76 << 1), 1, 100);
-            vTaskDelayUntil(&xLastWakeTime,xFrequency);
-        }
-    }
+    //     portTickType xLastWakeTime;
+    //     const portTickType xFrequency = 500;
+    //     xLastWakeTime=xTaskGetTickCount();
+    //     for( ;; )
+    //     {
+    //         HAL_I2C_IsDeviceReady(&i2c::m_I2C1, (0x76 << 1), 1, 100);
+    //         vTaskDelayUntil(&xLastWakeTime,xFrequency);
+    //     }
+    // }
 
-    void init() {
-        txQueue = xQueueCreate(5, 50);
+    // void init() {
+    //     txQueue = xQueueCreate(5, 50);
 
-        xTaskCreate( vUART, "UART", configMINIMAL_STACK_SIZE, (void *) txQueue,  tskIDLE_PRIORITY, NULL );
-        xTaskCreate( vDebug, "LED", configMINIMAL_STACK_SIZE, (void *) txQueue, tskIDLE_PRIORITY, NULL );
+    //     xTaskCreate( vUART, "UART", configMINIMAL_STACK_SIZE, (void *) txQueue,  tskIDLE_PRIORITY, NULL );
+    //     xTaskCreate( vDebug, "LED", configMINIMAL_STACK_SIZE, (void *) txQueue, tskIDLE_PRIORITY, NULL );
 
-        xTaskCreate( vController, "Controller", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
-        xTaskCreate( vI2C_IMU, "I2C_IMU", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
-        xTaskCreate( vI2C_BMP, "I2C_BMP", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
-        xTaskCreate( vSPI, "SPI", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
-    }
+    //     xTaskCreate( vController, "Controller", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+    //     xTaskCreate( vI2C_IMU, "I2C_IMU", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+    //     xTaskCreate( vI2C_BMP, "I2C_BMP", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+    //     xTaskCreate( vSPI, "SPI", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL );
+    // }
 
     
 

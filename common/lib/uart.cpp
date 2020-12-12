@@ -5,6 +5,8 @@ namespace picodrone
 
 namespace uart
 {
+    // static UART_HandleTypeDef UART1;
+
      void init() {
         
         __HAL_RCC_AFIO_CLK_ENABLE();

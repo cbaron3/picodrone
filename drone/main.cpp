@@ -4,6 +4,7 @@
 #include "utility.hpp"
 #include "uart.hpp"
 #include "system.hpp"
+
 #include "gpio.hpp"
 #include "pwm.hpp"
 #include "i2c.hpp"
@@ -12,9 +13,7 @@
 #include "task.h"
 #include "queue.h"
 
-#include "USART1Task.hpp"
-#include "USART1Queue.hpp"
-#include "HeartBeatTask.hpp"
+#include "task_manager.h"
 
 int main() {
   using namespace picodrone;
@@ -37,31 +36,10 @@ int main() {
   // Init I2C
   i2c::init();
 
-  system::rtos::init();
+  task_manager::init();
 
-  system::rtos::start();
-
-  // // Foo();
+  task_manager::start();
   
-  // // system::rtos::init();
-
-  // //char r[100]="Hello";
-  // const char* h = "Hello";
-  // //picodrone::uart::send(h);
-
-  // // init_queue();
-
-  // // xTaskCreate(vUSART1Task, "USART1", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL);
-
-  // xTaskCreate(vHeartBeatTask, "Heartbeat", configMINIMAL_STACK_SIZE, NULL, tskIDLE_PRIORITY, NULL);
-  
-  // // system::rtos::start();
-
-  // vTaskStartScheduler();
-  //       //you should never get here
-  //       while(1)
-  //           { }
-
 	return 0;
 }
 

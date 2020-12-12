@@ -11,7 +11,7 @@ namespace picodrone
 
 namespace uart
 {
-   static UART_HandleTypeDef UART1;
+    static UART_HandleTypeDef UART1;
 
     void init();
 
