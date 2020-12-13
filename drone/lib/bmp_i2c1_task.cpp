@@ -1,16 +1,17 @@
 #include "bmp_i2c1_task.h"
 #include "config.h"
+#include "i2c.hpp"
 
 void vBMP388Task(void *pvParameters) {
-    vTaskDelay(100);
+    // So for some reason putting the Init in the task works
+    // TODO: Refactor I2C init to take in GPIO 
+    picodrone::I2C::Init(picodrone::I2C::PORT::I1, &config::I2C_I2C1Cfg);
 
     // Cast parameter to queue
     xQueueHandle msg_queue = (xQueueHandle) pvParameters;
 
     // Repeating portion
-    portTickType xLastWakeTime;
-    const portTickType xFrequency = 50;
-    xLastWakeTime=xTaskGetTickCount();
+    
 
     // Check device status
     uint8_t BMP388_ADR = (0x76 << 1);
@@ -34,6 +35,10 @@ void vBMP388Task(void *pvParameters) {
     if(HAL_OK == device_status && _buffer[0] == 0x60) {
         xQueueSend(msg_queue,"BME388 Chip ID is correct", 0);
     }
+
+    portTickType xLastWakeTime;
+    const portTickType xFrequency = 50;
+    xLastWakeTime=xTaskGetTickCount();
 
     for( ;; )
     {

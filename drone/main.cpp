@@ -35,7 +35,7 @@ int main() {
 
 	// Init HAL
 	System::Init(&RCC_OscCfg, &RCC_ClkCfg);
-
+  
   // GPIO Init
   GPIO::Init(GPIO::PORT::A, &GPIOA_USART1TxCfg);
   GPIO::Init(GPIO::PORT::A, &GPIOA_USART1RxCfg);
@@ -43,8 +43,8 @@ int main() {
   GPIO::Init(GPIO::PORT::B, &GPIOB_I2C1SDACfg);
   GPIO::Init(GPIO::PORT::B, &GPIOB_I2C1SCLCfg);
 
-  GPIO::Init(GPIO::PORT::B, &GPIOB_I2C2SDACfg);
-  GPIO::Init(GPIO::PORT::B, &GPIOB_I2C2SCLCfg);
+  // GPIO::Init(GPIO::PORT::B, &GPIOB_I2C2SDACfg);
+  // GPIO::Init(GPIO::PORT::B, &GPIOB_I2C2SCLCfg);
 
   GPIO::Init(GPIO::PORT::C, &GPIOC_OnboardLEDCfg);
   
@@ -55,8 +55,10 @@ int main() {
   USART::Init(USART::PORT::U1, &UART_USART1Cfg);
 
   // Init I2C
-  I2C::Init(I2C::PORT::I1, &I2C_I2C1Cfg);
-
+  
+  //__HAL_RCC_I2C1_FORCE_RESET();
+  //__HAL_RCC_I2C1_RELEASE_RESET();
+  
   task_manager::init();
 
   task_manager::start();
