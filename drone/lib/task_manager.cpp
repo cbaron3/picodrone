@@ -13,6 +13,7 @@
 
 #include "heart_beat_task.h"
 #include "uart_task.h"
+#include "bmp_i2c1_task.h"
 
 namespace task_manager
 {
@@ -28,8 +29,9 @@ void start() {
     // Create all other tasks and print to UART
     picodrone::USART::Send(&config::UART_USART1Cfg, "Task manager started");
     
-    xTaskCreate( vUartTask, "UART", configMINIMAL_STACK_SIZE, (void *) uart_msg_queue,  ( 1 | portPRIVILEGE_BIT ), NULL );
-    xTaskCreate( vHeartBeatTask, "HeartBeat", configMINIMAL_STACK_SIZE, (void *) uart_msg_queue, ( 2 | portPRIVILEGE_BIT ), NULL );
+    xTaskCreate( vUartTask, "UART", configMINIMAL_STACK_SIZE, (void *) uart_msg_queue,  tskIDLE_PRIORITY, NULL );
+    xTaskCreate( vHeartBeatTask, "HeartBeat", configMINIMAL_STACK_SIZE, (void *) uart_msg_queue, tskIDLE_PRIORITY, NULL );
+    xTaskCreate( vBMP388Task, "BMP388", configMINIMAL_STACK_SIZE, (void *) uart_msg_queue, tskIDLE_PRIORITY, NULL );
 
     vTaskStartScheduler();
 

@@ -34,8 +34,6 @@ static RCC_ClkInitTypeDef RCC_ClkCfg {
     .APB2CLKDivider   = RCC_HCLK_DIV1,
 };
 
-
-
 // Board LED GPIO
 static GPIO_InitTypeDef GPIOC_OnboardLEDCfg {
     .Pin =   GPIO_PIN_13,
@@ -74,21 +72,67 @@ static UART_HandleTypeDef UART_USART1Cfg {
     },
 };
 
-// // I2C1 SDA & SCL GPIO
-// GPIO_InitTypeDef GPIO_I2C1SDACfg;
+// I2C1 SDA & SCL GPIO
+// I2C1 -> SDA on PB7, SCL on PB6
+static GPIO_InitTypeDef GPIOB_I2C1SCLCfg {
+    .Pin       = GPIO_PIN_6,
+    .Mode      = GPIO_MODE_AF_OD,
+    .Pull      = GPIO_PULLUP,
+    .Speed     = GPIO_SPEED_FREQ_HIGH,
+};
 
-// GPIO_InitTypeDef GPIO_I2C1SCLCfg;
+static GPIO_InitTypeDef GPIOB_I2C1SDACfg {
+    .Pin       = GPIO_PIN_7,
+    .Mode      = GPIO_MODE_AF_OD,
+    .Pull      = GPIO_PULLUP,
+    .Speed     = GPIO_SPEED_FREQ_HIGH,
+};
 
 // // I2C1 settings
-// I2C_HandleTypeDef I2C_I2C1Cfg;
+static I2C_HandleTypeDef I2C_I2C1Cfg {
+    .Instance             = I2C1,
+    .Init = {
+        .ClockSpeed      = 100000, // 100 kHz
+        .DutyCycle       = I2C_DUTYCYCLE_2,
+        .OwnAddress1     = 0x00,  // Either 076 or 077
+        .AddressingMode  = I2C_ADDRESSINGMODE_7BIT,
+        .DualAddressMode = I2C_DUALADDRESS_DISABLE,
+        .OwnAddress2     = 0xFF,
+        .GeneralCallMode = I2C_GENERALCALL_DISABLE,
+        .NoStretchMode   = I2C_NOSTRETCH_DISABLE,  
+    },    
+};
 
-// // I2C2 settings
-// I2C_HandleTypeDef I2C_I2C2Cfg;
+// I2C2 SDA & SCL GPIO
+// I2C2 -> SDA on PB11, SCL on PB10
+static GPIO_InitTypeDef GPIOB_I2C2SCLCfg {
+    .Pin       = GPIO_PIN_10,
+    .Mode      = GPIO_MODE_AF_OD,
+    .Pull      = GPIO_PULLUP,
+    .Speed     = GPIO_SPEED_FREQ_HIGH,
+};
 
-// // I2C2 SDA & SCL GPIO
-// GPIO_InitTypeDef GPIO_I2C2SDACfg;
+static GPIO_InitTypeDef GPIOB_I2C2SDACfg {
+    .Pin       = GPIO_PIN_11,
+    .Mode      = GPIO_MODE_AF_OD,
+    .Pull      = GPIO_PULLUP,
+    .Speed     = GPIO_SPEED_FREQ_HIGH,
+};
 
-// GPIO_InitTypeDef GPIO_I2C2SCLCfg;
+// I2C2 settings
+static I2C_HandleTypeDef I2C_I2C2Cfg {
+    .Instance             = I2C2,
+    .Init = {
+        .ClockSpeed      = 100000, // 100 kHz
+        .DutyCycle       = I2C_DUTYCYCLE_2,
+        .OwnAddress1     = 0x00,  // Either 076 or 077
+        .AddressingMode  = I2C_ADDRESSINGMODE_7BIT,
+        .DualAddressMode = I2C_DUALADDRESS_DISABLE,
+        .OwnAddress2     = 0xFF,
+        .GeneralCallMode = I2C_GENERALCALL_DISABLE,
+        .NoStretchMode   = I2C_NOSTRETCH_DISABLE,  
+    },    
+};
 
 }
 #endif

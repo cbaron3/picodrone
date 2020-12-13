@@ -5,7 +5,6 @@
 #include "stm32f1xx.h"
 
 #include "utility.hpp"
-#include "tasks.hpp"
 #include "uart.hpp"
 #include "i2c.hpp"
 

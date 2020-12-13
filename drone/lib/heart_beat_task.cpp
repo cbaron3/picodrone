@@ -1,9 +1,6 @@
 #include "heart_beat_task.h"
 
 void vHeartBeatTask(void *pvParameters) {
-    // Initialize GPIO - PC13 for onboard LED
-    
-
     // Cast parameter to queue
     xQueueHandle msg_queue = (xQueueHandle) pvParameters;
 
