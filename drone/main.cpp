@@ -5,6 +5,8 @@
 #include "uart.hpp"
 #include "system.hpp"
 
+#include "stm32f1xx_ll_usart.h"
+
 #include "gpio.hpp"
 #include "pwm.hpp"
 #include "i2c.hpp"
@@ -15,23 +17,35 @@
 
 #include "task_manager.h"
 
+#include "config.h"
+
+// TODO: Combine hal and clock init into one system init
+// TODO: Keep all Handle and Typedefs in config separate, then pass into init helpers
+  // In those init functions, can log input variables using serial send.
+  // Will need to initialize UART
+  // Can pass UART into serial and only call if not null
+
+  // PUT HAL__ENABLES in main
+
 int main() {
   using namespace picodrone;
+  using namespace config;
 
 	// Init HAL
-	system::hal::init();
+	System::Init(&RCC_OscCfg, &RCC_ClkCfg);
 
-	// Initialize clocks to max speed
-	system::clock::init();
-
-	// Init GPIOs
-	gpio::init();
+  // GPIO Init
+  GPIO::Init(GPIO::PORT::A, &GPIOA_USART1TxCfg);
+  GPIO::Init(GPIO::PORT::A, &GPIOA_USART1RxCfg);
+  GPIO::Init(GPIO::PORT::C, &GPIOC_OnboardLEDCfg);
   
   // Init PWM
   pwm::init();
 
   // Init UART
-  uart::init();
+  USART::Init(USART::PORT::U1, &UART_USART1Cfg);
+
+  // USART::Send(&UART_USART1Cfg, ".");
 
   // Init I2C
   i2c::init();

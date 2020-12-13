@@ -36,6 +36,7 @@ set(COMPILER_FLAGS
     -Wall 
     -Wextra
     -Werror
+    -Wno-missing-field-initializers
     -Wno-unused-parameter # Disable unused parameter warnings for now
     -Wno-unused-variable # Disable unused parameter warnings for now
 )

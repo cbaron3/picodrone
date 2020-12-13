@@ -9,13 +9,13 @@
 namespace picodrone
 {
 
-namespace uart
+namespace USART
 {
-    static UART_HandleTypeDef UART1;
+    enum class PORT { U1, U2 };
 
-    void init();
+    bool Init(PORT port, UART_HandleTypeDef* def);
 
-    void send(const char *_out);
+    void Send(UART_HandleTypeDef* def, const char *_out);
 }
 
 }

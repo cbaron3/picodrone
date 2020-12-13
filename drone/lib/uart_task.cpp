@@ -1,5 +1,6 @@
 #include "uart_task.h"
 #include "uart.hpp"
+#include "config.h"
 
 void vUartTask(void *pvParameters)
 {
@@ -11,7 +12,7 @@ void vUartTask(void *pvParameters)
 
     for(;;) {
         if(pdTRUE == xQueueReceive(msg_queue, received, 0)) {
-            picodrone::uart::send(received);
+            picodrone::USART::Send(&config::UART_USART1Cfg, received);
         }   
     }
 }

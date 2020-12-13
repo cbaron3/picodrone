@@ -9,6 +9,8 @@
 
 #include "uart.hpp"
 
+#include "config.h"
+
 #include "heart_beat_task.h"
 #include "uart_task.h"
 
@@ -24,10 +26,10 @@ void init() {
 
 void start() {
     // Create all other tasks and print to UART
-    picodrone::uart::send("Task manager started");
-
-    xTaskCreate( vUartTask, "UART", configMINIMAL_STACK_SIZE, (void *) uart_msg_queue,  tskIDLE_PRIORITY, NULL );
-    xTaskCreate( vHeartBeatTask, "HeartBeat", configMINIMAL_STACK_SIZE, (void *) uart_msg_queue, tskIDLE_PRIORITY, NULL );
+    picodrone::USART::Send(&config::UART_USART1Cfg, "Task manager started");
+    
+    xTaskCreate( vUartTask, "UART", configMINIMAL_STACK_SIZE, (void *) uart_msg_queue,  ( 1 | portPRIVILEGE_BIT ), NULL );
+    xTaskCreate( vHeartBeatTask, "HeartBeat", configMINIMAL_STACK_SIZE, (void *) uart_msg_queue, ( 2 | portPRIVILEGE_BIT ), NULL );
 
     vTaskStartScheduler();
 
