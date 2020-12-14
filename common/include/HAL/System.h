@@ -4,9 +4,9 @@
 #include "stm32f1xx_hal.h"
 #include "stm32f1xx.h"
 
-#include "utility.hpp"
-#include "uart.hpp"
-#include "i2c.hpp"
+#include "Util.h"
+#include "HAL/UART.h"
+#include "HAL/I2C.h"
 
 #include "FreeRTOS.h"
 #include "task.h"

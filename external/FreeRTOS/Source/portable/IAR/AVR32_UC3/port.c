@@ -47,7 +47,7 @@
 /* AVR32 UC3 includes. */
 #include <avr32/io.h>
 #include <intrinsics.h>
-#include "gpio.h"
+#include "HAL/GPIO.h"
 
 #if configDBG
 	#include "usart.h"

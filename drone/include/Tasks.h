@@ -1,12 +1,12 @@
 #ifndef DRONE_INCLUDE_TASK_MANAGER_H
 #define DRONE_INCLUDE_TASK_MANAGER_H
 
-namespace task_manager
+namespace Tasks
 {
 
-void init();
+void Init();
 
-void start();
+void Start();
 
 }
 

@@ -1,6 +1,6 @@
-#include "bmp_i2c1_task.h"
-#include "config.h"
-#include "i2c.hpp"
+#include "Task_BMP.h"
+#include "Config.h"
+#include "HAL/I2C.h"
 
 void vBMP388Task(void *pvParameters) {
     // So for some reason putting the Init in the task works
@@ -28,11 +28,11 @@ void vBMP388Task(void *pvParameters) {
 
     // Confirm WHO AM I register
     vTaskDelay(10);
-    uint8_t BMP388_CHIP_ID_ID_ADDR = 0xD0;
-    uint8_t BMP388_CHIP_ID = 0x60;
+    uint8_t BMP388_CHIP_ID_ID_ADDR = 0x00;
+    uint8_t BMP388_CHIP_ID = 0x50;
     uint8_t _buffer[1];
     device_status = HAL_I2C_Mem_Read(&config::I2C_I2C1Cfg, BMP388_ADR, BMP388_CHIP_ID_ID_ADDR, I2C_MEMADD_SIZE_8BIT, _buffer, sizeof(_buffer), 10);
-    if(HAL_OK == device_status && _buffer[0] == 0x60) {
+    if(HAL_OK == device_status && _buffer[0] == BMP388_CHIP_ID) {
         xQueueSend(msg_queue,"BME388 Chip ID is correct", 0);
     }
 

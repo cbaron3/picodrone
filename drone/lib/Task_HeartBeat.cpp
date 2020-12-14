@@ -1,4 +1,4 @@
-#include "heart_beat_task.h"
+#include "Task_HeartBeat.h"
 
 void vHeartBeatTask(void *pvParameters) {
     // Cast parameter to queue

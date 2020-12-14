@@ -33,6 +33,7 @@ set(SYSTEM_INCLUDE
 )
 
 set(COMPILER_FLAGS
+    -Os
     -Wall 
     -Wextra
     -Werror

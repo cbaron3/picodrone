@@ -11,7 +11,7 @@ namespace GPIO
 {
     enum class PORT { A, B, C };
 
-    bool Init(PORT port, GPIO_InitTypeDef* def) {
+    inline bool Init(PORT port, GPIO_InitTypeDef* def) {
         switch (port) {
             case PORT::A: {
                 // Init struct
@@ -31,9 +31,9 @@ namespace GPIO
                 HAL_GPIO_Init(GPIOC, def);
             } break;
         }
-
+        
         return true;
-    }   
+    }
 }
 
 }

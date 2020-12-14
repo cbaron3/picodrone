@@ -1,6 +1,6 @@
-#include "uart_task.h"
-#include "uart.hpp"
-#include "config.h"
+#include "Task_UART.h"
+#include "HAL/UART.h"
+#include "Config.h"
 
 void vUartTask(void *pvParameters)
 {

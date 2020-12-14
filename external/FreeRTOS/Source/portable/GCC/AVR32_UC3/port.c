@@ -51,7 +51,7 @@
 
 /* AVR32 UC3 includes. */
 #include <avr32/io.h>
-#include "gpio.h"
+#include "HAL/GPIO.h"
 #if( configTICK_USE_TC==1 )
 	#include "tc.h"
 #endif

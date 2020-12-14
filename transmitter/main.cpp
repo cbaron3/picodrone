@@ -1,12 +1,12 @@
 #include "stm32f1xx_hal.h"
 #include "stm32f1xx.h"
 
-#include "utility.hpp"
-// #include "uart.hpp"
-#include "system.hpp"
-#include "gpio.hpp"
-#include "pwm.hpp"
-#include "i2c.hpp"
+#include "Util.h"
+// #include "HAL/UART.h"
+#include "HAL/System.h"
+#include "HAL/GPIO.h"
+#include "HAL/PWM.h"
+#include "HAL/I2C.h"
 
 // #include "OS/threads.h"
 

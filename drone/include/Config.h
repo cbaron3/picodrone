@@ -134,5 +134,57 @@ static I2C_HandleTypeDef I2C_I2C2Cfg {
     },    
 };
 
+static SPI_HandleTypeDef SPI_SPI1Cfg {
+    .Instance               = SPI1,
+    .Init = {
+        .Mode              = SPI_MODE_MASTER,
+        .Direction         = SPI_DIRECTION_2LINES,
+        .DataSize          = SPI_DATASIZE_8BIT,
+        .CLKPolarity       = SPI_POLARITY_LOW,
+        .CLKPhase          = SPI_PHASE_1EDGE,
+        .NSS               = SPI_NSS_HARD_OUTPUT,
+        .BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2,
+        .FirstBit          = SPI_FIRSTBIT_MSB,
+        .TIMode            = SPI_TIMODE_DISABLE,
+        .CRCCalculation    = SPI_CRCCALCULATION_DISABLE,
+        .CRCPolynomial     = 10,
+    },
+};
+
+static GPIO_InitTypeDef GPIOB_SPI1NSSCfg {
+    .Pin       = GPIO_PIN_0,
+    .Mode      = GPIO_MODE_AF_PP,
+    .Pull      = GPIO_PULLUP,
+    .Speed     = GPIO_SPEED_FREQ_HIGH,
+};
+
+static GPIO_InitTypeDef GPIOA_SPI1SCKCfg {
+    .Pin       = GPIO_PIN_5,
+    .Mode      = GPIO_MODE_AF_PP,
+    .Pull      = GPIO_PULLUP,
+    .Speed     = GPIO_SPEED_FREQ_HIGH,
+};
+
+static GPIO_InitTypeDef GPIOA_SPI1MISOCfg {
+    .Pin       = GPIO_PIN_6,
+    .Mode      = GPIO_MODE_INPUT,
+    .Pull      = GPIO_NOPULL,
+    .Speed     = GPIO_SPEED_FREQ_HIGH,
+};
+
+static GPIO_InitTypeDef GPIOA_SPI1MOSICfg {
+    .Pin       = GPIO_PIN_7,
+    .Mode      = GPIO_MODE_AF_PP,
+    .Pull      = GPIO_PULLUP,
+    .Speed     = GPIO_SPEED_FREQ_HIGH,
+};
+
+static GPIO_InitTypeDef GPIOA_SPI1CECfg {
+    .Pin       = GPIO_PIN_4,
+    .Mode      = GPIO_MODE_AF_PP,
+    .Pull      = GPIO_PULLUP,
+    .Speed     = GPIO_SPEED_FREQ_HIGH,
+};
+
 }
 #endif
