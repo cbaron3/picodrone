@@ -13,22 +13,17 @@ void vMPU6050Task(void *pvParameters) {
     // Check device status
     // uint8_t BMP388_ADR = (0x76 << 1);
     HAL_StatusTypeDef device_status = HAL_I2C_IsDeviceReady(&config::I2C_I2C2Cfg, (0x68 << 1), 1, 100);
-    if(HAL_OK == device_status) {
-        xQueueSend(msg_queue, "MPU6050 available", 0);
-    } else if(HAL_ERROR == device_status) {
-        xQueueSend(msg_queue, "Error available", 0);
-    } else if(HAL_BUSY == device_status) {
-        xQueueSend(msg_queue, "Busy available", 0);
-    } else if(HAL_TIMEOUT == device_status) {
-        xQueueSend(msg_queue, "Timeout available", 0);
-    }
+    lib::util::ReportHalStatus(&msg_queue, "MPU6050 IsDeviceReady", device_status);
 
-    uint8_t WHO = 0x68;
-    if(HAL_I2C_Master_Transmit(&config::I2C_I2C2Cfg, (0x68 << 1), &WHO, 1, 1000) != HAL_OK)
-    {
-        xQueueSend(msg_queue, "Timeout available", 0);
+    vTaskDelay(10);
+    uint8_t WHO = 0x75;
+    uint8_t _buffer[1];
+    uint8_t MPU_CHIP_ID = 0x68;
+    device_status = HAL_I2C_Mem_Read(&config::I2C_I2C2Cfg,  (0x68 << 1), WHO, I2C_MEMADD_SIZE_8BIT, _buffer, sizeof(_buffer), 10);
+    if(_buffer[0] == MPU_CHIP_ID) {
+        lib::util::ReportHalStatus(&msg_queue, "MPU6050 Chip ID", device_status);
     }
-
+    
     // Repeating portion
     portTickType xLastWakeTime;
     const portTickType xFrequency = 50;

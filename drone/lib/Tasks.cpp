@@ -24,7 +24,7 @@ static xQueueHandle uart_msg_queue;
 
 void Init() {
     // Initialize UART message queue
-    uart_msg_queue = xQueueCreate(5, 50);
+    uart_msg_queue = xQueueCreate(10, 50);
 }
 
 void Start() {
