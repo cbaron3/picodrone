@@ -548,7 +548,7 @@ NRF_RESULT nrf_send_packet_noack(nrf24l01* dev, const uint8_t* data) {
 
     ce_reset(dev);
     nrf_rx_tx_control(dev, NRF_STATE_TX);
-    nrf_write_tx_payload_noack(dev, data);
+    NRF_RESULT r = nrf_write_tx_payload_noack(dev, data);
     ce_set(dev);
 
     while (dev->tx_busy == 1) {} // wait for end of transmittion

@@ -151,6 +151,14 @@ static SPI_HandleTypeDef SPI_SPI1Cfg {
     },
 };
 
+static GPIO_InitTypeDef GPIOB_SPI1IRQCfg {
+    .Pin       = GPIO_PIN_1,
+    .Mode      = GPIO_MODE_INPUT,
+    .Pull      = GPIO_PULLUP,
+    .Speed     = GPIO_SPEED_FREQ_LOW,
+};
+
+
 static GPIO_InitTypeDef GPIOB_SPI1NSSCfg {
     .Pin       = GPIO_PIN_0,
     .Mode      = GPIO_MODE_AF_PP,

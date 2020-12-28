@@ -35,7 +35,7 @@ void Start() {
     xTaskCreate( vHeartBeatTask, "HeartBeat", configMINIMAL_STACK_SIZE, (void *) uart_msg_queue, tskIDLE_PRIORITY + 2, NULL );
     xTaskCreate( vBMP388Task, "BMP388", configMINIMAL_STACK_SIZE, (void *) uart_msg_queue, tskIDLE_PRIORITY + 4, NULL );
     xTaskCreate( vMPU6050Task, "MPU6050", configMINIMAL_STACK_SIZE, (void *) uart_msg_queue, tskIDLE_PRIORITY + 3, NULL );
-    xTaskCreate( vNRF24Task, "NRF24", configMINIMAL_STACK_SIZE, (void *) uart_msg_queue, tskIDLE_PRIORITY + 5, NULL );
+    xTaskCreate( vNRF24Task, "NRF24", configMINIMAL_STACK_SIZE+1024, (void *) uart_msg_queue, tskIDLE_PRIORITY + 5, NULL );
 
 
     vTaskStartScheduler();

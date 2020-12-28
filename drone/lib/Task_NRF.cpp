@@ -38,8 +38,8 @@ void vNRF24Task(void *pvParameters) {
     config.ce_pin      = config::GPIOA_SPI1CECfg.Pin;
     config.csn_port    = GPIOB;
     config.csn_pin     = config::GPIOB_SPI1NSSCfg.Pin;
-    //config.irq_port    = NRF_IRQ_GPIO_Port;
-    //config.irq_pin     = NRF_IRQ_Pin;
+    config.irq_port    = GPIOB;
+    config.irq_pin     = GPIO_PIN_1;
 
     NRF_RESULT r = nrf_init(&nrf, &config);
     if(r == NRF_OK) {
@@ -48,13 +48,24 @@ void vNRF24Task(void *pvParameters) {
         xQueueSend(msg_queue, "NRF24 init failed", 0);
     }
 
+    static uint8_t tx_data = 1;
+    r = nrf_send_packet_noack(&nrf, &tx_data);
+    if(r == NRF_OK) {
+        xQueueSend(msg_queue, "NRF24 available", 0);
+    } else {
+        xQueueSend(msg_queue, "NRF24 init failed", 0);
+    }
+    
     // Repeating portion
     portTickType xLastWakeTime;
-    const portTickType xFrequency = 50;
+    const portTickType xFrequency = 1000;
     xLastWakeTime=xTaskGetTickCount();
 
     for( ;; )
     {
+
+        
+
         // Delay until RTOS can swap context again with delay
         vTaskDelayUntil(&xLastWakeTime,xFrequency);
     }

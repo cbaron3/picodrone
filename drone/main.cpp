@@ -41,6 +41,7 @@ int main() {
   GPIO::Init(GPIO::PORT::A, &GPIOA_SPI1MOSICfg);
   GPIO::Init(GPIO::PORT::A, &GPIOA_SPI1MISOCfg);
   GPIO::Init(GPIO::PORT::A, &GPIOA_SPI1CECfg);
+  GPIO::Init(GPIO::PORT::B, &GPIOB_SPI1IRQCfg);
 
   /* UART Init */
   USART::Init(USART::PORT::U1, &UART_USART1Cfg);
