@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-01-21T17:01:36Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.4.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "final_design_v1"
+        },
+        "Owner": "Carl Baron <cbaron3@uwo.ca>",
+        "Size": {
+            "X": 38.1,
+            "Y": 57.15
+        }
+    }
+}
