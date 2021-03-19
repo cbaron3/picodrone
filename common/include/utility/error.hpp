@@ -1,22 +1,22 @@
-#ifndef PICODRONE_COMMON_INCLUDE_UTILITY_ERROR_H
-#define PICODRONE_COMMON_INCLUDE_UTILITY_ERROR_H
+// #ifndef PICODRONE_COMMON_INCLUDE_UTILITY_ERROR_H
+// #define PICODRONE_COMMON_INCLUDE_UTILITY_ERROR_H
 
-#include "stm32f1xx_hal.h"
-#include "stm32f1xx.h"
+// #include "stm32f1xx_hal.h"
+// #include "stm32f1xx.h"
 
-namespace common
-{
+// namespace common
+// {
 
-namespace utility
-{
+// namespace utility
+// {
 
-enum class ErrC : uint8_t {
-    kNone = 0x00,
-    kHalError = 0x01,
-};
+// enum class ErrC : uint8_t {
+//     kNone = 0x00,
+//     kHalError = 0x01,
+// };
 
-} // namespace utility
+// } // namespace utility
 
-} // namespace common
+// } // namespace common
 
-#endif // PICODRONE_COMMON_INCLUDE_UTILITY_ERROR_H
+// #endif // PICODRONE_COMMON_INCLUDE_UTILITY_ERROR_H

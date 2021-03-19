@@ -12,7 +12,7 @@ file(GLOB DRONE_C_SRC "src/*.c")
 enable_language(ASM)
 set(STARTUP_FILE "../system/startup_stm32f103xb.c")
 
-add_executable(${ELF} ${STARTUP_FILE} ${DRONE_SRC} ${DRONE_C_SRC} main.cpp)
+add_executable(${ELF} ${STARTUP_FILE} ${DRONE_SRC} ${DRONE_C_SRC} main.c)
 
 target_include_directories(${ELF} PUBLIC "include")
 
