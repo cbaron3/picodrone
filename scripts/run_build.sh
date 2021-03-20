@@ -31,7 +31,4 @@ if [ ! "$(docker ps -q -f name=PICODRONE_BUILD)" ]; then
     docker run -d -it --name PICODRONE_BUILD -v $PWD/../.:/picodrone stm32
 fi
 
-# docker exec -it PICODRONE_BUILD bash -c “sh /home/picodrone/scripts/test.sh”
-
-
-docker exec -it PICODRONE_BUILD /picodrone/scripts/test.sh $clean
+docker exec -it PICODRONE_BUILD /picodrone/scripts/build.sh $clean

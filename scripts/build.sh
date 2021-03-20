@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Build script
+
 # Navigate to picodrone directory if it exists
 if [ ! -d "$PWD/picodrone" ]; then
     echo "Project does not exist in docker container."
@@ -29,3 +31,7 @@ echo $PWD
 cmake -DCMAKE_TOOLCHAIN_FILE=../system/toolchain.cmake ../
 
 make
+
+arm-none-eabi-size drone/drone.elf
+
+python ../scripts/track_size.py
