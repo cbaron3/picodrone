@@ -1,13 +1,30 @@
 #!/bin/bash
 
-echo "Hello from container"
+# Navigate to picodrone directory if it exists
+if [ ! -d "$PWD/picodrone" ]; then
+    echo "Project does not exist in docker container."
+    echo "Terminating build process..."
+    exit 1;
+fi
 
-cd picodrone/
+echo "Navigating to project directory"
+cd /picodrone
 
-ls
+if [ "$1" == "true" ]; then
+    echo "Clean build - removing old build folder"
+    rm -r "$PWD/build"
+fi
 
-cd build/
+# If the build directory does not exist, create it. This supercedes the clean flag
+if [ ! -d "$PWD/build" ]; then
+    echo "Creating build folder"
 
+    mkdir "$PWD/build"
+fi
+
+cd build
+
+echo $PWD
 
 cmake -DCMAKE_TOOLCHAIN_FILE=../system/toolchain.cmake ../
 

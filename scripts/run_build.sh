@@ -1,5 +1,24 @@
 #!/bin/bash
 
+clean='false'
+
+print_usage() {
+  echo
+  echo "Invalid Option Supplied."
+  echo
+  echo "Usage:"
+  echo -e ' \t -c for clean build'
+}
+
+while getopts 'c' flag; do
+  case "${flag}" in
+    c) clean='true' ;;
+    *) print_usage
+       exit 1 ;;
+  esac
+done
+
+
 echo
 echo "Starting Picodrone Build"
 
@@ -15,4 +34,4 @@ fi
 # docker exec -it PICODRONE_BUILD bash -c “sh /home/picodrone/scripts/test.sh”
 
 
-docker exec -it PICODRONE_BUILD /picodrone/scripts/test.sh
+docker exec -it PICODRONE_BUILD /picodrone/scripts/test.sh $clean
