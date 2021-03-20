@@ -32,6 +32,6 @@ cmake -DCMAKE_TOOLCHAIN_FILE=../system/toolchain.cmake ../
 
 make
 
-arm-none-eabi-size drone/drone.elf
 
-python ../scripts/track_size.py
+
+arm-none-eabi-size drone/drone.elf | python ../scripts/track_size.py
