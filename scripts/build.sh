@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Build script
+### Build script
 
 # Navigate to picodrone directory if it exists
 if [ ! -d "$PWD/picodrone" ]; then
@@ -24,14 +24,14 @@ if [ ! -d "$PWD/build" ]; then
     mkdir "$PWD/build"
 fi
 
+# Navigate to build directory
 cd build
 
-echo $PWD
+# Run CMAKE
+cmake -DCMAKE_TOOLCHAIN_FILE=../system/toolchain.cmake ../ || exit 1
 
-cmake -DCMAKE_TOOLCHAIN_FILE=../system/toolchain.cmake ../
+# Run MAKE
+make || exit 1
 
-make
-
-
-
+# Track elf size for drone
 arm-none-eabi-size drone/drone.elf | python ../scripts/track_size.py
