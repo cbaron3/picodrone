@@ -34,4 +34,6 @@ cmake -DCMAKE_TOOLCHAIN_FILE=../system/toolchain.cmake ../ || exit 1
 make || exit 1
 
 # Track elf size for drone
-arm-none-eabi-size drone/drone.elf | python ../scripts/track_size.py
+arm-none-eabi-size drone/drone.elf | python ../scripts/track_size.py "drone.elf" || exit 1
+
+arm-none-eabi-size transmitter/transmitter.elf | python ../scripts/track_size.py "transmitter.elf" || exit 1
