@@ -8,7 +8,7 @@ set(ELF ${PROJECT_NAME}.elf)
 enable_language(ASM)
 set(STARTUP_FILE "../system/startup_stm32f103xb.c")
 
-add_executable(${ELF} ${STARTUP_FILE} main.cpp)
+add_executable(${ELF} ${STARTUP_FILE} main.c)
 
 target_link_libraries(${ELF} hal freertos common)
 

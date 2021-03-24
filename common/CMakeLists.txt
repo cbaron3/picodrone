@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
 
-file(GLOB SRC "lib/*.cpp")
+file(GLOB SRC "src/*.c" "src/hal/*.c")
 
 project(common)
 

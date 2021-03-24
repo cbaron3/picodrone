@@ -33,13 +33,22 @@ set(SYSTEM_INCLUDE
 )
 
 set(COMPILER_FLAGS
-    -Os
     -Wall 
-    -Wextra
-    -Werror
-    -Wno-missing-field-initializers
-    -Wno-unused-parameter # Disable unused parameter warnings for now
-    -Wno-unused-variable # Disable unused parameter warnings for now
+    -g 
+    -std=gnu99 
+    -Os
+    -mthumb
+    -mcpu=cortex-m3
+    -mfloat-abi=soft
+    -mlittle-endian
+    -ffunction-sections 
+    -fdata-sections
+    -Werror 
+    -Warray-bounds 
+    -fno-strict-aliasing 
+    -Wno-unused-const-variable 
+    -specs=nano.specs 
+    -specs=nosys.specs
 )
 
 set(TARGET_FLAGS 
