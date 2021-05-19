@@ -1,44 +1,31 @@
-// #ifndef PICODRONE_COMMON_INCLUDE_HAL_CONTROLLER_H
-// #define PICODRONE_COMMON_INCLUDE_HAL_CONTROLLER_H
+#ifndef PICODRONE_COMMON_INCLUDE_HAL_CONTROLLER_H
+#define PICODRONE_COMMON_INCLUDE_HAL_CONTROLLER_H
 
-// #include "utility/error.hpp"
+#include "stm32f1xx_hal.h"
+#include "stm32f1xx.h"
 
-// #include "stm32f1xx_hal.h"
-// #include "stm32f1xx.h"
+typedef struct {
+    uint32_t flash_latency;     /// Flash wait state to ensure the speed of reading data from 
+                                /// FLASH corresponds to the speed of the system clock
+    uint32_t hal_clk_source;    /// HAL SYSTICK source
+    uint32_t hal_clk_divider;   /// Divider to drop HAL SYSTICK source to SYSTICK interrupt time
+} Controller_Cfg;
+typedef enum {
+  CONTROLLER_OK          = 0x00,
+  CONTROLLER_OSC_ERR     = 0x01,
+  CONTROLLER_CLK_ERR     = 0x02,
+  CONTROLLER_SYSTICK_ERR = 0x03,
+  CONTROLLER_HAL_ERR     = 0x04,
+} Controller_Status;
 
-// namespace common
-// {
+/**
+ * @brief Initialize the controller which includes the oscillator, system clock, and hardware-abstraction layer
+ * 
+ * @param controller_osc_cfg RCC Internal/External Oscillator (HSE, HSI, LSE, LSI) configuration
+ * @param controller_clk_cfg RCC System, AHB and APM busses clock configuration
+ * @param cfg Controller configuration structure
+ * @return Controller_Status Return status of Init operation 
+ */
+Controller_Status Controller_Init(RCC_OscInitTypeDef* controller_osc_cfg, RCC_ClkInitTypeDef* controller_clk_cfg, Controller_Cfg *cfg);
 
-// namespace hal
-// {
-
-// /**
-//  * @brief Class used to encapsulate initialize process of system clocks, interrupts,
-//  *        and hardware abstraction layer based on input clock and oscillator settings. 
-//  */
-// class Controller final
-// {
-// public:
-
-// /**
-//  * @brief Struct to encapsulate configurations NOT determined by STM32F1 Cube
-//  *        HAL type definitions
-//  */
-// struct Cfg {
-//     uint32_t latency;       /// Flash wait state to ensure the speed of reading data from 
-//                             /// FLASH corresponds to the speed of the system clock
-//     uint32_t clk_source;    /// HAL SYSTICK source
-//     uint32_t divider;       /// Divider to drop HAL SYSTICK source to SYSTICK interrupt time
-// };
-
-// static constexpr Cfg DEFAULT_CFG{FLASH_ACR_LATENCY_1, 1000, SYSTICK_CLKSOURCE_HCLK};
-
-// utility::ErrC static Init(RCC_OscInitTypeDef* osc_def, RCC_ClkInitTypeDef* clk_def, Cfg cfg = DEFAULT_CFG) noexcept;
-
-// };
-
-// }
-
-// } // namespace common
-
-// #endif // PICODRONE_COMMON_INCLUDE_HAL_CONTROLLER_H
+#endif // PICODRONE_COMMON_INCLUDE_HAL_CONTROLLER_H

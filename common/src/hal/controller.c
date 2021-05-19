@@ -1,39 +1,32 @@
-// #include "hal/controller.h"
-// #include "stm32f1xx_hal.h"
-// #include "stm32f1xx.h"
+#include "controller.h"
 
-// namespace common
-// {
+// Initialize controller
+Controller_Status Controller_Init(RCC_OscInitTypeDef* controller_osc_cfg, RCC_ClkInitTypeDef* controller_clk_cfg, Controller_Cfg *cfg) {
+    Controller_Status status = CONTROLLER_OK;
 
-// namespace hal
-// {
+    // Initializes the CPU, AHB and APB busses clocks
+    if (HAL_RCC_OscConfig(controller_osc_cfg) != HAL_OK) {
+        status = CONTROLLER_OSC_ERR;
+    }
 
-// constexpr Controller::Cfg Controller::DEFAULT_CFG;
+    if (HAL_RCC_ClockConfig(controller_clk_cfg, cfg->flash_latency) != HAL_OK) {
+        status = CONTROLLER_CLK_ERR;
+    }
 
-// utility::ErrC Controller::Init(RCC_OscInitTypeDef* osc_def, RCC_ClkInitTypeDef* clk_def, Cfg cfg) {
-//     // Initializes the CPU, AHB and APB busses clocks
-//     if (HAL_RCC_OscConfig(osc_def) != HAL_OK) {
-//         return utility::ErrC::kHalError;
-//     }
+    // Configure the Systick source
+    HAL_SYSTICK_CLKSourceConfig(cfg->hal_clk_source);
 
-//     if (HAL_RCC_ClockConfig(clk_def, cfg.latency) != HAL_OK) {
-//         return utility::ErrC::kHalError;
-//     }
+    // Configure the Systick interrupt time
+    if(HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/cfg->hal_clk_divider) != 0) {
+        status = CONTROLLER_SYSTICK_ERR;
+    }
 
-//     // Configure the Systick interrupt time
-//     HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/cfg.divider);
+    // SysTick_IRQn interrupt configuration
+    HAL_NVIC_SetPriority(SysTick_IRQn, 15, 0);
 
-//     // Configure the Systick
-//     HAL_SYSTICK_CLKSourceConfig(cfg.clk_source);
+    if(HAL_Init() != HAL_OK) {
+        status = CONTROLLER_HAL_ERR;
+    }
 
-//     // SysTick_IRQn interrupt configuration
-//     HAL_NVIC_SetPriority(SysTick_IRQn, 15, 0);
-
-//     HAL_Init();
-
-//     return utility::ErrC::kNone;
-// }
-
-// } // namespace hal
-    
-// } // namespace common
+    return status;
+}

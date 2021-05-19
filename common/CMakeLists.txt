@@ -10,6 +10,7 @@ target_link_libraries(common hal freertos )
 
 target_include_directories(common PUBLIC 
     "include/"
+    "include/hal/"
     ${SYSTEM_INCLUDE}
     ${STM32_INCLUDE}
     
