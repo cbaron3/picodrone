@@ -1,2 +1,0 @@
-add_subdirectory(STM32F1)
-add_subdirectory(FreeRTOS)
